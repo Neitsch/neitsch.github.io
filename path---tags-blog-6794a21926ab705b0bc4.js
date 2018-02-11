@@ -1,2 +1,0 @@
-webpackJsonp([17976388717192],{457:function(o,t){o.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/welcome-to-my-blog"},excerpt:"Welcome to my new Blog As so many people, I'm also starting a blog. This is partially to document my\nown work, but I also want to help other…",timeToRead:1,frontmatter:{title:"Welcome to my Blog",tags:["programming","blog"],cover:"/img/liberty.jpg",date:"10/02/2018"}}}]}},pathContext:{tag:"blog"}}}});
-//# sourceMappingURL=path---tags-blog-6794a21926ab705b0bc4.js.map
