@@ -1,0 +1,2 @@
+webpackJsonp([86242794778721],{468:function(t,e){t.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/articles/welcome-to-my-blog"},excerpt:"Motivation I've decided to start a blog for two purposes: First, I want to document my\nwork, so that I can go back, reflect and learn from…",timeToRead:1,frontmatter:{title:"Welcome to my Blog",tags:["Blog","Nigel Schuster"],cover:"/img/liberty.jpg",date:"09/02/2018"}}}]}},pathContext:{category:"Tech"}}}});
+//# sourceMappingURL=path---categories-tech-eee87a771d5d8e8971a8.js.map
