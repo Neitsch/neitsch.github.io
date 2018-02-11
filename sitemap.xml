@@ -13,6 +13,6 @@
 <url> <loc>https://www.nigel-schuster.de/categories/software-engineering/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nigel-schuster.de/categories/tech/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nigel-schuster.de/categories/machine-learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nigel-schuster.de/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nigel-schuster.de/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nigel-schuster.de/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
