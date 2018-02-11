@@ -1,0 +1,83 @@
+---
+title: "Trying to build a good web app"
+cover: "/img/app-dev.jpg"
+date: "11/02/2018"
+category: "software engineering"
+tags:
+    - programming
+    - past project
+---
+# Motivation
+Our project "MIWF" was built during our Advanced Software Engineering class.
+We wanted to build an application that allowed people to simulate stock trading.
+This hypothetical product would mostly target people who have no experience in
+stock trading and want to get involved.
+
+# Software Stack
+We tried to decide on components that fit our experience and are appropriate
+for the project:
+* Database: We picked [PostgreSQL](https://www.postgresql.org/) as our database.
+To all of us it was clear that a relational database was the best decision,
+since our data fits very well in a schema, required a lot of aggregation
+queries, and the database is widely deployed. Our decision fell on PostgreSQL
+over MySQL simply, since we had more operational experience with former.
+* Backend: Our backend was powered by [Django](https://www.djangoproject.com/).
+Python was the only language that all of us had worked with before, thus that
+part was an easy decision. Then we could have either gone with Flask + SQLAlchemy
+or Django. We chose latter, since it offered more of a all-in-one solution and
+thus made it easier for our team. Also Django has an awesome [documentation]
+(https://docs.djangoproject.com/en/2.0/)!
+* API: We exposed our data via [GraphQL](http://graphql.org/). It allowed us to
+manage our data definitions in an easier way. On top of that [Graphene]
+(http://graphene-python.org/) allowed us to parallelize a lot of data fetching.
+On the client side it allowed us to easily evolve our data needs with [Relay]
+(https://facebook.github.io/relay/).
+* Frontend: We used [React](https://reactjs.org/) to manage our view layer. It
+allowed us to work well with user interactions. Paired with [Relay]
+(https://facebook.github.io/relay/), we were able to model user data and
+interaction very well. The declarative style allowed us to reason easily about
+the data.
+* Documentation: We generated our documentation with Sphinx and deployed it to readthedocs. You can find it [here](http://ase4156.readthedocs.io/).
+* External Services: We integrated our application with some external services
+to move critical data away from our responsibility.
+  * [Plaid](https://plaid.com/): This API allowed us to integrate with real
+  production data. Users were able to link our application with their real bank
+  account.
+  * [Google Auth](https://developers.google.com/identity/sign-in/web/sign-in):
+  We did not want to take the responsibility of authenticating the user, since
+  we would have to store the password and prevent attacks. Thus instead we went
+  with Google Authentication. Integrating with it was a breeze.
+* Testing: A major focus of the class was properly testing the application. We
+were able to achieve a 96% test coverage.
+  * Python: Django offered an [internal testing tool]
+  (https://docs.djangoproject.com/en/2.0/topics/testing/overview/), but [pytest]
+  (https://docs.pytest.org/en/latest/) had a better appeal for us, since it is
+  widely used. It was not always easy to integrate with Django, but it ended up
+  working mostly.
+  * Javascript: We used [Jest](https://facebook.github.io/jest/) to test the
+  Javascript side of our application. Combined with [Snapshot Testing]
+  (https://facebook.github.io/jest/docs/en/snapshot-testing.html) we were able
+  to mostly test our client side. However we struggled with testing Relay
+  components. Ultimately we were forced to add a lot of extra test data to
+  match the expected fragments. An example testcase is [here]
+  (https://github.com/Neitsch/ASE4156/blob/master/web/js/components/InvestBucket/__tests__/InvestBucketRelay-test.jsx).
+  * Selenium: This served as one of our pillars to verify that our software
+  actually worked. Unit and integration testing took us 90% of the way, but
+  Selenium caught several regressions during our development process. Overall
+  it was important that we used that tool.
+* Infrastructure:
+  * We hosted our database with [GCP SQL]
+  (https://cloud.google.com/sql/docs/postgres/), since we had credits there.
+  * We did CID through [Travis](https://travis-ci.org/), since we had positive
+  experiences with it in the
+  past
+  * We hosted our application in [Heroku](http://dashboard.heroku.com/), since
+  it seamlessly integrated with Travis and managed our application well.
+
+# Final result
+I am quite satisfied with the final result. All our code is in our [Github
+Repository](https://github.com/Neitsch/ASE4156). We have very good test coverage
+with 96% coverage. Our code is well documented and met most of anticipated
+goals. Finally, big thanks to JP Morgan Chase and Will Searle for mentoring us
+throughout the project. Our efforts were rewarded with a 2nd place at a private
+competition for our class.
