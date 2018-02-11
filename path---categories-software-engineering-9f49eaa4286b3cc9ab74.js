@@ -1,2 +1,0 @@
-webpackJsonp([0xd36fa0654391],{463:function(e,t){e.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/trying-to-build-a-good-web-app"},excerpt:"Capsule Networks",timeToRead:1,frontmatter:{title:"Trying to build a good web app",tags:["programming","past project"],cover:"/img/app-dev.jpg",date:"11/02/2018"}}}]}},pathContext:{category:"software engineering"}}}});
-//# sourceMappingURL=path---categories-software-engineering-9f49eaa4286b3cc9ab74.js.map
