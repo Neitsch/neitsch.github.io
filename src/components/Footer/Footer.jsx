@@ -31,10 +31,7 @@ class Footer extends Component {
           </div>
           <div className="based-on">
             <h4>
-              Based on{" "}
-              <a href="https://github.com/Vagr9K/gatsby-material-starter">
-                Gatsby Material Starter
-              </a>.
+              Thank you to <a href="https://github.com/Vagr9K">Vagr9K</a> for the theme.
             </h4>
           </div>
         </div>
