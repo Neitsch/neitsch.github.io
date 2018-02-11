@@ -2,10 +2,9 @@
 title: "Welcome to my Blog"
 cover: "/img/liberty.jpg"
 date: "09/02/2018"
-category: "tech"
+category: "Tech"
 tags:
-    - programming
-    - blog
+    - Blog
     - Nigel Schuster
 ---
 # Motivation

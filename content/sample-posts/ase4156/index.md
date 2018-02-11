@@ -2,10 +2,11 @@
 title: "Trying to build a good web app"
 cover: "/img/app-dev.jpg"
 date: "11/02/2018"
-category: "software engineering"
+category: "Software Engineering"
 tags:
-    - programming
-    - past project
+    - Programming
+    - Software Engineering
+    - Past Project
 ---
 # Motivation
 Our project "MIWF" was built during our Advanced Software Engineering class.

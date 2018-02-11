@@ -17,7 +17,7 @@ module.exports = {
   userLocation: "New York City, NY", // User location to display in the author segment.
   userAvatar: "https://avatars1.githubusercontent.com/u/7909844", // User avatar to display in the author segment.
   userDescription:
-    "Just another software engineer in the city.", // User description to display in the author segment.
+    "Just another software engineer in the city. Interested in everything ranging from Operating Systems to Machine Learning and Frontend Development. Also huge fan of compilers and good language design.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {

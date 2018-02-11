@@ -2,11 +2,12 @@
 title: "Capsule Networks"
 cover: "/img/neural-network.jpg"
 date: "10/02/2018"
-category: "machine learning"
+category: "Machine Learning"
 tags:
-    - programming
-    - neural networks
-    - past project
+    - Programming
+    - Neural Networks
+    - Machine Learning
+    - Past Project
 ---
 Capsule Networks are a novel approach for processing data with a neural network.
 They were first introduced a couple years ago, but recently gained some
