@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{455:function(o,e){o.exports={data:{allMarkdownRemark:{edges:[{node:{fields:{slug:"/welcome-to-my-blog"},excerpt:"Welcome to my new Blog As so many people, I'm also starting a blog. This is partially to document my\nown work, but I also want to help other…",timeToRead:1,frontmatter:{title:"Welcome to my Blog",tags:["programming","blog"],cover:"/img/liberty.jpg",date:"10/02/2018"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-28e59ee0b508ea82f085.js.map
