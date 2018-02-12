@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nigel Schuster]]></title><description><![CDATA[Homepage/Blog of Nigel Schuster. This will mostly talk about various Software Engineering topics, such as Operating Systems or Machine Learning.]]></description><link>https://www.nigel-schuster.de</link><image><url>https://www.nigel-schuster.de/logos/logo-512.png</url><title>Nigel Schuster</title><link>https://www.nigel-schuster.de</link></image><generator>Nigel Schuster | Blog</generator><lastBuildDate>Mon, 12 Feb 2018 00:33:05 GMT</lastBuildDate><atom:link href="https://www.nigel-schuster.de/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Nigel Schuster]]></author><copyright><![CDATA[Copyright © 2018. Nigel Schuster]]></copyright><item><title><![CDATA[Trying to build a good web app]]></title><description><![CDATA[Motivation Our project "MIWF" was built during our Advanced Software Engineering class.
-We wanted to build an application that allowed…]]></description><link>https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</guid><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Fri, 02 Nov 2018 04:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#motivation&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Motivation&lt;/h1&gt;
-&lt;p&gt;Our project &quot;MIWF&quot; was built during our Advanced Software Engineering class.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nigel Schuster]]></title><description><![CDATA[Homepage/Blog of Nigel Schuster. This will mostly talk about various Software Engineering topics, such as Operating Systems or Machine Learning.]]></description><link>https://www.nigel-schuster.de</link><image><url>https://www.nigel-schuster.de/logos/logo-512.png</url><title>Nigel Schuster</title><link>https://www.nigel-schuster.de</link></image><generator>Nigel Schuster | Blog</generator><lastBuildDate>Mon, 12 Feb 2018 22:01:14 GMT</lastBuildDate><atom:link href="https://www.nigel-schuster.de/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Nigel Schuster]]></author><copyright><![CDATA[Copyright © 2018. Nigel Schuster]]></copyright><item><title><![CDATA[Trying to build a good web app]]></title><description><![CDATA[Motivation We built our project "MIWF" during our Advanced Software Engineering class.
+We wanted to build an application that allowed people…]]></description><link>https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</guid><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Fri, 02 Nov 2018 04:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#motivation&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;We built our project &quot;MIWF&quot; during our Advanced Software Engineering class.
 We wanted to build an application that allowed people to simulate stock trading.
-This hypothetical product would mostly target people who have no experience in
+This hypothetical product would target people who have no experience in
 stock trading and want to get involved.&lt;/p&gt;
 &lt;h1 id=&quot;software-stack&quot;&gt;&lt;a href=&quot;#software-stack&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software Stack&lt;/h1&gt;
 &lt;p&gt;We tried to decide on components that fit our experience and are appropriate
 for the project:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Database: We picked &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt; as our database.
-To all of us it was clear that a relational database was the best decision,
-since our data fits very well in a schema, required a lot of aggregation
+We knew that a relational database was the best decision,
+since our data fits well in a schema, required a lot of aggregation
 queries, and the database is widely deployed. Our decision fell on PostgreSQL
-over MySQL simply, since we had more operational experience with former.&lt;/li&gt;
-&lt;li&gt;Backend: Our backend was powered by &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt;.
-Python was the only language that all of us had worked with before, thus that
+over MySQL, since we had more operational experience with former.&lt;/li&gt;
+&lt;li&gt;Backend: We powered our backend with &lt;a href=&quot;https://www.djangoproject.com/&quot;&gt;Django&lt;/a&gt;.
+Python was a language that we all had worked with before, thus that
 part was an easy decision. Then we could have either gone with Flask + SQLAlchemy
 or Django. We chose latter, since it offered more of a all-in-one solution and
 thus made it easier for our team. Also Django has an awesome &lt;a href=&quot;https://docs.djangoproject.com/en/2.0/&quot;&gt;documentation&lt;/a&gt;!&lt;/li&gt;
 &lt;li&gt;API: We exposed our data via &lt;a href=&quot;http://graphql.org/&quot;&gt;GraphQL&lt;/a&gt;. It allowed us to
 manage our data definitions in an easier way. On top of that &lt;a href=&quot;http://graphene-python.org/&quot;&gt;Graphene&lt;/a&gt; allowed us to parallelize a lot of data fetching.
-On the client side it allowed us to easily evolve our data needs with &lt;a href=&quot;https://facebook.github.io/relay/&quot;&gt;Relay&lt;/a&gt;.&lt;/li&gt;
+On the client side it allowed us to evolve our data needs with &lt;a href=&quot;https://facebook.github.io/relay/&quot;&gt;Relay&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Frontend: We used &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; to manage our view layer. It
 allowed us to work well with user interactions. Paired with &lt;a href=&quot;https://facebook.github.io/relay/&quot;&gt;Relay&lt;/a&gt;, we were able to model user data and
-interaction very well. The declarative style allowed us to reason easily about
+interaction well. The declarative style allowed us to reason about
 the data.&lt;/li&gt;
 &lt;li&gt;Documentation: We generated our documentation with Sphinx and deployed it to readthedocs. You can find it &lt;a href=&quot;http://ase4156.readthedocs.io/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;
@@ -36,25 +36,25 @@ account.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developers.google.com/identity/sign-in/web/sign-in&quot;&gt;Google Auth&lt;/a&gt;:
 We did not want to take the responsibility of authenticating the user, since
 we would have to store the password and prevent attacks. Thus instead we went
-with Google Authentication. Integrating with it was a breeze.&lt;/li&gt;
+with Google Authentication. Integrating with the tool was a breeze.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Testing: A major focus of the class was properly testing the application. We
 were able to achieve a 96% test coverage.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Python: Django offered an &lt;a href=&quot;https://docs.djangoproject.com/en/2.0/topics/testing/overview/&quot;&gt;internal testing tool&lt;/a&gt;, but &lt;a href=&quot;https://docs.pytest.org/en/latest/&quot;&gt;pytest&lt;/a&gt; had a better appeal for us, since it is
-widely used. It was not always easy to integrate with Django, but it ended up
-working mostly.&lt;/li&gt;
+&lt;li&gt;Python: Django offered an &lt;a href=&quot;https://docs.djangoproject.com/en/2.0/topics/testing/overview/&quot;&gt;internal testing tool&lt;/a&gt;, but &lt;a href=&quot;https://docs.pytest.org/en/latest/&quot;&gt;pytest&lt;/a&gt; had a better appeal for us, since the test runner is
+widely used. Pytest was not always easy to integrate with Django, but it ended up
+working for our use cases.&lt;/li&gt;
 &lt;li&gt;Javascript: We used &lt;a href=&quot;https://facebook.github.io/jest/&quot;&gt;Jest&lt;/a&gt; to test the
 Javascript side of our application. Combined with &lt;a href=&quot;https://facebook.github.io/jest/docs/en/snapshot-testing.html&quot;&gt;Snapshot Testing&lt;/a&gt; we were able
-to mostly test our client side. However we struggled with testing Relay
-components. Ultimately we were forced to add a lot of extra test data to
+to test our client side well. We struggled with testing Relay
+components. Ultimately we had to add a lot of extra test data to
 match the expected fragments. An example testcase is &lt;a href=&quot;https://github.com/Neitsch/ASE4156/blob/master/web/js/components/InvestBucket/__tests__/InvestBucketRelay-test.jsx&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Selenium: This served as one of our pillars to verify that our software
 actually worked. Unit and integration testing took us 90% of the way, but
-Selenium caught several regressions during our development process. Overall
-it was important that we used that tool.&lt;/li&gt;
+Selenium caught regressions throughout our development process.
+It ended up being an important asset.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -70,18 +70,17 @@ it seamlessly integrated with Travis and managed our application well.&lt;/li&gt
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&quot;final-result&quot;&gt;&lt;a href=&quot;#final-result&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Final result&lt;/h1&gt;
-&lt;p&gt;I am quite satisfied with the final result. All our code is in our &lt;a href=&quot;https://github.com/Neitsch/ASE4156&quot;&gt;Github
-Repository&lt;/a&gt;. We have very good test coverage
+&lt;p&gt;I am satisfied with the final result. All our code is in our &lt;a href=&quot;https://github.com/Neitsch/ASE4156&quot;&gt;Github
+Repository&lt;/a&gt;. We have good test coverage
 with 96% coverage. Our code is well documented and met most of anticipated
-goals. Finally, big thanks to JP Morgan Chase and Will Searle for mentoring us
-throughout the project. Our efforts were rewarded with a 2nd place at a private
-competition for our class.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Capsule Networks]]></title><description><![CDATA[Capsule Networks are a novel approach for processing data with a neural network.
-They were first introduced a couple years ago, but recently…]]></description><link>https://www.nigel-schuster.de/articles/capsule-networks</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/capsule-networks</guid><category><![CDATA[Programming]]></category><category><![CDATA[Neural Networks]]></category><category><![CDATA[Machine Learning]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Tue, 02 Oct 2018 04:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Capsule Networks are a novel approach for processing data with a neural network.
-They were first introduced a couple years ago, but recently gained some
+goals. Big thanks to JP Morgan Chase and Will Searle for mentoring us
+throughout the project. We made 2nd place at a private competition for our class.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Capsule Networks]]></title><description><![CDATA[Capsule Networks are a novel approach for processing data with a neural network.
+They were first introduced a couple years ago, but gained…]]></description><link>https://www.nigel-schuster.de/articles/capsule-networks</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/capsule-networks</guid><category><![CDATA[Programming]]></category><category><![CDATA[Neural Networks]]></category><category><![CDATA[Machine Learning]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Tue, 02 Oct 2018 04:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Capsule Networks are a novel approach for processing data with a neural network.
+They were first introduced a couple years ago, but gained some
 popularity after Hinton et al. published &lt;a href=&quot;https://arxiv.org/abs/1710.09829&quot;&gt;Dynamic Routing between Capsules&lt;/a&gt;. We researched the performance of CapsNets
 during our Deep Learning class. Our main findings were, that CapsNets exhibit
-some very desirable properties, such as resistance to Adversarial Attacks and
-better adaptiveness, but are currently orders of magnitude slower. You can find
+some desirable properties, such as resistance to Adversarial Attacks and
+better adaptiveness, but are orders of magnitude slower. You can find
 the full report &lt;a href=&quot;/uploads/capsnets.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Welcome to my Blog]]></title><description><![CDATA[Motivation I've decided to start a blog for two purposes: First, I want to document my
 work, so that I can go back, reflect and learn from…]]></description><link>https://www.nigel-schuster.de/articles/welcome-to-my-blog</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/welcome-to-my-blog</guid><category><![CDATA[Blog]]></category><category><![CDATA[Nigel Schuster]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Sun, 02 Sep 2018 04:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#motivation&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Motivation&lt;/h1&gt;
 &lt;p&gt;I&apos;ve decided to start a blog for two purposes: First, I want to document my
@@ -90,6 +89,6 @@ others can hopefully profit from my posts. I&apos;ve received so much guidance
 from other blogs, now I hope to impart some of my experiences to others.&lt;/p&gt;
 &lt;h1 id=&quot;content&quot;&gt;&lt;a href=&quot;#content&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Content&lt;/h1&gt;
 &lt;p&gt;This blog will cover a wide range of Software Engineering topics. I&apos;ve tried
-out several languages ranging from Pascal to ReasonML and my interests are
-just as widely spread. Hopefully I&apos;ll be able to cover a wide range of topics
+out programming languages ranging from Pascal to ReasonML and my interests are
+as widely spread. Hopefully I&apos;ll be able to cover a wide range of topics
 including OS development, frontend development and machine learning.&lt;/p&gt;</content:encoded></item></channel></rss>
