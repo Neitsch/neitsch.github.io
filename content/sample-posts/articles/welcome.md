@@ -15,6 +15,6 @@ from other blogs, now I hope to impart some of my experiences to others.
 
 # Content
 This blog will cover a wide range of Software Engineering topics. I've tried
-out several languages ranging from Pascal to ReasonML and my interests are
-just as widely spread. Hopefully I'll be able to cover a wide range of topics
+out programming languages ranging from Pascal to ReasonML and my interests are
+as widely spread. Hopefully I'll be able to cover a wide range of topics
 including OS development, frontend development and machine learning.
