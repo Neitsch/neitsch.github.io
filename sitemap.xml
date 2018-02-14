@@ -3,7 +3,7 @@
 <url> <loc>https://www.nigel-schuster.de/articles/welcome-to-my-blog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nigel-schuster.de/articles/capsule-networks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nigel-schuster.de/articles/sms-analysis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nigel-schuster.de/articles/messaging-analysis-and-visualization</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nigel-schuster.de/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nigel-schuster.de/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
