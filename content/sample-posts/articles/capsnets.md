@@ -1,7 +1,7 @@
 ---
 title: "Capsule Networks"
 cover: "/img/neural-network.jpg"
-date: "10/02/2018"
+date: "02/10/2018"
 category: "Machine Learning"
 tags:
     - Programming

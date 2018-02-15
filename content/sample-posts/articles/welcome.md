@@ -1,7 +1,7 @@
 ---
 title: "Welcome to my Blog"
 cover: "/img/liberty.jpg"
-date: "09/02/2018"
+date: "02/09/2018"
 category: "Tech"
 tags:
     - Blog
