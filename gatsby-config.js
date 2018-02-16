@@ -2,7 +2,46 @@ const config = require("./data/SiteConfig");
 
 const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
 
-const regexExclude404AndOfflineShell = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/
+const regexExclude404AndOfflineShell = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories|search)).*$/
+
+const algoliaQuery = `{
+  allMarkdownRemark(limit: 1000) {
+    edges {
+      node {
+        excerpt
+        timeToRead
+        internal {
+          content
+        }
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date
+          cover
+          category
+          tags
+          date
+        }
+      }
+    }
+  }
+}`;
+const algoliaQueries = [
+  {
+    query: algoliaQuery,
+    transformer: ({data: {allMarkdownRemark: {edges}}}) => edges.map(({ node }) => ({
+      content: node.internal.content,
+      id: node.fields.slug,
+      objectID: node.fields.slug,
+      meta: node.frontmatter,
+      date: Date.parse(node.frontmatter.date),
+      excerpt: node.excerpt,
+      timeToRead: node.timeToRead,
+    })),
+  },
+];
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -202,6 +241,16 @@ module.exports = {
           windows: true
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-algolia`,
+      options: {
+        appId: '3GOEFLAHC5',
+        apiKey: '',
+        indexName: 'page_index',
+        queries: algoliaQueries,
+        chunkSize: 10000, // default: 1000
+      },
+    },
   ]
 };

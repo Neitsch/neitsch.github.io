@@ -39,6 +39,11 @@ module.exports = {
       label: "Email",
       url: "mailto:nigel.schuster+website@googlemail.com",
       iconClassName: "fa fa-envelope"
+    },
+    {
+      label: "Search",
+      url: "/search",
+      iconClassName: "fa fa-search"
     }
   ],
   copyright: "Copyright © 2018. Nigel Schuster" // Copyright string for the footer of the website and RSS feed.
