@@ -1,2 +1,0 @@
-webpackJsonp([49809841224506],{461:function(a,e){a.exports={data:{allMarkdownRemark:{totalCount:1,edges:[{node:{fields:{slug:"/articles/sms-analysis"},excerpt:"About a year ago I attended a  Meetup on D3.js . The first talk by  Michael Dezube  was on using machine learning to analyze text messages…",timeToRead:2,frontmatter:{title:"SMS Analysis",tags:["Programming","NLP","Visualization","Machine Learning","Past Project"],cover:"/img/social-media.jpg",date:"14/02/2018"}}}]}},pathContext:{tag:"NLP"}}}});
-//# sourceMappingURL=path---tags-nlp-eb38c8bf192085501e09.js.map
