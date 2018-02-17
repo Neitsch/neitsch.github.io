@@ -1,6 +1,6 @@
 ---
 title: "Messaging Analysis and Visualization"
-cover: "/img/social-media.jpg"
+cover: "./img/social-media.jpg"
 date: "02/14/2018"
 category: "Machine Learning"
 tags:

@@ -19,7 +19,17 @@ const algoliaQuery = `{
         frontmatter {
           title
           date
-          cover
+          cover {
+            childImageSharp{
+              sizes(maxWidth: 630) {
+                base64
+                aspectRatio
+                src
+                srcSet
+                sizes
+              }
+            }
+          }
           category
           tags
           date
@@ -60,6 +70,8 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -98,8 +110,6 @@ module.exports = {
         color: "#c62828"
       }
     },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     {
       resolve: `gatsby-plugin-sitemap`,
@@ -209,7 +219,6 @@ module.exports = {
                     fields { slug }
                     frontmatter {
                       title
-                      cover
                       date
                       category
                       tags

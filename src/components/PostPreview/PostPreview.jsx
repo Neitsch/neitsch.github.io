@@ -1,3 +1,4 @@
+import Img from "gatsby-image";
 import React, { Component } from "react";
 import Card from "react-md/lib/Cards/Card";
 import CardTitle from "react-md/lib/Cards/CardTitle";
@@ -39,20 +40,17 @@ class PostPreview extends Component {
     const { mobile } = this.state;
     const expand = mobile;
     /* eslint no-undef: "off"*/
-    const cover = postInfo.cover.startsWith("/")
-      ? __PATH_PREFIX__ + postInfo.cover
-      : postInfo.cover;
     const coverHeight = mobile ? 162 : 225;
     return (
       <Card key={postInfo.path} raise className="md-grid md-cell md-cell--12">
         <Link style={{ textDecoration: "none" }} to={postInfo.path}>
           <Media
             style={{
-              backgroundImage: `url(${cover})`,
               height: `${coverHeight}px`
             }}
             className="post-preview-cover"
           >
+            <Img sizes={postInfo.cover.childImageSharp.sizes} />
             <MediaOverlay>
               <CardTitle title={postInfo.title}>
                 <Button raised secondary className="md-cell--right">

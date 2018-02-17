@@ -1,6 +1,6 @@
 ---
 title: "Welcome to my Blog"
-cover: "/img/liberty.jpg"
+cover: "./img/liberty.jpg"
 date: "02/09/2018"
 category: "Tech"
 tags:

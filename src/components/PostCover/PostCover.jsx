@@ -1,20 +1,19 @@
 import React, { Component } from "react";
+import Img from "gatsby-image";
 import "./PostCover.scss";
 
 class PostCover extends Component {
   render() {
     const { postNode, mobile } = this.props;
-    const post = postNode.frontmatter;
     /* eslint no-undef: "off"*/
-    const cover = post.cover.startsWith("/")
-      ? __PATH_PREFIX__ + post.cover
-      : post.cover;
     const coverHeight = mobile ? 180 : 350;
     return (
       <div
-        style={{ backgroundImage: `url(${cover})`, height: `${coverHeight}px` }}
+        style={{ height: `${coverHeight}px` }}
         className="md-grid md-cell--9 post-cover"
-      />
+      >
+        <Img outerWrapperClassName="cover_image_wrapper" style={{width: "100%"}} sizes={postNode.frontmatter.cover.childImageSharp.sizes} />
+      </div>
     );
   }
 }
