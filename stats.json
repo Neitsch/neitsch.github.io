@@ -5,24 +5,24 @@
       "path---tags-blog-b140bbb754791bbb5153.js.map"
     ],
     "path---tags-programming": [
-      "path---tags-programming-d8f4204fb7674ddc5125.js",
-      "path---tags-programming-d8f4204fb7674ddc5125.js.map"
+      "path---tags-programming-ea10c8dbcbbd1d925f8a.js",
+      "path---tags-programming-ea10c8dbcbbd1d925f8a.js.map"
     ],
     "path---tags-nlp": [
-      "path---tags-nlp-b0daa7005038fb8f71a6.js",
-      "path---tags-nlp-b0daa7005038fb8f71a6.js.map"
+      "path---tags-nlp-4c215a93b1c64cb65b61.js",
+      "path---tags-nlp-4c215a93b1c64cb65b61.js.map"
     ],
     "path---articles-welcome-to-my-blog": [
-      "path---articles-welcome-to-my-blog-9a9139970c14eeb487a5.js",
-      "path---articles-welcome-to-my-blog-9a9139970c14eeb487a5.js.map"
+      "path---articles-welcome-to-my-blog-5a28752af56292707fa7.js",
+      "path---articles-welcome-to-my-blog-5a28752af56292707fa7.js.map"
     ],
     "path---": [
       "path----6611940bd40871b680a6.js",
       "path----6611940bd40871b680a6.js.map"
     ],
     "component---src-pages-search-jsx": [
-      "component---src-pages-search-jsx-2d4805ef6c469e211444.js",
-      "component---src-pages-search-jsx-2d4805ef6c469e211444.js.map"
+      "component---src-pages-search-jsx-54f8105a57463bcaacc1.js",
+      "component---src-pages-search-jsx-54f8105a57463bcaacc1.js.map"
     ],
     "component---src-layouts-index-jsx": [
       "component---src-layouts-index-jsx-4ea591186ef8850bc9fa.js",
@@ -33,8 +33,8 @@
       "path---tags-software-engineering-82395f2d72e8231be9f1.js.map"
     ],
     "path---categories-tech": [
-      "path---categories-tech-2c0106b78c0f6a798885.js",
-      "path---categories-tech-2c0106b78c0f6a798885.js.map"
+      "path---categories-tech-8d3819b69ef6d343d611.js",
+      "path---categories-tech-8d3819b69ef6d343d611.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -45,8 +45,8 @@
       "component---src-templates-category-jsx-e99b23511858395a9c2c.js.map"
     ],
     "path---index": [
-      "path---index-b0676b41002af2abbf05.js",
-      "path---index-b0676b41002af2abbf05.js.map"
+      "path---index-1ae32ed79593140c8a1f.js",
+      "path---index-1ae32ed79593140c8a1f.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-ad03a97f9d94d9bb3877.js",
@@ -57,20 +57,20 @@
       "path---tags-nigel-schuster-2771a8a3363866ca2eda.js.map"
     ],
     "path---articles-trying-to-build-a-good-web-app": [
-      "path---articles-trying-to-build-a-good-web-app-3530b2eb28dfd4b47d71.js",
-      "path---articles-trying-to-build-a-good-web-app-3530b2eb28dfd4b47d71.js.map"
+      "path---articles-trying-to-build-a-good-web-app-40f2b3660f4f318d1706.js",
+      "path---articles-trying-to-build-a-good-web-app-40f2b3660f4f318d1706.js.map"
     ],
     "path---articles-capsule-networks": [
       "path---articles-capsule-networks-10795c778a882bcf9b7d.js",
       "path---articles-capsule-networks-10795c778a882bcf9b7d.js.map"
     ],
     "path---articles-messaging-analysis-and-visualization": [
-      "path---articles-messaging-analysis-and-visualization-d193bf2fd50811cdd844.js",
-      "path---articles-messaging-analysis-and-visualization-d193bf2fd50811cdd844.js.map"
+      "path---articles-messaging-analysis-and-visualization-29485d608ef78192a729.js",
+      "path---articles-messaging-analysis-and-visualization-29485d608ef78192a729.js.map"
     ],
     "path---tags-past-project": [
-      "path---tags-past-project-e83992a41df8e475bcfb.js",
-      "path---tags-past-project-e83992a41df8e475bcfb.js.map"
+      "path---tags-past-project-aa586b27c5f1958ddbc9.js",
+      "path---tags-past-project-aa586b27c5f1958ddbc9.js.map"
     ],
     "commons": [
       "commons-c8e457213ffca6e1a402.js",
@@ -87,20 +87,20 @@
       "component---src-templates-tag-jsx-d54dfdcf08ef64f8639d.js.map"
     ],
     "path---categories-machine-learning": [
-      "path---categories-machine-learning-1c3f99e4115a8fdfedf4.js",
-      "path---categories-machine-learning-1c3f99e4115a8fdfedf4.js.map"
+      "path---categories-machine-learning-a7775f78876b69f02941.js",
+      "path---categories-machine-learning-a7775f78876b69f02941.js.map"
     ],
     "path---tags-visualization": [
-      "path---tags-visualization-f8a57dde20501af6ef5c.js",
-      "path---tags-visualization-f8a57dde20501af6ef5c.js.map"
+      "path---tags-visualization-4cc2af5cb763e6317230.js",
+      "path---tags-visualization-4cc2af5cb763e6317230.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-586c7e095e534a3909ec.js",
       "path---offline-plugin-app-shell-fallback-586c7e095e534a3909ec.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-f06ad2704a77e805e0a5.js",
-      "component---src-templates-post-jsx-f06ad2704a77e805e0a5.js.map"
+      "component---src-templates-post-jsx-a87e026ad7ac72188d26.js",
+      "component---src-templates-post-jsx-a87e026ad7ac72188d26.js.map"
     ],
     "component---src-pages-index-jsx": [
       "component---src-pages-index-jsx-6977b0427849d735dac6.js",
@@ -113,12 +113,12 @@
       "build-js-styles.css.map"
     ],
     "path---categories-software-engineering": [
-      "path---categories-software-engineering-9a726e156ce99510e4ca.js",
-      "path---categories-software-engineering-9a726e156ce99510e4ca.js.map"
+      "path---categories-software-engineering-c119fee7542276213192.js",
+      "path---categories-software-engineering-c119fee7542276213192.js.map"
     ],
     "path---tags-machine-learning": [
-      "path---tags-machine-learning-6567e483f17e5bef234a.js",
-      "path---tags-machine-learning-6567e483f17e5bef234a.js.map"
+      "path---tags-machine-learning-a499a72a90ebfd842cdb.js",
+      "path---tags-machine-learning-a499a72a90ebfd842cdb.js.map"
     ],
     "path---search": [
       "path---search-586c7e095e534a3909ec.js",
