@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nigel Schuster]]></title><description><![CDATA[Homepage/Blog of Nigel Schuster. This will mostly talk about various Software Engineering topics, such as Operating Systems or Machine Learning.]]></description><link>https://www.nigel-schuster.de</link><image><url>https://www.nigel-schuster.de/logos/logo-512.png</url><title>Nigel Schuster</title><link>https://www.nigel-schuster.de</link></image><generator>Nigel Schuster | Blog</generator><lastBuildDate>Sat, 17 Feb 2018 15:33:57 GMT</lastBuildDate><atom:link href="https://www.nigel-schuster.de/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Nigel Schuster]]></author><copyright><![CDATA[Copyright © 2018. Nigel Schuster]]></copyright><item><title><![CDATA[Messaging Analysis and Visualization]]></title><description><![CDATA[About a year ago I attended a  Meetup on D3.js . The first talk by  Michael Dezube  was on using machine learning to analyze text messages…]]></description><link>https://www.nigel-schuster.de/articles/messaging-analysis-and-visualization</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/messaging-analysis-and-visualization</guid><category><![CDATA[Programming]]></category><category><![CDATA[NLP]]></category><category><![CDATA[Visualization]]></category><category><![CDATA[Machine Learning]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Wed, 14 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;About a year ago I attended a &lt;a href=&quot;https://www.meetup.com/it-IT/NYC-D3-JS/events/236673854/&quot;&gt;Meetup on D3.js&lt;/a&gt;. The first talk by &lt;a href=&quot;https://github.com/mdezube&quot;&gt;Michael Dezube&lt;/a&gt; was on using machine learning to analyze text messages and visualize the results. Today I want to walk through all the awesomeness we have in this project.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nigel Schuster]]></title><description><![CDATA[Homepage/Blog of Nigel Schuster. This will mostly talk about various Software Engineering topics, such as Operating Systems or Machine Learning.]]></description><link>https://www.nigel-schuster.de</link><image><url>https://www.nigel-schuster.de/logos/logo-512.png</url><title>Nigel Schuster</title><link>https://www.nigel-schuster.de</link></image><generator>Nigel Schuster | Blog</generator><lastBuildDate>Sat, 17 Feb 2018 16:06:10 GMT</lastBuildDate><atom:link href="https://www.nigel-schuster.de/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Nigel Schuster]]></author><copyright><![CDATA[Copyright © 2018. Nigel Schuster]]></copyright><item><title><![CDATA[Messaging Analysis and Visualization]]></title><description><![CDATA[About a year ago I attended a  Meetup on D3.js . The first talk by  Michael Dezube  was on using machine learning to analyze text messages…]]></description><link>https://www.nigel-schuster.de/articles/messaging-analysis-and-visualization</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/messaging-analysis-and-visualization</guid><category><![CDATA[Programming]]></category><category><![CDATA[NLP]]></category><category><![CDATA[Visualization]]></category><category><![CDATA[Machine Learning]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Wed, 14 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;About a year ago I attended a &lt;a href=&quot;https://www.meetup.com/it-IT/NYC-D3-JS/events/236673854/&quot;&gt;Meetup on D3.js&lt;/a&gt;. The first talk by &lt;a href=&quot;https://github.com/mdezube&quot;&gt;Michael Dezube&lt;/a&gt; was on using machine learning to analyze text messages and visualize the results. Today I want to walk through all the awesomeness we have in this project.&lt;/p&gt;
 &lt;h1 id=&quot;demo&quot;&gt;&lt;a href=&quot;#demo&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Demo&lt;/h1&gt;
 &lt;p&gt;The first chart we see is this
 
@@ -34,7 +34,7 @@
   
   &lt;/a&gt;
     
-Here it simply shows us our messaging habits over the years. Kinda amazing how it varies. But let&apos;s dive deeper. The important question really is: Who did we message? We can display the top N people:
+Here it shows us our messaging habits over the years. Fascinating how it varies! But let&apos;s dive deeper. The important question is: Who did we message? We can display the top N people:
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -103,7 +103,7 @@ But who did we message and when?
   
   &lt;/a&gt;
     
-This graph is really amazing! It&apos;s almost a history of my life. Looking back at it, I can see when I made friendships and how they were developing. This is probably my favorite visualization!&lt;/p&gt;
+This graph is great! It&apos;s almost a history of my life. Looking back at it, I can see when I made friendships and how they were developing. This is probably my favorite visualization!&lt;/p&gt;
 &lt;p&gt;After that we have a word cloud and a tree for visualizing conversations, but it&apos;s a little too personal for me to post online.&lt;/p&gt;
 &lt;p&gt;Later in the Jupyter notebook we find a chart that shows us our top words over the years, accounting for the relative frequency in other years:
 
@@ -139,8 +139,8 @@ This graph is really amazing! It&apos;s almost a history of my life. Looking bac
   
   &lt;/a&gt;
     
-Here we not only see me moving to the US, but also how I was interacting. The blacked out sections are names of people. Fascinating who I was talking about 😉.&lt;/p&gt;
-&lt;p&gt;Lately this project has not seen any attention, but there is still so much more to explore.&lt;/p&gt;
+Here we see me moving to the US, but also how I was interacting. The blacked out sections are names of people. Fascinating who I was talking about 😉.&lt;/p&gt;
+&lt;p&gt;This project has not seen any attention in the last months, but there is still so much more to explore.&lt;/p&gt;
 &lt;h1 id=&quot;how-it-works&quot;&gt;&lt;a href=&quot;#how-it-works&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How it works&lt;/h1&gt;
 &lt;p&gt;We start by loading the data into our notebook&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -149,7 +149,7 @@ iphone_connector.initialize()
 fully_merged_messages_df, address_book_df = iphone_connector.get_cleaned_fully_merged_messages()&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;The connector does all the heavy lifting. The iphone&lt;em&gt;connector accesses the latest iPhone backup and reads all text messages from its database. The facebook&lt;/em&gt;connector uses fbchat&lt;em&gt;archive&lt;/em&gt;parser to read a user&apos;s archive of chat messages. Now we have fully&lt;em&gt;merged&lt;/em&gt;messages&lt;em&gt;df and address&lt;/em&gt;book_df, both of which are &lt;a href=&quot;https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html&quot;&gt;Pandas Dataframes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once we have the messages it is easy to create the heatmap. First we group our messages by month:&lt;/p&gt;
+&lt;p&gt;Once we have the messages we can create the heatmap. First we group our messages by month:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;month_year_messages = pd.DataFrame(df[&apos;date&apos;])
 month_year_messages[&apos;year&apos;] = month_year_messages.apply(lambda row: row.date.year, axis=1)
@@ -160,8 +160,8 @@ month_year_messages[&apos;month&apos;] = month_year_messages.apply(lambda row: r
       &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;month_year_messages_pivot = month_year_messages.pivot_table(index=&apos;year&apos;,columns=&apos;month&apos;,aggfunc=len, dropna=True)
 month_year_messages_pivot = month_year_messages_pivot[month_year_messages_pivot.count(axis=1) == 12]&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;After that it is simply a problem of feeding the data into the plotting tool.&lt;/p&gt;
-&lt;p&gt;Next we want to create the barchart to see who we have messaged the most in the past. We group the messages by message partner and count how many were sent and received:&lt;/p&gt;
+&lt;p&gt;After that we feed the data into the plotting tool.&lt;/p&gt;
+&lt;p&gt;Next we want to create the barchart to see who we have messaged the most in the past. We group the messages by message partner and count how many you sent and received.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;def get_message_counts(dataframe):
     return pd.Series({
@@ -180,8 +180,8 @@ grouped_by_month = sliced_df.groupby([
     &apos;full_name&apos;]
 )[&apos;text&apos;].count().to_frame()&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;After that we simply graph it using &lt;a href=&quot;https://github.com/d3/d3&quot;&gt;D3.js&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To obtain the final chart - our most used words per year - we have to get a little more into NLP. We&apos;ll be using Tfidf (term-frequency times inverse document-frequency) to obtain the relevance of each word.&lt;/p&gt;
+&lt;p&gt;After that we graph it using &lt;a href=&quot;https://github.com/d3/d3&quot;&gt;D3.js&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The final chart - our most used words per year - requires us to dive into NLP. We&apos;ll be using Tfidf (term-frequency times inverse document-frequency) to calculate the relevance of each word.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk import tokenize
@@ -189,7 +189,7 @@ vectorizer = TfidfVectorizer(preprocessor=clean_text, tokenizer=tokenize.WordPun
 grouped_by_name = fully_merged_messages_df[fully_merged_messages_df.is_from_me == 0].groupby(&apos;full_name&apos;)[&apos;text&apos;].apply(lambda x: &apos; &apos;.join(x)).to_frame()
 vectorizer.fit(grouped_by_name.text)&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;The above code is used to identify the most relevant word for a certain chat partner, but important is, that it trains our TfidfVectorizer. We can now use it to find the prominence of a word in a given year.&lt;/p&gt;
+&lt;p&gt;The above code identifies the most relevant word for a certain chat partner, but important is, that it trains our TfidfVectorizer. We can now use it to find the prominence of a word in a given year.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;grouper = slice_of_texts_df.date.apply(lambda x: x.year)
 grouped_by_year = slice_of_texts_df.groupby(grouper).apply(
@@ -197,14 +197,14 @@ grouped_by_year = slice_of_texts_df.groupby(grouper).apply(
 )
 grouped_by_year_tfidf = vectorizer.transform(grouped_by_year[&apos;text&apos;])&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Now it is just about finding the most important word in comparison to other years.&lt;/p&gt;
+&lt;p&gt;Now we need to find the most important word in comparison to other years.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;sorted_indices = (tfidf_this_year - tfidf_other_years).argsort()[::-1]
 df = pd.DataFrame({this_year: word_list.iloc[sorted_indices[:top_n]]})&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h1 id=&quot;my-contribution&quot;&gt;&lt;a href=&quot;#my-contribution&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;My contribution&lt;/h1&gt;
-&lt;p&gt;After the presentation I was super excited about the idea and wanted to try it out. Unfortunately it only supported iPhones. So I added an Facebook Chat connector. It still has minor issues, such as an ID not being properly resolved, but it works (in fact all those charts above are based on FB).&lt;/p&gt;
-&lt;p&gt;I have also been looking into clustering. Having the word vectors would allow us to cluster our text/chat partners and see who we interact with similarly. It is not done yet, but this is how a first draft looks (names purposefully omitted).
+&lt;p&gt;After the presentation I was super excited about the idea and wanted to try it out. When I first tried it, it only supported iPhones. I decided to add a Facebook Chat connector. It still has minor issues, such as an ID not being properly resolved, but it works (in fact all those charts above use my FB data).&lt;/p&gt;
+&lt;p&gt;I have also been looking into clustering. Having the word vectors would allow us to cluster our text/chat partners and see who we interact with similarly. I am still working on it, but below is how a first draft looks (names purposefully omitted).
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
