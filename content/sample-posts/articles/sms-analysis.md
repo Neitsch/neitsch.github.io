@@ -31,7 +31,7 @@ This project has not seen any attention in the last months, but there is still s
 
 # How it works
 We start by loading the data into our notebook
-```
+```python
 import iphone_connector
 iphone_connector.initialize()
 fully_merged_messages_df, address_book_df = iphone_connector.get_cleaned_fully_merged_messages()
@@ -39,20 +39,20 @@ fully_merged_messages_df, address_book_df = iphone_connector.get_cleaned_fully_m
 The connector does all the heavy lifting. The iphone\_connector accesses the latest iPhone backup and reads all text messages from its database. The facebook\_connector uses fbchat\_archive\_parser to read a user's archive of chat messages. Now we have fully\_merged\_messages\_df and address\_book\_df, both of which are [Pandas Dataframes](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html).
 
 Once we have the messages we can create the heatmap. First we group our messages by month:
-```
+```python
 month_year_messages = pd.DataFrame(df['date'])
 month_year_messages['year'] = month_year_messages.apply(lambda row: row.date.year, axis=1)
 month_year_messages['month'] = month_year_messages.apply(lambda row: row.date.month, axis=1)
 ```
 Then we create a pivot table that contains the number of messages per month.
-```
+```python
 month_year_messages_pivot = month_year_messages.pivot_table(index='year',columns='month',aggfunc=len, dropna=True)
 month_year_messages_pivot = month_year_messages_pivot[month_year_messages_pivot.count(axis=1) == 12]
 ```
 After that we feed the data into the plotting tool.
 
 Next we want to create the barchart to see who we have messaged the most in the past. We group the messages by message partner and count how many you sent and received.
-```
+```python
 def get_message_counts(dataframe):
     return pd.Series({
       'Texts sent': dataframe[dataframe.is_from_me == 1].shape[0],
@@ -63,7 +63,7 @@ messages_grouped = fully_merged_messages_df.groupby('full_name').apply(get_messa
 messages_grouped = messages_grouped.sort_values(by='Texts exchanged', ascending=False)
 ```
 By combining the ideas from the two charts above we can create the chart that shows our interactions with friends over time. We select our TOP\_N friends and count how many messages we sent them each month.
-```
+```python
 sliced_df = fully_merged_messages_df[fully_merged_messages_df.full_name.isin(messages_grouped.head(TOP_N).index)]
 grouped_by_month = sliced_df.groupby([
     sliced_df.apply(lambda x: x.date.strftime('%Y/%m'), axis=1),
@@ -73,7 +73,7 @@ grouped_by_month = sliced_df.groupby([
 After that we graph it using [D3.js](https://github.com/d3/d3).
 
 The final chart - our most used words per year - requires us to dive into NLP. We'll be using Tfidf (term-frequency times inverse document-frequency) to calculate the relevance of each word.
-```
+```python
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk import tokenize
 vectorizer = TfidfVectorizer(preprocessor=clean_text, tokenizer=tokenize.WordPunctTokenizer().tokenize, ngram_range=(1, 2), max_df=.9, max_features=50000)
@@ -81,7 +81,7 @@ grouped_by_name = fully_merged_messages_df[fully_merged_messages_df.is_from_me =
 vectorizer.fit(grouped_by_name.text)
 ```
 The above code identifies the most relevant word for a certain chat partner, but important is, that it trains our TfidfVectorizer. We can now use it to find the prominence of a word in a given year.
-```
+```python
 grouper = slice_of_texts_df.date.apply(lambda x: x.year)
 grouped_by_year = slice_of_texts_df.groupby(grouper).apply(
   lambda row: pd.Series({'count': len(row.date), 'text': ' '.join(row.text)})
@@ -89,7 +89,7 @@ grouped_by_year = slice_of_texts_df.groupby(grouper).apply(
 grouped_by_year_tfidf = vectorizer.transform(grouped_by_year['text'])
 ```
 Now we need to find the most important word in comparison to other years.
-```
+```python
 sorted_indices = (tfidf_this_year - tfidf_other_years).argsort()[::-1]
 df = pd.DataFrame({this_year: word_list.iloc[sorted_indices[:top_n]]})
 ```
