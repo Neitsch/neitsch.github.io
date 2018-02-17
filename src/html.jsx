@@ -36,7 +36,6 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
           {css}
         </head>
         <body>
