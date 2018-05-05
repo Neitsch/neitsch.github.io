@@ -37,7 +37,7 @@ module.exports = {
     },
     {
       label: "Email",
-      url: "mailto:nigel.schuster+website@googlemail.com",
+      url: "mailto:nigel.schusters+website@googlemail.com",
       iconClassName: "fa fa-envelope"
     },
     {
