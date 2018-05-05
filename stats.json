@@ -13,24 +13,28 @@
       "path---tags-nlp-08389d6a12555d92fa6f.js.map"
     ],
     "path---articles-welcome-to-my-blog": [
-      "path---articles-welcome-to-my-blog-f8dc4fe6363e845abfed.js",
-      "path---articles-welcome-to-my-blog-f8dc4fe6363e845abfed.js.map"
+      "path---articles-welcome-to-my-blog-07b5b6cf9b8ac7e74710.js",
+      "path---articles-welcome-to-my-blog-07b5b6cf9b8ac7e74710.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-pages-search-jsx": [
-      "component---src-pages-search-jsx-7db54d777c7e5392c21c.js",
-      "component---src-pages-search-jsx-7db54d777c7e5392c21c.js.map"
+      "component---src-pages-search-jsx-fe87428008ae0507fb78.js",
+      "component---src-pages-search-jsx-fe87428008ae0507fb78.js.map"
+    ],
+    "path---articles-crd-ts-sound-good-in-theory-not-in-practice": [
+      "path---articles-crd-ts-sound-good-in-theory-not-in-practice-627f62e4a9677f863339.js",
+      "path---articles-crd-ts-sound-good-in-theory-not-in-practice-627f62e4a9677f863339.js.map"
     ],
     "component---src-layouts-index-jsx": [
       "component---src-layouts-index-jsx-c7388bf35a29dbf4b8a4.js",
       "component---src-layouts-index-jsx-c7388bf35a29dbf4b8a4.js.map"
     ],
     "path---articles-lamport-clocks": [
-      "path---articles-lamport-clocks-6a6ea3d8013c2e09dcbc.js",
-      "path---articles-lamport-clocks-6a6ea3d8013c2e09dcbc.js.map"
+      "path---articles-lamport-clocks-6582b1ab16a21a313fa7.js",
+      "path---articles-lamport-clocks-6582b1ab16a21a313fa7.js.map"
     ],
     "path---tags-software-engineering": [
       "path---tags-software-engineering-2d5e5d9bec83d703299c.js",
@@ -45,8 +49,8 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---categories-distributed-systems": [
-      "path---categories-distributed-systems-fd90ee7d80f24c65b8f6.js",
-      "path---categories-distributed-systems-fd90ee7d80f24c65b8f6.js.map"
+      "path---categories-distributed-systems-6c5727a0d360e6ac4a93.js",
+      "path---categories-distributed-systems-6c5727a0d360e6ac4a93.js.map"
     ],
     "path---tags-concurrency": [
       "path---tags-concurrency-c14993656d3f9b8ebd88.js",
@@ -56,9 +60,13 @@
       "component---src-templates-category-jsx-e99b23511858395a9c2c.js",
       "component---src-templates-category-jsx-e99b23511858395a9c2c.js.map"
     ],
+    "path---tags-conflict-free-replicated-datatype": [
+      "path---tags-conflict-free-replicated-datatype-34d3f160ff046179e597.js",
+      "path---tags-conflict-free-replicated-datatype-34d3f160ff046179e597.js.map"
+    ],
     "path---index": [
-      "path---index-d75fe917540196c97bdf.js",
-      "path---index-d75fe917540196c97bdf.js.map"
+      "path---index-d8d61aa3840281013183.js",
+      "path---index-d8d61aa3840281013183.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-ad03a97f9d94d9bb3877.js",
@@ -73,8 +81,12 @@
       "path---articles-trying-to-build-a-good-web-app-f52883d6ae7307ad6d06.js.map"
     ],
     "path---articles-capsule-networks": [
-      "path---articles-capsule-networks-3aec39375d625dde2d2a.js",
-      "path---articles-capsule-networks-3aec39375d625dde2d2a.js.map"
+      "path---articles-capsule-networks-8ad651905d84d3e4a88f.js",
+      "path---articles-capsule-networks-8ad651905d84d3e4a88f.js.map"
+    ],
+    "path---tags-crdt": [
+      "path---tags-crdt-ba7d798c5e65c38c8291.js",
+      "path---tags-crdt-ba7d798c5e65c38c8291.js.map"
     ],
     "path---articles-messaging-analysis-and-visualization": [
       "path---articles-messaging-analysis-and-visualization-dae9b1a67c64f15bb671.js",
@@ -85,14 +97,14 @@
       "path---tags-past-project-7732eea7d1034b7a91fb.js.map"
     ],
     "commons": [
-      "commons-60451e1b7d20e3996b96.js",
+      "commons-18cf2710d16e8723f3df.js",
       "build-js-styles.css",
-      "commons-60451e1b7d20e3996b96.js.map",
+      "commons-18cf2710d16e8723f3df.js.map",
       "build-js-styles.css.map"
     ],
     "path---tags-distributed-systems": [
-      "path---tags-distributed-systems-49f57d95691406b3ce41.js",
-      "path---tags-distributed-systems-49f57d95691406b3ce41.js.map"
+      "path---tags-distributed-systems-94c159ca288f4f1cb2b6.js",
+      "path---tags-distributed-systems-94c159ca288f4f1cb2b6.js.map"
     ],
     "path---tags-neural-networks": [
       "path---tags-neural-networks-26564c85dc76f077038b.js",
@@ -127,9 +139,9 @@
       "path---tags-academic-writing-581c6b4d30c28c7bc2aa.js.map"
     ],
     "app": [
-      "app-01f5494e544b768b9b51.js",
+      "app-bf4b04de583268049552.js",
       "build-js-styles.css",
-      "app-01f5494e544b768b9b51.js.map",
+      "app-bf4b04de583268049552.js.map",
       "build-js-styles.css.map"
     ],
     "path---categories-software-engineering": [
