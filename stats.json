@@ -13,20 +13,24 @@
       "path---tags-nlp-08389d6a12555d92fa6f.js.map"
     ],
     "path---articles-welcome-to-my-blog": [
-      "path---articles-welcome-to-my-blog-bc41bf04711b317f6019.js",
-      "path---articles-welcome-to-my-blog-bc41bf04711b317f6019.js.map"
+      "path---articles-welcome-to-my-blog-f8dc4fe6363e845abfed.js",
+      "path---articles-welcome-to-my-blog-f8dc4fe6363e845abfed.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-pages-search-jsx": [
-      "component---src-pages-search-jsx-f482bca800ddff2e328a.js",
-      "component---src-pages-search-jsx-f482bca800ddff2e328a.js.map"
+      "component---src-pages-search-jsx-7db54d777c7e5392c21c.js",
+      "component---src-pages-search-jsx-7db54d777c7e5392c21c.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-7c8743a350f9c2c55685.js",
-      "component---src-layouts-index-jsx-7c8743a350f9c2c55685.js.map"
+      "component---src-layouts-index-jsx-c7388bf35a29dbf4b8a4.js",
+      "component---src-layouts-index-jsx-c7388bf35a29dbf4b8a4.js.map"
+    ],
+    "path---articles-lamport-clocks": [
+      "path---articles-lamport-clocks-6a6ea3d8013c2e09dcbc.js",
+      "path---articles-lamport-clocks-6a6ea3d8013c2e09dcbc.js.map"
     ],
     "path---tags-software-engineering": [
       "path---tags-software-engineering-2d5e5d9bec83d703299c.js",
@@ -40,13 +44,21 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
+    "path---categories-distributed-systems": [
+      "path---categories-distributed-systems-fd90ee7d80f24c65b8f6.js",
+      "path---categories-distributed-systems-fd90ee7d80f24c65b8f6.js.map"
+    ],
+    "path---tags-concurrency": [
+      "path---tags-concurrency-c14993656d3f9b8ebd88.js",
+      "path---tags-concurrency-c14993656d3f9b8ebd88.js.map"
+    ],
     "component---src-templates-category-jsx": [
       "component---src-templates-category-jsx-e99b23511858395a9c2c.js",
       "component---src-templates-category-jsx-e99b23511858395a9c2c.js.map"
     ],
     "path---index": [
-      "path---index-7c5c4e72148acb9a63f6.js",
-      "path---index-7c5c4e72148acb9a63f6.js.map"
+      "path---index-d75fe917540196c97bdf.js",
+      "path---index-d75fe917540196c97bdf.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-ad03a97f9d94d9bb3877.js",
@@ -61,22 +73,26 @@
       "path---articles-trying-to-build-a-good-web-app-f52883d6ae7307ad6d06.js.map"
     ],
     "path---articles-capsule-networks": [
-      "path---articles-capsule-networks-f2fb6a2c42cb2428ed6c.js",
-      "path---articles-capsule-networks-f2fb6a2c42cb2428ed6c.js.map"
+      "path---articles-capsule-networks-3aec39375d625dde2d2a.js",
+      "path---articles-capsule-networks-3aec39375d625dde2d2a.js.map"
     ],
     "path---articles-messaging-analysis-and-visualization": [
-      "path---articles-messaging-analysis-and-visualization-a9697afecb9cab32349d.js",
-      "path---articles-messaging-analysis-and-visualization-a9697afecb9cab32349d.js.map"
+      "path---articles-messaging-analysis-and-visualization-dae9b1a67c64f15bb671.js",
+      "path---articles-messaging-analysis-and-visualization-dae9b1a67c64f15bb671.js.map"
     ],
     "path---tags-past-project": [
       "path---tags-past-project-7732eea7d1034b7a91fb.js",
       "path---tags-past-project-7732eea7d1034b7a91fb.js.map"
     ],
     "commons": [
-      "commons-d834ef8cd935388479ff.js",
+      "commons-60451e1b7d20e3996b96.js",
       "build-js-styles.css",
-      "commons-d834ef8cd935388479ff.js.map",
+      "commons-60451e1b7d20e3996b96.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---tags-distributed-systems": [
+      "path---tags-distributed-systems-49f57d95691406b3ce41.js",
+      "path---tags-distributed-systems-49f57d95691406b3ce41.js.map"
     ],
     "path---tags-neural-networks": [
       "path---tags-neural-networks-26564c85dc76f077038b.js",
@@ -99,17 +115,21 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-97a5c848504fbab43c58.js",
-      "component---src-templates-post-jsx-97a5c848504fbab43c58.js.map"
+      "component---src-templates-post-jsx-3207b011f294a8129515.js",
+      "component---src-templates-post-jsx-3207b011f294a8129515.js.map"
     ],
     "component---src-pages-index-jsx": [
       "component---src-pages-index-jsx-6977b0427849d735dac6.js",
       "component---src-pages-index-jsx-6977b0427849d735dac6.js.map"
     ],
+    "path---tags-academic-writing": [
+      "path---tags-academic-writing-581c6b4d30c28c7bc2aa.js",
+      "path---tags-academic-writing-581c6b4d30c28c7bc2aa.js.map"
+    ],
     "app": [
-      "app-cb01fae181d11b38267d.js",
+      "app-01f5494e544b768b9b51.js",
       "build-js-styles.css",
-      "app-cb01fae181d11b38267d.js.map",
+      "app-01f5494e544b768b9b51.js.map",
       "build-js-styles.css.map"
     ],
     "path---categories-software-engineering": [
@@ -119,6 +139,10 @@
     "path---tags-machine-learning": [
       "path---tags-machine-learning-9c720096cea599c35f91.js",
       "path---tags-machine-learning-9c720096cea599c35f91.js.map"
+    ],
+    "path---tags-synchronization": [
+      "path---tags-synchronization-bf870eb3621bf68e2fa6.js",
+      "path---tags-synchronization-bf870eb3621bf68e2fa6.js.map"
     ],
     "path---search": [
       "path---search-a0e39f21c11f6a62c5ab.js",
