@@ -148,7 +148,7 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: "#e0e0e0",
         theme_color: "#c62828",
-        display: "minimal-ui",
+        display: "fullscreen",
         icon:  "static/logos/logo-1024.png",
       }
     },

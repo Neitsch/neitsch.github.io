@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from 'react-md';
 import { FacebookShareButton,
   GooglePlusShareButton,
   LinkedinShareButton,
@@ -15,6 +16,19 @@ import config from "../../../data/SiteConfig";
 import "./SocialLinks.scss";
 
 class SocialLinks extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nativeShare: false,
+    }
+  }
+  componentDidMount() {
+    if("share" in window.navigator) {
+      this.setState({
+        nativeShare: true,
+      })
+    }
+  }
   render() {
     const { postNode, postPath, mobile } = this.props;
     const post = postNode.frontmatter;
@@ -22,6 +36,24 @@ class SocialLinks extends Component {
 
     const iconSize = mobile ? 36 : 48;
     const filter = count => (count > 0 ? count : "");
+
+    if(this.state.nativeShare) {
+      return (
+        <div className="social-links">
+          <Button
+            onClick={() => navigator.share({
+              title: post.title,
+              text: postNode.excerpt,
+              url,
+            })}
+            secondary
+            swapTheming
+            flat
+          >Share
+          </Button>
+        </div>
+      );
+    }
 
     return (
       <div className="social-links">
@@ -41,7 +73,8 @@ class SocialLinks extends Component {
           </GooglePlusShareCount>
         </GooglePlusShareButton>
         <FacebookShareButton
-          url={url} quote={postNode.excerpt}
+          url={url}
+          quote={postNode.excerpt}
         >
           <FacebookIcon round size={iconSize} />
           <FacebookShareCount url={url}>
