@@ -4,13 +4,13 @@
 import React from "react";
 import favicon from "./favicon.png";
 
-let inlinedStyles = "";
+const inlinedStyles = "";
 if (process.env.NODE_ENV === "production") {
   try {
     /* eslint import/no-webpack-loader-syntax: off */
-    inlinedStyles = require("!raw-loader!../public/styles.css");
+    // inlinedStyles = require("!raw-loader!../public/styles.css");
   } catch (e) {
-    /* eslint no-console: "off"*/
+    /* eslint no-console: "off" */
     console.log(e);
   }
 }
