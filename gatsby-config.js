@@ -149,18 +149,7 @@ module.exports = {
         background_color: "#e0e0e0",
         theme_color: "#c62828",
         display: "minimal-ui",
-        icons: [
-          {
-            src: "/logos/logo-192.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "/logos/logo-512.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
+        icon:  "static/logos/logo-1024.png",
       }
     },
     "gatsby-plugin-offline",
@@ -259,6 +248,13 @@ module.exports = {
         indexName: 'page_index',
         queries: algoliaQueries,
         chunkSize: 10000, // default: 1000
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-W8KB3GV",
+        includeInDevelopment: true,
       },
     },
   ]
