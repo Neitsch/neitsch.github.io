@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nigel Schuster]]></title><description><![CDATA[Homepage/Blog of Nigel Schuster. This will mostly talk about various Software Engineering topics, such as Operating Systems or Machine Learning.]]></description><link>https://www.nigel-schuster.de</link><image><url>https://www.nigel-schuster.de/logos/logo-512.png</url><title>Nigel Schuster</title><link>https://www.nigel-schuster.de</link></image><generator>Nigel Schuster | Blog</generator><lastBuildDate>Sun, 25 Nov 2018 17:56:22 GMT</lastBuildDate><atom:link href="https://www.nigel-schuster.de/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Nigel Schuster]]></author><copyright><![CDATA[Copyright © 2018. Nigel Schuster]]></copyright><item><title><![CDATA[CRDTs - Sound good in theory, not in practice]]></title><description><![CDATA[This term I did some research on conflict-free replicated datatypes (CRDTs). I will walk through what they are, why the concept is cool, but…]]></description><link>https://www.nigel-schuster.de/articles/crd-ts-sound-good-in-theory-not-in-practice</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/crd-ts-sound-good-in-theory-not-in-practice</guid><category><![CDATA[Distributed Systems]]></category><category><![CDATA[CRDT]]></category><category><![CDATA[Conflict-Free Replicated Datatype]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Sat, 05 May 2018 04:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This term I did some research on conflict-free replicated datatypes (CRDTs). I will walk through what they are, why the concept is cool, but they don&apos;t work in practice.&lt;/p&gt;
-&lt;h1 id=&quot;what-are-crdts&quot;&gt;&lt;a href=&quot;#what-are-crdts&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What are CRDTs?&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Nigel Schuster]]></title><description><![CDATA[Homepage/Blog of Nigel Schuster. This will mostly talk about various Software Engineering topics, such as Operating Systems or Machine Learning.]]></description><link>https://www.nigel-schuster.de</link><image><url>https://www.nigel-schuster.de/logos/logo-512.png</url><title>Nigel Schuster</title><link>https://www.nigel-schuster.de</link></image><generator>Nigel Schuster | Blog</generator><lastBuildDate>Mon, 26 Nov 2018 05:00:38 GMT</lastBuildDate><atom:link href="https://www.nigel-schuster.de/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Nigel Schuster]]></author><copyright><![CDATA[Copyright © 2018. Nigel Schuster]]></copyright><item><title><![CDATA[CRDTs - Sound good in theory, not in practice]]></title><description><![CDATA[This term I did some research on conflict-free replicated datatypes (CRDTs). I will walk through what they are, why the concept is cool, but…]]></description><link>https://www.nigel-schuster.de/articles/crd-ts-sound-good-in-theory-not-in-practice</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/crd-ts-sound-good-in-theory-not-in-practice</guid><category><![CDATA[Distributed Systems]]></category><category><![CDATA[CRDT]]></category><category><![CDATA[Conflict-Free Replicated Datatype]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Sat, 05 May 2018 04:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This term I did some research on conflict-free replicated datatypes (CRDTs). I will walk through what they are, why the concept is cool, but they don&apos;t work in practice.&lt;/p&gt;
+&lt;h1 id=&quot;what-are-crdts&quot;&gt;&lt;a href=&quot;#what-are-crdts&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What are CRDTs?&lt;/h1&gt;
 &lt;p&gt;CRDT is a data structure that propagates concurrently in a network without the need for coordination.
 CRDTs are mathematically proven to not cause inconsistencies.
 This property is desirable, since all partitions of a split-brain scenario can continue accepting writes.
@@ -27,12 +27,12 @@ This data structure is able to handle repeated additions and removals by timesta
 The timestamp is generated using vector clocks.
 I personally do not like this data structure.
 Vector clocks require consensus, consensus does not allow for a split-brain, and split-brain is a situation we fundamentally want to be able to handle with CRDTs.&lt;/p&gt;
-&lt;h1 id=&quot;my-research&quot;&gt;&lt;a href=&quot;#my-research&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;My Research&lt;/h1&gt;
+&lt;h1 id=&quot;my-research&quot;&gt;&lt;a href=&quot;#my-research&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;My Research&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/raymondxu/&quot;&gt;Raymond&lt;/a&gt; and I wanted to test the viability of CRDTs in practice.
 For this, we took an existing application and migrated components of it to a CRDT store.&lt;/p&gt;
 &lt;p&gt;For this, we chose the application Vataxia, a simple social network with a Django backend. The &lt;a href=&quot;https://github.com/buckyroberts/Vataxia-Frontend&quot;&gt;frontend&lt;/a&gt; and &lt;a href=&quot;https://github.com/buckyroberts/Vataxia&quot;&gt;backend&lt;/a&gt; are completely decoupled. As our storage layer we chosee &lt;a href=&quot;docs.basho.com/riak/kv/2.2.3/learn/concepts/crdts/&quot;&gt;Riak&lt;/a&gt;, a well established CRDT store.&lt;/p&gt;
 &lt;p&gt;We attempted to mirror the functionality provided by Vataxia originally. The two components we migrated are Voting and Messaging.&lt;/p&gt;
-&lt;h2 id=&quot;voting&quot;&gt;&lt;a href=&quot;#voting&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Voting&lt;/h2&gt;
+&lt;h2 id=&quot;voting&quot;&gt;&lt;a href=&quot;#voting&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Voting&lt;/h2&gt;
 &lt;p&gt;Voting in Vataxia is simple. We broke it down into a few requirements:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;At most one Upvote or Downvote per user and post&lt;/li&gt;
@@ -52,7 +52,7 @@ A LWW-Set fulfilled almost all requirements.
 Yet, it did not work, because it did not allow to enforce only having an upvote OR a downvote, since we have to maintain a seperate upvote and downvote set.&lt;/li&gt;
 &lt;li&gt;A map per post with key user and value vote: Each post maintans a LWW-Map. On each post the key of the map is the user ID, while the value is true or false (upvote / downvote, absence = no vote). This solution ended up being the only approach that was able to replicate the semantics of Vataxia.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;messaging&quot;&gt;&lt;a href=&quot;#messaging&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Messaging&lt;/h2&gt;
+&lt;h2 id=&quot;messaging&quot;&gt;&lt;a href=&quot;#messaging&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Messaging&lt;/h2&gt;
 &lt;p&gt;In Vataxia messaging is akin to emails.
 It does not allow for chats or threads.
 Instead one sends individual messages that Vataxia treats completely separately.
@@ -64,7 +64,7 @@ A G-Set maintained on the user referrences his sent and received messages.
 Note, that a G-Set is unordered, therefore we must address this on the application level.
 To retrieve the latest messages we order the set on the user by timestamp and then fetch the latest messages.
 This process can be expensive, since we load the identifier for every single message ever sent/received into memory and sort it.&lt;/p&gt;
-&lt;h1 id=&quot;problems-of-crdts&quot;&gt;&lt;a href=&quot;#problems-of-crdts&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Problems of CRDTs&lt;/h1&gt;
+&lt;h1 id=&quot;problems-of-crdts&quot;&gt;&lt;a href=&quot;#problems-of-crdts&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Problems of CRDTs&lt;/h1&gt;
 &lt;p&gt;We notice, that the LWW-Map is a crucial component for both components we converted.
 For me personally that is a deal breaker for CRDTs.
 Since we rely so heavily on vector clocks, we rely on consensus.
@@ -75,17 +75,17 @@ If we do not use vector clocks, data that is written to the store will never be 
 Even a 2P-Set never truly deletes data, it merely marks it as hidden.
 If an intruder gains access to the set, he/she can access the tombstone set and inspect deleted data.
 Those semantics are at odds with the EU &quot;right to be forgotten&quot;.&lt;/p&gt;
-&lt;h1 id=&quot;retrospective&quot;&gt;&lt;a href=&quot;#retrospective&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Retrospective&lt;/h1&gt;
+&lt;h1 id=&quot;retrospective&quot;&gt;&lt;a href=&quot;#retrospective&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Retrospective&lt;/h1&gt;
 &lt;p&gt;CRDTs are an interesting concept.
 If an application can fit into the computational model of CRDTs excluding LWW semantics then CRDTs are a great options.
 Almost no application can allow for those semantics.
 The fact that deletion is often not possible is a crucial flaw.&lt;/p&gt;
-&lt;h1 id=&quot;links&quot;&gt;&lt;a href=&quot;#links&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h1&gt;
+&lt;h1 id=&quot;links&quot;&gt;&lt;a href=&quot;#links&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/raymondxu/crdt-project&quot;&gt;Repository&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1i-AT59MD-DwwM-h1DFZUTj3qmx4_JYlojepA6IOauZI/edit?usp=sharing&quot;&gt;Midterm presentation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1i-AT59MD-DwwM-h1DFZUTj3qmx4_JYlojepA6IOauZI/edit?usp=sharing&quot;&gt;Final presentation&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;/uploads/crdt-paper.pdf&quot;&gt;Final paper&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Lamport Clocks]]></title><description><![CDATA[I read Leslie Lamport's  Time, Clocks, and the Ordering of Events in a Distributed System . The paper is concise, yet profound and impactful…]]></description><link>https://www.nigel-schuster.de/articles/lamport-clocks</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/lamport-clocks</guid><category><![CDATA[Distributed Systems]]></category><category><![CDATA[Concurrency]]></category><category><![CDATA[Academic Writing]]></category><category><![CDATA[Synchronization]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Tue, 20 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I read Leslie Lamport&apos;s &lt;a href=&quot;https://lamport.azurewebsites.net/pubs/time-clocks.pdf&quot;&gt;&lt;em&gt;Time, Clocks, and the Ordering of Events in a Distributed System&lt;/em&gt;&lt;/a&gt;. The paper is concise, yet profound and impactful!!&lt;/p&gt;
-&lt;h1 id=&quot;content&quot;&gt;&lt;a href=&quot;#content&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Content&lt;/h1&gt;
+&lt;h1 id=&quot;content&quot;&gt;&lt;a href=&quot;#content&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Content&lt;/h1&gt;
 &lt;p&gt;Lamport&apos;s paper is about the ordering of events.
 His main goal is to provide an viable total ordering of events across machines based on a partial ordering.
 He starts with baby steps, by looking at &lt;em&gt;before&lt;/em&gt; and &lt;em&gt;after&lt;/em&gt; as a temporal ordering in the context of events.
@@ -104,19 +104,19 @@ When we propagate events to other machines in the system the receiver uses the t
 The name of the machine generating the timestamp serves as tie breaker.&lt;/p&gt;
 &lt;p&gt;With this simple setup we are able to introduce a total ordering in the system.
 Note, that this setup disregards Machine failure and lost messages (both are non trivial to solve).&lt;/p&gt;
-&lt;h1 id=&quot;writing&quot;&gt;&lt;a href=&quot;#writing&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Writing&lt;/h1&gt;
+&lt;h1 id=&quot;writing&quot;&gt;&lt;a href=&quot;#writing&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Writing&lt;/h1&gt;
 &lt;p&gt;The most fascinating part of the paper was not the result, but the way we obtained the result.
 Lamport&apos;s style of writing is incredibly clear and concise.
 Reading the paper is straightforward, yet the impact is profound.
 This paper revolutionaized how we reason about events, time and synchronization.
 I wish more academics write papers this well.&lt;/p&gt;
 &lt;p&gt;P.S.: You can find my presentation on this topic &lt;a href=&quot;https://docs.google.com/presentation/d/1ElrYSbSfCI-ROX1p0QvQN5VWhsBcNSIHTYoR9QChVUI/edit#slide=id.p3&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Messaging Analysis and Visualization]]></title><description><![CDATA[About a year ago I attended a  Meetup on D3.js . The first talk by  Michael Dezube  was on using machine learning to analyze text messages…]]></description><link>https://www.nigel-schuster.de/articles/messaging-analysis-and-visualization</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/messaging-analysis-and-visualization</guid><category><![CDATA[Programming]]></category><category><![CDATA[NLP]]></category><category><![CDATA[Visualization]]></category><category><![CDATA[Machine Learning]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Wed, 14 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;About a year ago I attended a &lt;a href=&quot;https://www.meetup.com/it-IT/NYC-D3-JS/events/236673854/&quot;&gt;Meetup on D3.js&lt;/a&gt;. The first talk by &lt;a href=&quot;https://github.com/mdezube&quot;&gt;Michael Dezube&lt;/a&gt; was on using machine learning to analyze text messages and visualize the results. Today I want to walk through all the awesomeness we have in this project.&lt;/p&gt;
-&lt;h1 id=&quot;demo&quot;&gt;&lt;a href=&quot;#demo&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Demo&lt;/h1&gt;
+&lt;h1 id=&quot;demo&quot;&gt;&lt;a href=&quot;#demo&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Demo&lt;/h1&gt;
 &lt;p&gt;The first chart we see is this
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sms-analysis-1-86b3d9848a6783f0fbfcf3250110969c-4b2e7.png&quot;
+    href=&quot;/static/86b3d9848a6783f0fbfcf3250110969c/4b2e7/sms-analysis-1.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -124,7 +124,7 @@ I wish more academics write papers this well.&lt;/p&gt;
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 954px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 954px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -135,10 +135,10 @@ I wish more academics write papers this well.&lt;/p&gt;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;texting per month&quot;
         title=&quot;&quot;
-        src=&quot;/static/sms-analysis-1-86b3d9848a6783f0fbfcf3250110969c-4b2e7.png&quot;
-        srcset=&quot;/static/sms-analysis-1-86b3d9848a6783f0fbfcf3250110969c-37099.png 300w,
-/static/sms-analysis-1-86b3d9848a6783f0fbfcf3250110969c-f2478.png 600w,
-/static/sms-analysis-1-86b3d9848a6783f0fbfcf3250110969c-4b2e7.png 954w&quot;
+        src=&quot;/static/86b3d9848a6783f0fbfcf3250110969c/4b2e7/sms-analysis-1.png&quot;
+        srcset=&quot;/static/86b3d9848a6783f0fbfcf3250110969c/37099/sms-analysis-1.png 300w,
+/static/86b3d9848a6783f0fbfcf3250110969c/f2478/sms-analysis-1.png 600w,
+/static/86b3d9848a6783f0fbfcf3250110969c/4b2e7/sms-analysis-1.png 954w&quot;
         sizes=&quot;(max-width: 954px) 100vw, 954px&quot;
       /&gt;
     &lt;/span&gt;
@@ -150,7 +150,7 @@ Here it shows us our messaging habits over the years. Fascinating how it varies!
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sms-analysis-2-b326bf83fada3d7ed8d7c9ae49b8d403-2fd0b.png&quot;
+    href=&quot;/static/b326bf83fada3d7ed8d7c9ae49b8d403/2fd0b/sms-analysis-2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -158,7 +158,7 @@ Here it shows us our messaging habits over the years. Fascinating how it varies!
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 1165px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 1165px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -169,10 +169,10 @@ Here it shows us our messaging habits over the years. Fascinating how it varies!
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;top people messaged with&quot;
         title=&quot;&quot;
-        src=&quot;/static/sms-analysis-2-b326bf83fada3d7ed8d7c9ae49b8d403-2fd0b.png&quot;
-        srcset=&quot;/static/sms-analysis-2-b326bf83fada3d7ed8d7c9ae49b8d403-715e4.png 300w,
-/static/sms-analysis-2-b326bf83fada3d7ed8d7c9ae49b8d403-fcbdd.png 600w,
-/static/sms-analysis-2-b326bf83fada3d7ed8d7c9ae49b8d403-2fd0b.png 1165w&quot;
+        src=&quot;/static/b326bf83fada3d7ed8d7c9ae49b8d403/2fd0b/sms-analysis-2.png&quot;
+        srcset=&quot;/static/b326bf83fada3d7ed8d7c9ae49b8d403/715e4/sms-analysis-2.png 300w,
+/static/b326bf83fada3d7ed8d7c9ae49b8d403/fcbdd/sms-analysis-2.png 600w,
+/static/b326bf83fada3d7ed8d7c9ae49b8d403/2fd0b/sms-analysis-2.png 1165w&quot;
         sizes=&quot;(max-width: 1165px) 100vw, 1165px&quot;
       /&gt;
     &lt;/span&gt;
@@ -184,7 +184,7 @@ But who did we message and when?
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sms-analysis-3-10e5f2334114d2aaa588e029eb19ba12-2aea6.png&quot;
+    href=&quot;/static/10e5f2334114d2aaa588e029eb19ba12/2aea6/sms-analysis-3.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -192,7 +192,7 @@ But who did we message and when?
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 1200px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 1200px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -203,11 +203,11 @@ But who did we message and when?
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;people messaged over time&quot;
         title=&quot;&quot;
-        src=&quot;/static/sms-analysis-3-10e5f2334114d2aaa588e029eb19ba12-abe1c.png&quot;
-        srcset=&quot;/static/sms-analysis-3-10e5f2334114d2aaa588e029eb19ba12-10046.png 300w,
-/static/sms-analysis-3-10e5f2334114d2aaa588e029eb19ba12-3c4a3.png 600w,
-/static/sms-analysis-3-10e5f2334114d2aaa588e029eb19ba12-abe1c.png 1200w,
-/static/sms-analysis-3-10e5f2334114d2aaa588e029eb19ba12-2aea6.png 1246w&quot;
+        src=&quot;/static/10e5f2334114d2aaa588e029eb19ba12/abe1c/sms-analysis-3.png&quot;
+        srcset=&quot;/static/10e5f2334114d2aaa588e029eb19ba12/10046/sms-analysis-3.png 300w,
+/static/10e5f2334114d2aaa588e029eb19ba12/3c4a3/sms-analysis-3.png 600w,
+/static/10e5f2334114d2aaa588e029eb19ba12/abe1c/sms-analysis-3.png 1200w,
+/static/10e5f2334114d2aaa588e029eb19ba12/2aea6/sms-analysis-3.png 1246w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
       /&gt;
     &lt;/span&gt;
@@ -221,7 +221,7 @@ This graph is great! It&apos;s almost a history of my life. Looking back at it, 
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sms-analysis-4-2b106777dbb8e7dc4d57fbbc4ca4c12f-f77ec.png&quot;
+    href=&quot;/static/2b106777dbb8e7dc4d57fbbc4ca4c12f/f77ec/sms-analysis-4.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -229,7 +229,7 @@ This graph is great! It&apos;s almost a history of my life. Looking back at it, 
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 756px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 756px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -240,10 +240,10 @@ This graph is great! It&apos;s almost a history of my life. Looking back at it, 
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;words over the years&quot;
         title=&quot;&quot;
-        src=&quot;/static/sms-analysis-4-2b106777dbb8e7dc4d57fbbc4ca4c12f-f77ec.png&quot;
-        srcset=&quot;/static/sms-analysis-4-2b106777dbb8e7dc4d57fbbc4ca4c12f-f6d30.png 300w,
-/static/sms-analysis-4-2b106777dbb8e7dc4d57fbbc4ca4c12f-3b26c.png 600w,
-/static/sms-analysis-4-2b106777dbb8e7dc4d57fbbc4ca4c12f-f77ec.png 756w&quot;
+        src=&quot;/static/2b106777dbb8e7dc4d57fbbc4ca4c12f/f77ec/sms-analysis-4.png&quot;
+        srcset=&quot;/static/2b106777dbb8e7dc4d57fbbc4ca4c12f/f6d30/sms-analysis-4.png 300w,
+/static/2b106777dbb8e7dc4d57fbbc4ca4c12f/3b26c/sms-analysis-4.png 600w,
+/static/2b106777dbb8e7dc4d57fbbc4ca4c12f/f77ec/sms-analysis-4.png 756w&quot;
         sizes=&quot;(max-width: 756px) 100vw, 756px&quot;
       /&gt;
     &lt;/span&gt;
@@ -253,7 +253,7 @@ This graph is great! It&apos;s almost a history of my life. Looking back at it, 
     
 Here we see me moving to the US, but also how I was interacting. The blacked out sections are names of people. Fascinating who I was talking about 😉.&lt;/p&gt;
 &lt;p&gt;This project has not seen any attention in the last months, but there is still so much more to explore.&lt;/p&gt;
-&lt;h1 id=&quot;how-it-works&quot;&gt;&lt;a href=&quot;#how-it-works&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How it works&lt;/h1&gt;
+&lt;h1 id=&quot;how-it-works&quot;&gt;&lt;a href=&quot;#how-it-works&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How it works&lt;/h1&gt;
 &lt;p&gt;We start by loading the data into our notebook&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; iphone_connector
 iphone_connector&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;initialize&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -298,13 +298,13 @@ grouped_by_year_tfidf &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt
 &lt;p&gt;Now we need to find the most important word in comparison to other years.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;sorted_indices &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;tfidf_this_year &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; tfidf_other_years&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;argsort&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 df &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pd&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;DataFrame&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;this_year&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; word_list&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iloc&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;sorted_indices&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;top_n&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1 id=&quot;my-contribution&quot;&gt;&lt;a href=&quot;#my-contribution&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;My contribution&lt;/h1&gt;
+&lt;h1 id=&quot;my-contribution&quot;&gt;&lt;a href=&quot;#my-contribution&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;My contribution&lt;/h1&gt;
 &lt;p&gt;After the presentation I was super excited about the idea and wanted to try it out. When I first tried it, it only supported iPhones. I decided to add a Facebook Chat connector. It still has minor issues, such as an ID not being properly resolved, but it works (in fact all those charts above use my FB data).&lt;/p&gt;
 &lt;p&gt;I have also been looking into clustering. Having the word vectors would allow us to cluster our text/chat partners and see who we interact with similarly. I am still working on it, but below is how a first draft looks (names purposefully omitted).
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/sms-analysis-5-f645965c9d3ae51c090702637ea54822-d6fae.png&quot;
+    href=&quot;/static/f645965c9d3ae51c090702637ea54822/d6fae/sms-analysis-5.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -312,7 +312,7 @@ df &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pd&lt;span class=
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 963px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block;  max-width: 963px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -323,10 +323,10 @@ df &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pd&lt;span class=
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;clustered contacts&quot;
         title=&quot;&quot;
-        src=&quot;/static/sms-analysis-5-f645965c9d3ae51c090702637ea54822-d6fae.png&quot;
-        srcset=&quot;/static/sms-analysis-5-f645965c9d3ae51c090702637ea54822-74412.png 300w,
-/static/sms-analysis-5-f645965c9d3ae51c090702637ea54822-4a056.png 600w,
-/static/sms-analysis-5-f645965c9d3ae51c090702637ea54822-d6fae.png 963w&quot;
+        src=&quot;/static/f645965c9d3ae51c090702637ea54822/d6fae/sms-analysis-5.png&quot;
+        srcset=&quot;/static/f645965c9d3ae51c090702637ea54822/74412/sms-analysis-5.png 300w,
+/static/f645965c9d3ae51c090702637ea54822/4a056/sms-analysis-5.png 600w,
+/static/f645965c9d3ae51c090702637ea54822/d6fae/sms-analysis-5.png 963w&quot;
         sizes=&quot;(max-width: 963px) 100vw, 963px&quot;
       /&gt;
     &lt;/span&gt;
@@ -334,14 +334,14 @@ df &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pd&lt;span class=
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h1 id=&quot;check-it-out&quot;&gt;&lt;a href=&quot;#check-it-out&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Check it out&lt;/h1&gt;
+&lt;h1 id=&quot;check-it-out&quot;&gt;&lt;a href=&quot;#check-it-out&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Check it out&lt;/h1&gt;
 &lt;p&gt;I&apos;d recommend anybody to check out the repository. Michael has been awesome in reviewing my code and gave me so many helpful tips. You can find the repository &lt;a href=&quot;https://github.com/mdezube/sms-analysis&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Trying to build a good web app]]></title><description><![CDATA[Motivation We built our project "MIWF" during our Advanced Software Engineering class.
-We wanted to build an application that allowed people…]]></description><link>https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</guid><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Sun, 11 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#motivation&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Motivation&lt;/h1&gt;
+We wanted to build an application that allowed people…]]></description><link>https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/trying-to-build-a-good-web-app</guid><category><![CDATA[Programming]]></category><category><![CDATA[Software Engineering]]></category><category><![CDATA[Past Project]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Sun, 11 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#motivation&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Motivation&lt;/h1&gt;
 &lt;p&gt;We built our project &quot;MIWF&quot; during our Advanced Software Engineering class.
 We wanted to build an application that allowed people to simulate stock trading.
 This hypothetical product would target people who have no experience in
 stock trading and want to get involved.&lt;/p&gt;
-&lt;h1 id=&quot;software-stack&quot;&gt;&lt;a href=&quot;#software-stack&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software Stack&lt;/h1&gt;
+&lt;h1 id=&quot;software-stack&quot;&gt;&lt;a href=&quot;#software-stack&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Software Stack&lt;/h1&gt;
 &lt;p&gt;We tried to decide on components that fit our experience and are appropriate
 for the project:&lt;/p&gt;
 &lt;ul&gt;
@@ -415,7 +415,7 @@ it seamlessly integrated with Travis and managed our application well.&lt;/li&gt
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;final-result&quot;&gt;&lt;a href=&quot;#final-result&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Final result&lt;/h1&gt;
+&lt;h1 id=&quot;final-result&quot;&gt;&lt;a href=&quot;#final-result&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Final result&lt;/h1&gt;
 &lt;p&gt;I am satisfied with the final result. All our code is in our &lt;a href=&quot;https://github.com/Neitsch/ASE4156&quot;&gt;Github
 Repository&lt;/a&gt;. We have good test coverage
 with 96% coverage. Our code is well documented and met most of anticipated
@@ -429,12 +429,12 @@ during our Deep Learning class. Our main findings were, that CapsNets exhibit
 some desirable properties, such as resistance to Adversarial Attacks and
 better adaptiveness, but are orders of magnitude slower. You can find
 the full report &lt;a href=&quot;/uploads/capsnets.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Welcome to my Blog]]></title><description><![CDATA[Motivation I've decided to start a blog for two purposes: First, I want to document my
-work, so that I can go back, reflect and learn from…]]></description><link>https://www.nigel-schuster.de/articles/welcome-to-my-blog</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/welcome-to-my-blog</guid><category><![CDATA[Blog]]></category><category><![CDATA[Nigel Schuster]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Fri, 09 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#motivation&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Motivation&lt;/h1&gt;
+work, so that I can go back, reflect and learn from…]]></description><link>https://www.nigel-schuster.de/articles/welcome-to-my-blog</link><guid isPermaLink="false">https://www.nigel-schuster.de/articles/welcome-to-my-blog</guid><category><![CDATA[Blog]]></category><category><![CDATA[Nigel Schuster]]></category><dc:creator><![CDATA[Nigel Schuster]]></dc:creator><pubDate>Fri, 09 Feb 2018 05:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#motivation&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Motivation&lt;/h1&gt;
 &lt;p&gt;I&apos;ve decided to start a blog for two purposes: First, I want to document my
 work, so that I can go back, reflect and learn from my mistakes. Second,
 others can hopefully profit from my posts. I&apos;ve received so much guidance
 from other blogs, now I hope to impart some of my experiences to others.&lt;/p&gt;
-&lt;h1 id=&quot;content&quot;&gt;&lt;a href=&quot;#content&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Content&lt;/h1&gt;
+&lt;h1 id=&quot;content&quot;&gt;&lt;a href=&quot;#content&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Content&lt;/h1&gt;
 &lt;p&gt;This blog will cover a wide range of Software Engineering topics. I&apos;ve tried
 out programming languages ranging from Pascal to ReasonML and my interests are
 as widely spread. Hopefully I&apos;ll be able to cover a wide range of topics
