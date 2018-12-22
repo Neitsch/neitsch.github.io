@@ -12,6 +12,8 @@ class SocialSEO extends Component {
             "@type" : "Person",
             "name" : config.userName,
             "url" : config.siteUrl,
+            "image": config.userAvatar,
+            "email": config.userLinks.find(linkInfo => linkInfo.label === "Email").url,
             "sameAs" : config.userLinks.filter(
               linkInfo => !!linkInfo.external
             ).map(
