@@ -23,27 +23,32 @@ module.exports = {
     {
       label: "GitHub",
       url: "https://github.com/Neitsch",
-      iconClassName: "fa fa-github"
+      iconClassName: "fa fa-github",
+      external: true
     },
     {
       label: "LinkedIn",
       url: "https://www.linkedin.com/in/nigelschuster/",
-      iconClassName: "fa fa-linkedin"
+      iconClassName: "fa fa-linkedin",
+      external: true
     },
     {
       label: "AngelList",
       url: "https://angel.co/nigel-schuster/",
-      iconClassName: "fa fa-angellist"
+      iconClassName: "fa fa-angellist",
+      external: true
     },
     {
       label: "Email",
       url: "mailto:nigel.schusters+website@googlemail.com",
-      iconClassName: "fa fa-envelope"
+      iconClassName: "fa fa-envelope",
+      external: false
     },
     {
       label: "Search",
       url: "/search",
-      iconClassName: "fa fa-search"
+      iconClassName: "fa fa-search",
+      external: false
     }
   ],
   copyright: "Copyright © 2018. Nigel Schuster" // Copyright string for the footer of the website and RSS feed.

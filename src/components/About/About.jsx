@@ -4,6 +4,7 @@ import CardText from "react-md/lib/Cards/CardText";
 import UserLinks from "../UserLinks/UserLinks";
 import config from "../../../data/SiteConfig";
 import "./About.scss";
+import SocialSEO from "../SEO/SocialSEO";
 
 class About extends Component {
   render() {
@@ -22,6 +23,7 @@ class About extends Component {
             <UserLinks labeled config={config} />
           </div>
         </Card>
+        <SocialSEO />
       </div>
     );
   }

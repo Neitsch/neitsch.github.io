@@ -10,7 +10,7 @@ import PostCover from "../components/PostCover/PostCover";
 import PostInfo from "../components/PostInfo/PostInfo";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions/PostSuggestions";
-import SEO from "../components/SEO/SEO";
+import PostSEO from "../components/SEO/PostSEO";
 import Layout from "../components/layout";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
@@ -24,6 +24,7 @@ export default class PostTemplate extends React.Component {
     };
     this.handleResize = this.handleResize.bind(this);
   }
+
   componentDidMount() {
     this.handleResize();
     window.addEventListener("resize", this.handleResize);
@@ -61,7 +62,7 @@ export default class PostTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
           </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
+          <PostSEO postPath={slug} postNode={postNode} />
           <PostCover postNode={postNode} mobile={mobile} />
           <div
             className={`md-grid md-cell--9 post-page-contents mobile-fix ${postOverlapClass}`}
@@ -96,7 +97,7 @@ export default class PostTemplate extends React.Component {
   }
 }
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
