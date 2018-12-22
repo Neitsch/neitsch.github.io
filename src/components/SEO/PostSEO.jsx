@@ -6,10 +6,9 @@ class PostSEO extends Component {
   render() {
     const { postNode, postPath } = this.props;
     const {frontmatter: {title, excerpt: description, cover}} = postNode;
-    const postURL = config.siteUrl + config.pathPrefix + postPath;
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
-    const image = config.siteUrl + realPrefix + cover;
-    const blogURL = config.siteUrl + config.pathPrefix;
+    const postURL = config.siteUrl + realPrefix + postPath;
+    const image = config.siteUrl + realPrefix + cover.childImageSharp.fluid.src;
     return (
       <React.Fragment>
         <SEO
@@ -31,7 +30,7 @@ class PostSEO extends Component {
         {
           "@context": "http://schema.org",
           "@type": "BlogPosting",
-          url: blogURL,
+          url: postURL,
           name: title,
           alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
           headline: title,

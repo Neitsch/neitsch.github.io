@@ -111,6 +111,9 @@ export const pageQuery = graphql`
             sizes(maxHeight: 350) {
               ...GatsbyImageSharpSizes_withWebp_tracedSVG
             }
+            fluid {
+              src
+            }
           }
         }
         date

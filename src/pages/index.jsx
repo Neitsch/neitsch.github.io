@@ -2,7 +2,7 @@ import { graphql } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
-import SEO from "../components/SEO/SEO";
+import BlogSEO from "../components/SEO/BlogSEO";
 import Layout from "../components/layout";
 import config from "../../data/SiteConfig";
 
@@ -16,8 +16,8 @@ class Index extends React.Component {
             <title>{config.siteTitle}</title>
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
-          <SEO postEdges={postEdges} />
           <PostListing postEdges={postEdges} />
+          <BlogSEO postEdges={postEdges} />
         </div>
       </Layout>
     );
@@ -26,7 +26,7 @@ class Index extends React.Component {
 
 export default Index;
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
@@ -47,6 +47,9 @@ export const pageQuery = graphql`
               childImageSharp {
                 sizes(maxWidth: 630) {
                   ...GatsbyImageSharpSizes_withWebp_tracedSVG
+                }
+                fluid {
+                  src
                 }
               }
             }
