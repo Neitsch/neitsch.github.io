@@ -3,14 +3,15 @@ import _ from "lodash";
 import Link from "gatsby-link";
 import Chip from "react-md/lib/Chips";
 import "./PostTags.scss";
+import {graphql} from 'gatsby';
 
 class PostTags extends Component {
   render() {
-    const { tags } = this.props;
+    const { postNode } = this.props;
     return (
       <div className="post-tag-container">
-        {tags &&
-          tags.map(tag => (
+        {postNode.frontmatter.tags &&
+          postNode.frontmatter.tags.map(tag => (
             <Link
               key={tag}
               style={{ textDecoration: "none" }}
@@ -25,3 +26,11 @@ class PostTags extends Component {
 }
 
 export default PostTags;
+
+export const query = graphql`
+  fragment PostTagsFragment on MarkdownRemark {
+    frontmatter {
+      tags
+    }
+  }
+`;

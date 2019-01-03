@@ -11,13 +11,17 @@ import config from "../../data/SiteConfig";
 const HitComponent = props => (
   <PostPreview
     postInfo={{
-      path: props.hit.objectID,
-      tags: props.hit.meta.tags,
-      cover: props.hit.meta.cover,
-      title: props.hit.meta.title,
-      date: props.hit.meta.date,
+      fields: {
+        slug: props.hit.objectID
+      },
       excerpt: props.hit.excerpt,
-      timeToRead: props.hit.timeToRead
+      timeToRead: props.hit.timeToRead,
+      frontmatter: {
+        title: props.hit.meta.title,
+        tags: props.hit.meta.tags,
+        cover: props.hit.meta.cover,
+        date: props.hit.meta.date,
+      }
     }}
   />
 );

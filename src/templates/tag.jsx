@@ -8,7 +8,6 @@ import config from "../../data/SiteConfig";
 export default class TagTemplate extends React.Component {
   render() {
     const tag = this.props.pageContext.tag;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout location={this.props.location}>
         <div className="tag-container">
@@ -16,7 +15,7 @@ export default class TagTemplate extends React.Component {
             <title>{`Posts tagged as "${tag}" | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}/tags/${tag}`} />
           </Helmet>
-          <PostListing postEdges={postEdges} />
+          <PostListing queryData={this.props.data.allMarkdownRemark} />
         </div>
       </Layout>
     );
@@ -31,28 +30,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover {
-              childImageSharp {
-                sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes_withWebp_tracedSVG
-                }
-              }
-            }
-            date
-          }
-        }
-      }
+      ...PostListingFragment
     }
   }
 `;

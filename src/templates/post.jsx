@@ -74,7 +74,7 @@ export default class PostTemplate extends React.Component {
                 <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
               </CardText>
               <div className="post-meta">
-                <PostTags tags={post.tags} />
+                <PostTags postNode={postNode} />
                 <SocialLinks
                   postPath={slug}
                   postNode={postNode}
@@ -101,21 +101,14 @@ export default class PostTemplate extends React.Component {
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
+      ...PostCoverFragment
+      ...PostSEOFragment
+      ...PostTagsFragment
       html
       timeToRead
       excerpt
       frontmatter {
         title
-        cover {
-          childImageSharp {
-            sizes(maxHeight: 350) {
-              ...GatsbyImageSharpSizes_withWebp_tracedSVG
-            }
-            fluid {
-              src
-            }
-          }
-        }
         date
         category
         tags

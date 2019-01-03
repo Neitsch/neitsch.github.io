@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby';
 import Img from "gatsby-image";
 import React, { Component } from "react";
 import Card from "react-md/lib/Cards/Card";
@@ -19,6 +20,7 @@ class PostPreview extends Component {
     };
     this.handleResize = this.handleResize.bind(this);
   }
+
   componentDidMount() {
     this.handleResize();
     window.addEventListener("resize", this.handleResize);
@@ -35,24 +37,25 @@ class PostPreview extends Component {
       this.setState({ mobile: true });
     }
   }
+
   render() {
     const { postInfo } = this.props;
     const { mobile } = this.state;
     const expand = mobile;
-    /* eslint no-undef: "off"*/
+    /* eslint no-undef: "off" */
     const coverHeight = mobile ? 162 : 225;
     return (
-      <Card key={postInfo.path} raise className="md-grid md-cell md-cell--12">
-        <Link style={{ textDecoration: "none" }} to={postInfo.path}>
+      <Card key={postInfo.fields.slug} raise className="md-grid md-cell md-cell--12">
+        <Link style={{ textDecoration: "none" }} to={postInfo.fields.slug}>
           <Media
             style={{
               height: `${coverHeight}px`
             }}
             className="post-preview-cover"
           >
-            <Img sizes={postInfo.cover.childImageSharp.sizes} />
+            <Img sizes={postInfo.frontmatter.cover.childImageSharp.sizes} />
             <MediaOverlay>
-              <CardTitle title={postInfo.title}>
+              <CardTitle title={postInfo.frontmatter.title}>
                 <Button raised secondary className="md-cell--right">
                   Read
                 </Button>
@@ -63,13 +66,13 @@ class PostPreview extends Component {
         <CardTitle
           expander={expand}
           avatar={<Avatar icon={<FontIcon iconClassName="fa fa-calendar" />} />}
-          title={`Published on ${postInfo.date}`}
+          title={`Published on ${postInfo.frontmatter.date}`}
           subtitle={`${postInfo.timeToRead} min read`}
         />
 
         <CardText expandable={expand}>
           {postInfo.excerpt}
-          <PostTags tags={postInfo.tags} />
+          <PostTags postNode={postInfo} />
         </CardText>
       </Card>
     );
@@ -77,3 +80,29 @@ class PostPreview extends Component {
 }
 
 export default PostPreview;
+
+export const query = graphql`
+  fragment PostPreviewFragment on MarkdownRemark {
+    ...PostTagsFragment
+    fields {
+      slug
+    }
+    excerpt
+    timeToRead
+    frontmatter {
+      title
+      tags
+      cover {
+        childImageSharp {
+          sizes(maxWidth: 630) {
+            ...GatsbyImageSharpSizes_withWebp_tracedSVG
+          }
+          fluid {
+            src
+          }
+        }
+      }
+      date
+    }
+  }
+`;

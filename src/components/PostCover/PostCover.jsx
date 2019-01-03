@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React, { Component } from "react";
 import Img from "gatsby-image";
 import "./PostCover.scss";
@@ -5,7 +6,7 @@ import "./PostCover.scss";
 class PostCover extends Component {
   render() {
     const { postNode, mobile } = this.props;
-    /* eslint no-undef: "off"*/
+    /* eslint no-undef: "off" */
     const coverHeight = mobile ? 180 : 350;
     return (
       <div
@@ -19,3 +20,17 @@ class PostCover extends Component {
 }
 
 export default PostCover;
+
+export const query = graphql`
+  fragment PostCoverFragment on MarkdownRemark {
+    frontmatter {
+      cover {
+        childImageSharp {
+          sizes(maxHeight: 350) {
+            ...GatsbyImageSharpSizes_withWebp_tracedSVG
+          }
+        }
+      }
+    }
+  }
+`;

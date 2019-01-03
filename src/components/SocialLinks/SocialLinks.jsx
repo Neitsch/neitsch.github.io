@@ -22,6 +22,7 @@ class SocialLinks extends Component {
       nativeShare: false,
     }
   }
+
   componentDidMount() {
     if("share" in window.navigator) {
       this.setState({
@@ -29,6 +30,7 @@ class SocialLinks extends Component {
       })
     }
   }
+
   render() {
     const { postNode, postPath, mobile } = this.props;
     const post = postNode.frontmatter;
@@ -49,12 +51,12 @@ class SocialLinks extends Component {
             secondary
             swapTheming
             flat
-          >Share
+          >
+Share
           </Button>
         </div>
       );
     }
-
     return (
       <div className="social-links">
         <RedditShareButton url={url} title={post.title}>
@@ -94,7 +96,7 @@ class SocialLinks extends Component {
         <TelegramShareButton url={url}>
           <TelegramIcon round size={iconSize} />
         </TelegramShareButton>
-        <EmailShareButton body={url} subject={post.title}>
+        <EmailShareButton url={url} subject={post.title}>
           <EmailIcon round size={iconSize} />
         </EmailShareButton>
       </div>

@@ -8,27 +8,28 @@ import config from "../../data/SiteConfig";
 export default class CategoryTemplate extends React.Component {
   render() {
     const category = this.props.pageContext.category;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout location={this.props.location}>
         <div className="category-container">
           <Helmet>
-            <title>{`Posts in category "${category}" | ${
+            <title>
+              {`Posts in category "${category}" | ${
               config.siteTitle
-            }`}</title>
+            }`}
+            </title>
             <link
               rel="canonical"
               href={`${config.siteUrl}/categories/${category}`}
             />
           </Helmet>
-          <PostListing postEdges={postEdges} />
+          <PostListing queryData={this.props.data.allMarkdownRemark} />
         </div>
       </Layout>
     );
   }
 }
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query CategoryPage($category: String) {
     allMarkdownRemark(
@@ -36,28 +37,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { category: { eq: $category } } }
     ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover {
-              childImageSharp {
-                sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes_withWebp_tracedSVG
-                }
-              }
-            }
-            date
-          }
-        }
-      }
+      ...PostListingFragment
     }
   }
 `;

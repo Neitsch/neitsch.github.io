@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import { graphql } from 'gatsby';
 import SEO from './SEO';
 import config from "../../../data/SiteConfig";
 
 class PostSEO extends Component {
   render() {
     const { postNode, postPath } = this.props;
-    const {frontmatter: {title, excerpt: description, cover}} = postNode;
+    const {frontmatter: {title, cover}, excerpt: description} = postNode;
     const realPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
     const postURL = config.siteUrl + realPrefix + postPath;
     const image = config.siteUrl + realPrefix + cover.childImageSharp.fluid.src;
@@ -48,3 +49,19 @@ class PostSEO extends Component {
 }
 
 export default PostSEO;
+
+export const query = graphql`
+  fragment PostSEOFragment on MarkdownRemark {
+    excerpt
+    frontmatter {
+      title
+      cover {
+        childImageSharp {
+          fluid {
+            src
+          }
+        }
+      }
+    }
+  }
+`;

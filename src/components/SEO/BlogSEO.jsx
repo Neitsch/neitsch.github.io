@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {graphql} from 'gatsby';
 import SEO from './SEO';
 import config from "../../../data/SiteConfig";
 
@@ -12,7 +13,7 @@ class BlogSEO extends Component {
             "@type" : "Blog",
             "about" : config.siteDescription,
             "url": config.siteUrl + config.pathPrefix,
-            "blogPost": this.props.postEdges.map(post => ({
+            "blogPost": this.props.queryData.edges.map(post => ({
               "@context": "http://schema.org",
               "@type": "BlogPosting",
               url: config.siteUrl + (config.pathPrefix === "/" ? "" : config.pathPrefix) + post.node.fields.slug,
@@ -33,3 +34,26 @@ class BlogSEO extends Component {
 }
 
 export default BlogSEO;
+
+export const query = graphql`
+  fragment BlogSEOFragment on MarkdownRemarkConnection {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        excerpt
+        frontmatter {
+          title
+          cover {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

@@ -8,7 +8,6 @@ import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout location={this.props.location}>
         <div className="index-container">
@@ -16,8 +15,8 @@ class Index extends React.Component {
             <title>{config.siteTitle}</title>
             <link rel="canonical" href={`${config.siteUrl}`} />
           </Helmet>
-          <PostListing postEdges={postEdges} />
-          <BlogSEO postEdges={postEdges} />
+          <PostListing queryData={this.props.data.allMarkdownRemark} />
+          <BlogSEO queryData={this.props.data.allMarkdownRemark} />
         </div>
       </Layout>
     );
@@ -30,33 +29,11 @@ export default Index;
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      limit: 2000
+      limit: 1000
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
-          frontmatter {
-            title
-            tags
-            cover {
-              childImageSharp {
-                sizes(maxWidth: 630) {
-                  ...GatsbyImageSharpSizes_withWebp_tracedSVG
-                }
-                fluid {
-                  src
-                }
-              }
-            }
-            date
-          }
-        }
-      }
+      ...PostListingFragment
+      ...BlogSEOFragment
     }
   }
 `;
