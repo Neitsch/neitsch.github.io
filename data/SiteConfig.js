@@ -51,5 +51,5 @@ module.exports = {
       external: false
     }
   ],
-  copyright: "Copyright © 2018. Nigel Schuster" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2019. Nigel Schuster" // Copyright string for the footer of the website and RSS feed.
 };

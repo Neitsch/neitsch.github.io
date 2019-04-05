@@ -29,11 +29,7 @@ class Footer extends Component {
               </Button>
             </Link>
           </div>
-          <div className="based-on">
-            <h4>
-              Thank you to <a href="https://github.com/Vagr9K">Vagr9K</a> for the theme.
-            </h4>
-          </div>
+          <div className="based-on" />
         </div>
       </footer>
     );
