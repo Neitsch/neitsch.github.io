@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: */tags/
-Disallow: */categories/
-Disallow: /search
-
-sitemap: https://www.nigel-schuster.de/sitemap.xml
