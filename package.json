@@ -18,7 +18,7 @@
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
     "@material-ui/core": "next",
-    "@sentry/nextjs": "^6.11.0",
+    "@sentry/nextjs": "^6.12.0",
     "classnames": "2.3.1",
     "concurrently": "^6.2.1",
     "date-fns": "2.22.1",
