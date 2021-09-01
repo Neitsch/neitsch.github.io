@@ -8,7 +8,8 @@
     "serve:prod": "npm run build:prod && cd out && python3 -m http.server",
     "ts": "tsc --noEmit --incremental",
     "ts:watch": "npm run ts -- --watch",
-    "graphql-codegen": "graphql-codegen --config codegen.yml"
+    "graphql-codegen": "graphql-codegen --config codegen.yml",
+    "lint": "next lint"
   },
   "dependencies": {
     "@apollo/client": "^3.4.10",
