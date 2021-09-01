@@ -1,0 +1,20 @@
+overwrite: true
+schema: "https://api-us-east-1.graphcms.com/v2/ckswjodgd0syb01xr1ayu7841/master"
+documents:
+  - "lib/**/*.ts"
+  - "components/**/*.tsx"
+  - "pages/**/*.tsx"
+  - "pages/index.tsx"
+generates:
+  generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      # - "typescript-react-apollo"
+    config:
+      inlineFragmentTypes: combine
+      immutableTypes: true
+      dedupeFragments: true
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
