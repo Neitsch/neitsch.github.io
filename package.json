@@ -4,7 +4,8 @@
     "dev": "concurrently \"next dev\" \"nodemon --exec 'next lint --fix' -e ts,tsx,js,jsx\" \"npm run graphql-codegen -- --watch\"",
     "build": "next build",
     "start": "next start",
-    "prod": "npm run build && next export && cd out && python3 -m http.server",
+    "build:prod": "npm run build && next export",
+    "serve:prod": "npm run build:prod && cd out && python3 -m http.server",
     "ts": "tsc --noEmit --incremental",
     "ts:watch": "npm run ts -- --watch",
     "graphql-codegen": "graphql-codegen --config codegen.yml"
