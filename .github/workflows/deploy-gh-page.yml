@@ -27,6 +27,7 @@ jobs:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
           SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+          GRAPHCMS_PROJECT_API: ${{ secrets.GRAPHCMS_PROJECT_API }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
