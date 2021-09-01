@@ -36,4 +36,4 @@ jobs:
         run: |
           npm install
           npm run graphql-codegen
-          npm run build
+          npm run ts
