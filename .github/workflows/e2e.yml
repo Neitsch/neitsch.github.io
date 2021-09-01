@@ -3,7 +3,7 @@ name: E2E
 on: [push]
 
 jobs:
-  lint:
+  e2e:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,3 +24,4 @@ jobs:
           npm run test
         env:
           NODE_ENV: development
+          GRAPHCMS_PROJECT_API: ${{ secrets.GRAPHCMS_PROJECT_API }}
