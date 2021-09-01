@@ -47,7 +47,7 @@ export default function PostPreview({
 }: PostPreviewFragment): JSX.Element {
   return (
     <Card>
-      <CardMedia component="img" src={coverImage?.url} />
+      {coverImage ? <CardMedia component="img" src={coverImage.url} /> : null}
 
       <CardContent>
         <CardActionArea>

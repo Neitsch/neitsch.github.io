@@ -19,26 +19,33 @@ const SentryWebpackPluginOptions = {
     // https://github.com/getsentry/sentry-webpack-plugin#options.
 };
 
-// Make sure adding Sentry options is the last code to run before exporting, to
-// ensure that your source maps include changes from all other Webpack plugins
-module.exports = withOffline(withSentryConfig(withImages({
-  reactStrictMode: true,
-  images: {
-    domains: ['media.graphcms.com'],
-      loader: 'custom'
-  },
-  workboxOpts: {
-    runtimeCaching: [
-      {
-        urlPattern: /^https?.*/,
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'offlineCache',
-          expiration: {
-            maxEntries: 200,
-          },
-        },
-      },
-    ],
-  },
-}), SentryWebpackPluginOptions))
+let config = withOffline(withImages({
+    reactStrictMode: true,
+    images: {
+        domains: ['media.graphcms.com'],
+        loader: 'custom'
+    },
+    workboxOpts: {
+        runtimeCaching: [
+            {
+                urlPattern: /^https?.*/,
+                handler: 'NetworkFirst',
+                options: {
+                    cacheName: 'offlineCache',
+                    expiration: {
+                        maxEntries: 200,
+                    },
+                },
+            },
+        ],
+    },
+}));
+
+if (process.env.NODE_ENV === 'production') {
+    // Make sure adding Sentry options is the last code to run before exporting, to
+    // ensure that your source maps include changes from all other Webpack plugins
+    config = withSentryConfig(config, SentryWebpackPluginOptions);
+}
+
+
+module.exports = config;
