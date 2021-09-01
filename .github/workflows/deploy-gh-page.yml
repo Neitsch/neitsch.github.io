@@ -13,6 +13,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
+          npm run graphql-codegen
           npm run build:prod
 
       - name: Deploy
