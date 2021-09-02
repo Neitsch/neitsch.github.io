@@ -11,7 +11,11 @@ describe('Homepage loads', () => {
         await page.goto(`file://${__dirname}/../out/index.html`);
         const image = await page.screenshot();
 
-        expect(image).toMatchImageSnapshot();
+        expect(image).toMatchImageSnapshot({
+            comparisonMethod: 'ssim',
+            failureThreshold: 0.01,
+            failureThresholdType: 'percent'
+        });
     });
 
     afterAll(async () => {
