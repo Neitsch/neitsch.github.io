@@ -25,3 +25,10 @@ jobs:
         env:
           NODE_ENV: development
           GRAPHCMS_PROJECT_API: ${{ secrets.GRAPHCMS_PROJECT_API }}
+
+      - name: Archive visual diff
+        uses: actions/upload-artifact@v2
+        with:
+          name: visual diff
+          retention-days: 1
+          path: __tests__/__image_snapshots__/
