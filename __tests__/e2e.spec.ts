@@ -24,10 +24,6 @@ describe("Homepage loads", () => {
     await page.goto("http://localhost:4444/");
     const image = await page.screenshot();
 
-    expect(image).toMatchImageSnapshot({
-      comparisonMethod: "ssim",
-      failureThreshold: 0.01,
-      failureThresholdType: "percent",
-    });
+    expect(image).toMatchImageSnapshot();
   });
 });
