@@ -28,6 +28,7 @@ jobs:
 
       - name: Archive visual diff
         uses: actions/upload-artifact@v2
+        if: ${{ failure() }}
         with:
           name: visual diff
           retention-days: 1
