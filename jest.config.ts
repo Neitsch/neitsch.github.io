@@ -1,4 +1,5 @@
 export default {
+    preset: "jest-puppeteer",
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: "coverage",
@@ -17,7 +18,6 @@ export default {
     "node"
   ],
   setupFilesAfterEnv: ["<rootDir>/jest-setup.ts"],
-  testEnvironment: "jsdom",
   testMatch: [
     "**/__tests__/**/*.[jt]s?(x)",
     "**/?(*.)+(spec|test).[tj]s?(x)"
