@@ -20,6 +20,7 @@ const SentryWebpackPluginOptions = {
 };
 
 let config = withOffline(withImages({
+    optimizeFonts: false,
     reactStrictMode: true,
     images: {
         domains: ['media.graphcms.com'],
