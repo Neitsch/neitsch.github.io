@@ -3,7 +3,9 @@ describe('Homepage loads', () => {
     let browser;
 
     beforeAll(async () => {
-        browser = await puppeteer.launch();
+        browser = await puppeteer.launch({args: [
+            '--font-render-hinting=medium'
+        ]});
     });
 
     it('works', async () => {
