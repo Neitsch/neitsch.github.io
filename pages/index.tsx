@@ -60,7 +60,6 @@ export const getStaticProps: GetStaticProps = async () => {
     .query({
       query: INDEX_LOOKUP,
     })
-
     .then((result) => {
       return result.data;
     });
