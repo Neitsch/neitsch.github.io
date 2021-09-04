@@ -102,6 +102,8 @@ export default function Post(lookup: PostLookupFragment): JSX.Element {
                     property="og:description"
                     content={post.excerpt ?? ""}
                   />
+                  <meta property="og:type" content="article" />
+                  <meta property="og:locale" content="en_US" />
                 </Head>
                 <Card>
                   <CardMedia component="img" src={post.coverImage?.url} />
