@@ -50,7 +50,7 @@ export default function Meta(): JSX.Element {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta name="description" content={`Personal blog.`} />
       <script
-        data-goatcounter-settings='{}'
+        data-goatcounter-settings="{}"
         data-goatcounter="https://nigel.goatcounter.com/count"
         async
         src="//gc.zgo.at/count.js"
