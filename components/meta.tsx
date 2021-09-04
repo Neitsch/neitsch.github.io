@@ -6,8 +6,12 @@ export default function Meta(): JSX.Element {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url) => {
-      window.goatcounter.count({
+    const handleRouteChange = (url: string) => {
+      (
+        window as unknown as {
+          goatcounter: { count: ({ path }: { path: string }) => void };
+        }
+      ).goatcounter.count({
         path: url,
       });
     };
