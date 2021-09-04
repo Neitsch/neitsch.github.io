@@ -1,6 +1,23 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function Meta(): JSX.Element {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      window.goatcounter.count({
+        path: url,
+      });
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router.events]);
   return (
     <Head>
       <link
@@ -32,6 +49,12 @@ export default function Meta(): JSX.Element {
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta name="description" content={`Personal blog.`} />
+      <script
+        data-goatcounter-settings='{}'
+        data-goatcounter="https://nigel.goatcounter.com/count"
+        async
+        src="//gc.zgo.at/count.js"
+      ></script>
     </Head>
   );
 }
