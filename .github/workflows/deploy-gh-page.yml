@@ -24,7 +24,9 @@ jobs:
         run: |
           npm install
           npm run graphql-codegen
-          npm run build:prod
+          npm run build
+          npm run sitemap
+          npm run export
         env:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}

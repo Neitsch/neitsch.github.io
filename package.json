@@ -9,7 +9,8 @@
     "ts": "tsc --noEmit --incremental",
     "ts:watch": "npm run ts -- --watch",
     "graphql-codegen": "graphql-codegen --config codegen.yml",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "next-sitemap"
   },
   "dependencies": {
     "@apollo/client": "^3.4.10",
@@ -53,6 +54,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.25.1",
     "graphql-tag": "^2.12.5",
+    "next-sitemap": "^1.6.164",
     "nodemon": "^2.0.12",
     "postcss": "8.3.6",
     "prettier": "^2.3.2",
