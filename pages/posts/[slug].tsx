@@ -23,6 +23,14 @@ import ErrorPage from "next/error";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
+import {
+  EmailShareButton,
+  LinkedinShareButton,
+  RedditShareButton,
+  EmailIcon,
+  LinkedinIcon,
+  RedditIcon,
+} from "react-share";
 import rehypeHighlight from "rehype-highlight";
 
 export const POST_FRAGMENT = gql`
@@ -116,6 +124,21 @@ export default function Post(lookup: PostLookupFragment): JSX.Element {
                     >
                       {post.content}
                     </ReactMarkdown>
+                    <div suppressHydrationWarning={true}>
+                      {process.browser && (
+                        <div>
+                          <EmailShareButton url={window.location.href}>
+                            <EmailIcon round />
+                          </EmailShareButton>
+                          <LinkedinShareButton url={window.location.href}>
+                            <LinkedinIcon round />
+                          </LinkedinShareButton>
+                          <RedditShareButton url={window.location.href}>
+                            <RedditIcon round />
+                          </RedditShareButton>
+                        </div>
+                      )}
+                    </div>
                   </CardContent>
                 </Card>
               </>
