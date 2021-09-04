@@ -28,6 +28,7 @@ import rehypeHighlight from "rehype-highlight";
 export const POST_FRAGMENT = gql`
   fragment Post on Post {
     title
+    excerpt
     slug
     content
     date
@@ -87,6 +88,7 @@ export default function Post(lookup: PostLookupFragment): JSX.Element {
               <>
                 <Head>
                   <title>{post.title}</title>
+                  <meta name="description" content={post.excerpt ?? ""} />
                 </Head>
                 <Card>
                   <CardMedia component="img" src={post.coverImage?.url} />
