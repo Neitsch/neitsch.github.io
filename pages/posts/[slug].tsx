@@ -110,7 +110,9 @@ export default function Post(lookup: PostLookupFragment): JSX.Element {
                   <CardContent>
                     <Box display="flex">
                       <Box flexGrow={1}>
-                        <Typography variant="h4">{post.title}</Typography>
+                        <Typography variant="h3" component="h1">
+                          {post.title}
+                        </Typography>
                       </Box>
                       <Box alignSelf="flex-end">
                         <Chip
