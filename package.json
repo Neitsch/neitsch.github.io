@@ -37,6 +37,8 @@
     "sharp": "^0.29.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/register": "^7.15.3",
     "@graphql-codegen/cli": "2.2.0",
     "@graphql-codegen/fragment-matcher": "3.1.0",
     "@graphql-codegen/introspection": "2.1.0",
@@ -44,6 +46,8 @@
     "@graphql-codegen/typescript-document-nodes": "2.1.2",
     "@graphql-codegen/typescript-operations": "2.1.2",
     "@graphql-codegen/typescript-react-apollo": "3.1.2",
+    "@stryker-mutator/core": "^5.4.0",
+    "@stryker-mutator/jest-runner": "^5.4.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
     "@trivago/prettier-plugin-sort-imports": "^2.0.4",
@@ -51,6 +55,7 @@
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "autoprefixer": "10.3.4",
+    "babel-cli": "^6.26.0",
     "babel-jest": "^27.1.1",
     "eslint": "^7.32.0",
     "eslint-config-next": "11.1.2",
