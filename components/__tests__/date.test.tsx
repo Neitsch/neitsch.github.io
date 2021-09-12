@@ -2,8 +2,9 @@ import Date from "../date";
 import { render } from "@testing-library/react";
 import React from "react";
 
-describe("Date", () => {
+describe("date", () => {
   it("renders a heading", () => {
+    expect.assertions(1);
     const { container } = render(<Date dateString="2021-02-02" />);
 
     expect(container).toMatchInlineSnapshot(`
