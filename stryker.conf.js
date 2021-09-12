@@ -7,7 +7,6 @@ module.exports = {
   testRunner: "jest",
   coverageAnalysis: "perTest",
     mutate: ['{lib,components,pages}/**/*.ts?(x)', '!{lib,components,pages}/**/*@(.test|.spec|Spec).ts?(x)'],
-    // buildCommand: "babel",
     ignorePatterns: [
         "coverage", "out", ".next", "public", "generated", "/*.{ts,js,tsx,json}", ".github", "__mocks__", ".*"
     ],
