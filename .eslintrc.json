@@ -1,11 +1,13 @@
 {
   "extends": [
     "plugin:@typescript-eslint/recommended",
+    "plugin:jest/all",
     "next",
     "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
   "plugins": [
-    "only-error"
+    "only-error",
+    "jest"
   ]
 }

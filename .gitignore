@@ -36,3 +36,6 @@ sentry.properties
 /tsconfig.tsbuildinfo
 /graphql.schema.json
 /generated/
+
+# stryker temp files
+.stryker-tmp
