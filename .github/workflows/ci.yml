@@ -54,6 +54,7 @@ jobs:
       - name: npm install and lint
         run: |
           npm install
+          npm run graphql-codegen
           npm run lint
 
   build:
