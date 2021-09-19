@@ -17,6 +17,7 @@ function MyApp({
   pageProps: { children?: React.ReactNode };
   emotionCache: EmotionCache;
 }): JSX.Element {
+  /* eslint-disable react/jsx-props-no-spreading */
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
@@ -25,6 +26,7 @@ function MyApp({
       </ThemeProvider>
     </CacheProvider>
   );
+  /* eslint-enable react/jsx-props-no-spreading */
 }
 
 export default MyApp;

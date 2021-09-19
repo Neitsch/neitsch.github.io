@@ -1,13 +1,36 @@
 {
+  "parserOptions": {
+    "project": ["tsconfig.json"]
+  },
   "extends": [
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/all",
     "plugin:jest/all",
+    "plugin:jsx-a11y/strict",
+    "plugin:react/all",
+    "plugin:react-hooks/recommended",
     "next",
     "next/core-web-vitals",
     "plugin:prettier/recommended"
   ],
   "plugins": [
     "only-error",
-    "jest"
-  ]
+    "jest",
+    "jsx-a11y",
+    "react",
+    "react-hooks"
+  ],
+  "rules":  {
+    "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "function",
+        "format": ["PascalCase", "camelCase"]
+      }
+    ],
+    "react/jsx-no-literals": "off",
+    "react/jsx-max-depth": ["error", { "max": 4 }],
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
+    "react/require-default-props": "off"
+  }
 }

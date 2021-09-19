@@ -1,10 +1,9 @@
 import Container from "../../components/container";
 import Header from "../../components/header";
 import Layout from "../../components/layout";
-import MoreStories from "../../components/more-stories";
-import { MORE_STORIES } from "../../components/more-stories";
+import MoreStories, { MORE_STORIES } from "../../components/more-stories";
 import SectionSeparator from "../../components/section-separator";
-import { PostLookupFragment } from "../../generated/graphql";
+import type { PostLookupFragment } from "../../generated/graphql";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/graphcms";
 import {
   Card,
@@ -18,10 +17,8 @@ import {
 import gql from "graphql-tag";
 import langx86 from "highlight.js/lib/languages/x86asm";
 import "highlight.js/styles/default.css";
-import { GetStaticProps, GetStaticPaths } from "next";
-import ErrorPage from "next/error";
+import type { GetStaticProps, GetStaticPaths } from "next";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
 import {
   EmailShareButton,
@@ -76,88 +73,89 @@ export const POST_LOOKUP = gql`
   }
 `;
 
-export default function Post(lookup: PostLookupFragment): JSX.Element {
-  const router = useRouter();
-  const { post } = lookup;
-
-  if (!router.isFallback && !post?.slug) {
-    return <ErrorPage statusCode={404} />;
+export default function Post({
+  post,
+  moreStories,
+}: PostLookupFragment): JSX.Element {
+  let content = <span>Something went wrong</span>;
+  if (post) {
+    const head = (
+      <Head>
+        <title>{post.title}</title>
+        <meta content={post.excerpt ?? ""} name="description" />
+        <meta content={post.title} property="og:title" />
+        <meta content={post.excerpt ?? ""} property="og:description" />
+        <meta content="article" property="og:type" />
+        <meta content="en_US" property="og:locale" />
+      </Head>
+    );
+    const titleElem = (
+      <Box flexGrow={1}>
+        <Typography component="h1" variant="h3">
+          {post.title}
+        </Typography>
+      </Box>
+    );
+    const authorElem = (
+      <Box alignSelf="flex-end">
+        <Chip
+          avatar={
+            <Avatar alt={post.author?.name} src={post.author?.picture?.url} />
+          }
+          label={post.author?.name}
+        />
+      </Box>
+    );
+    const body = (
+      <Card>
+        <CardMedia component="img" src={post.coverImage?.url} />
+        <CardContent>
+          <Box display="flex">
+            {titleElem}
+            {authorElem}
+          </Box>
+          <ReactMarkdown
+            rehypePlugins={[
+              [rehypeHighlight, { languages: { x86asm: langx86 } }],
+            ]}
+          >
+            {post.content}
+          </ReactMarkdown>
+          <div suppressHydrationWarning>
+            {process.browser && (
+              <div>
+                <EmailShareButton url={window.location.href}>
+                  <EmailIcon round />
+                </EmailShareButton>
+                <LinkedinShareButton url={window.location.href}>
+                  <LinkedinIcon round />
+                </LinkedinShareButton>
+                <RedditShareButton url={window.location.href}>
+                  <RedditIcon round />
+                </RedditShareButton>
+              </div>
+            )}
+          </div>
+        </CardContent>
+      </Card>
+    );
+    content = (
+      <>
+        {head}
+        {body}
+      </>
+    );
   }
 
   return (
-    <Layout preview={false}>
+    <Layout>
       <Container>
         <Header />
-        {router.isFallback ? (
-          <div>Loading…</div>
-        ) : (
-          <>
-            {post ? (
-              <>
-                <Head>
-                  <title>{post.title}</title>
-                  <meta name="description" content={post.excerpt ?? ""} />
-                  <meta property="og:title" content={post.title} />
-                  <meta
-                    property="og:description"
-                    content={post.excerpt ?? ""}
-                  />
-                  <meta property="og:type" content="article" />
-                  <meta property="og:locale" content="en_US" />
-                </Head>
-                <Card>
-                  <CardMedia component="img" src={post.coverImage?.url} />
-                  <CardContent>
-                    <Box display="flex">
-                      <Box flexGrow={1}>
-                        <Typography variant="h3" component="h1">
-                          {post.title}
-                        </Typography>
-                      </Box>
-                      <Box alignSelf="flex-end">
-                        <Chip
-                          avatar={
-                            <Avatar
-                              alt={post.author?.name}
-                              src={post.author?.picture?.url}
-                            />
-                          }
-                          label={post.author?.name}
-                        />
-                      </Box>
-                    </Box>
-                    <ReactMarkdown
-                      rehypePlugins={[
-                        [rehypeHighlight, { languages: { x86asm: langx86 } }],
-                      ]}
-                    >
-                      {post.content}
-                    </ReactMarkdown>
-                    <div suppressHydrationWarning={true}>
-                      {process.browser && (
-                        <div>
-                          <EmailShareButton url={window.location.href}>
-                            <EmailIcon round />
-                          </EmailShareButton>
-                          <LinkedinShareButton url={window.location.href}>
-                            <LinkedinIcon round />
-                          </LinkedinShareButton>
-                          <RedditShareButton url={window.location.href}>
-                            <RedditIcon round />
-                          </RedditShareButton>
-                        </div>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              </>
-            ) : (
-              <span>Something went wrong</span>
-            )}
-            <SectionSeparator />
-            <MoreStories {...lookup} />
-          </>
-        )}
+        <>
+          {content}
+          <SectionSeparator />
+          <MoreStories moreStories={moreStories} />
+        </>
       </Container>
     </Layout>
   );
@@ -165,12 +163,11 @@ export default function Post(lookup: PostLookupFragment): JSX.Element {
 
 export const getStaticProps: GetStaticProps = async ({
   params,
-  preview = false,
 }: {
-  params?: { slug?: string };
-  preview?: boolean;
+  readonly params?: { readonly slug?: string };
+  readonly preview?: boolean;
 }) => {
-  const data = await getPostAndMorePosts(params?.slug ?? "", preview);
+  const data = await getPostAndMorePosts(params?.slug ?? "");
   return {
     props: data,
   };
@@ -179,8 +176,7 @@ export const getStaticProps: GetStaticProps = async ({
 export const getStaticPaths: GetStaticPaths = async () => {
   const { posts } = await getAllPostsWithSlug();
   return {
-    paths: posts.map((input) => {
-      const slug = input?.slug ?? "";
+    paths: posts.map(({ slug }: { readonly slug: string }) => {
       return {
         params: { slug },
       };
