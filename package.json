@@ -15,7 +15,8 @@
         "mutation-test": "stryker run",
         "prepare": "husky install",
         "commit": "cz",
-        "size": "size-limit"
+        "size": "size-limit",
+        "size-build": "npm run graphql-codegen && npm run build && npm run sitemap && npm run export"
     },
     "lint-staged": {
         "{components,pages,lib}/**/*.{js,jsx,ts,tsx}": [
