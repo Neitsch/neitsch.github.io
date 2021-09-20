@@ -4,6 +4,7 @@ import React from "react";
 
 describe("date", () => {
   it("renders a heading", () => {
+    // eslint-disable-next-line
     expect.assertions(1);
     const { container } = render(<Date dateString="2021-02-02" />);
 

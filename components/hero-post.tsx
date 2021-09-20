@@ -1,4 +1,4 @@
-import { HeroPostFragment } from "../generated/graphql";
+import type { HeroPostFragment } from "../generated/graphql";
 import {
   Card,
   Box,
@@ -39,12 +39,29 @@ export const HERO_POST_FRAGMENT = gql`
 `;
 
 export default function HeroPost({
-  title,
-  coverImage,
-  author,
-  slug,
-  excerpt,
-}: HeroPostFragment): JSX.Element {
+  post: { title, coverImage, author, slug, excerpt },
+}: {
+  post: HeroPostFragment;
+}): JSX.Element {
+  const titleElem = (
+    <Box flexGrow={1}>
+      <Typography variant="h4">{title}</Typography>
+    </Box>
+  );
+  const headerElem = (
+    <Box display="flex">
+      {titleElem}
+      {author ? (
+        <Box alignSelf="flex-end">
+          <Chip
+            avatar={<Avatar alt={author.name} src={author.picture?.url} />}
+            label={author.name || "Anonymous"}
+          />
+        </Box>
+      ) : null}
+    </Box>
+  );
+  const excerptElem = <Typography variant="body1">{excerpt}</Typography>;
   return (
     <Card>
       <CardMedia component="img" src={coverImage?.url} />
@@ -52,22 +69,9 @@ export default function HeroPost({
         <CardActionArea>
           <Link href={`/posts/${slug}`} passHref>
             <MuiLink>
-              <Box display="flex">
-                <Box flexGrow={1}>
-                  <Typography variant="h4">{title}</Typography>
-                </Box>
-                {author ? (
-                  <Box alignSelf="flex-end">
-                    <Chip
-                      avatar={
-                        <Avatar alt={author.name} src={author.picture?.url} />
-                      }
-                      label={author.name ?? "Anonymous"}
-                    />
-                  </Box>
-                ) : null}
-              </Box>
-              <Typography variant="body1">{excerpt}</Typography>
+              {headerElem}
+
+              {excerptElem}
             </MuiLink>
           </Link>
         </CardActionArea>

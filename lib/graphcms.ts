@@ -1,38 +1,13 @@
 import { MORE_STORIES } from "../components/more-stories";
-import {
+import type {
   PostAndMorePostsQuery,
+  PostAndMorePostsQueryVariables,
   AllPostsWithSlugQuery,
+  AllPostsWithSlugQueryVariables,
 } from "../generated/graphql";
+import { Stage } from "../generated/graphql";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import gql from "graphql-tag";
-
-const GET_PREVIEW_POST_BY_SLUG = gql`
-  query PreviewPostBySlug($slug: String!, $stage: Stage!) {
-    post(where: { slug: $slug }, stage: $stage) {
-      slug
-    }
-  }
-`;
-
-export async function getPreviewPostBySlug(
-  slug: string,
-): Promise<{ slug: string }> {
-  const client = new ApolloClient({
-    uri: process.env.GRAPHCMS_PROJECT_API ?? "",
-    cache: new InMemoryCache(),
-  });
-  return client
-    .query({
-      query: GET_PREVIEW_POST_BY_SLUG,
-      variables: {
-        slug,
-        stage: "DRAFT",
-      },
-    })
-    .then((result) => {
-      return result.data;
-    });
-}
 
 const ALL_POSTS_WITH_SLUG = gql`
   query AllPostsWithSlug {
@@ -48,11 +23,11 @@ export async function getAllPostsWithSlug(): Promise<AllPostsWithSlugQuery> {
     cache: new InMemoryCache(),
   });
   return client
-    .query({
+    .query<AllPostsWithSlugQuery, AllPostsWithSlugQueryVariables>({
       query: ALL_POSTS_WITH_SLUG,
     })
-    .then((result) => {
-      return result.data;
+    .then(({ data }: { readonly data: Readonly<AllPostsWithSlugQuery> }) => {
+      return data;
     });
 }
 
@@ -95,22 +70,21 @@ const POST_AND_MORE_POSTS = gql`
 
 export async function getPostAndMorePosts(
   slug: string,
-  preview: boolean,
 ): Promise<PostAndMorePostsQuery> {
   const client = new ApolloClient({
     uri: process.env.GRAPHCMS_PROJECT_API ?? "",
     cache: new InMemoryCache(),
   });
   return client
-    .query({
+    .query<PostAndMorePostsQuery, PostAndMorePostsQueryVariables>({
       query: POST_AND_MORE_POSTS,
       variables: {
-        stage: preview ? "DRAFT" : "PUBLISHED",
+        stage: Stage.Published,
         slug,
       },
     })
 
-    .then((result) => {
-      return result.data;
+    .then(({ data }: { readonly data: Readonly<PostAndMorePostsQuery> }) => {
+      return data;
     });
 }
