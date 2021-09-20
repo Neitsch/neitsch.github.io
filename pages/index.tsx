@@ -29,15 +29,7 @@ export default function index(lookup: IndexLookupQuery): JSX.Element {
   const { posts } = lookup;
   const morePosts = [...posts];
   const heroPost = morePosts.shift();
-  const heroPostElem = heroPost ? (
-    <HeroPost
-      author={heroPost.author}
-      coverImage={heroPost.coverImage}
-      excerpt={heroPost.excerpt}
-      slug={heroPost.slug}
-      title={heroPost.title}
-    />
-  ) : null;
+  const heroPostElem = heroPost ? <HeroPost post={heroPost} /> : null;
   return (
     <Layout>
       <Head>

@@ -39,12 +39,10 @@ export const HERO_POST_FRAGMENT = gql`
 `;
 
 export default function HeroPost({
-  title,
-  coverImage,
-  author,
-  slug,
-  excerpt,
-}: HeroPostFragment): JSX.Element {
+  post: { title, coverImage, author, slug, excerpt },
+}: {
+  post: HeroPostFragment;
+}): JSX.Element {
   const titleElem = (
     <Box flexGrow={1}>
       <Typography variant="h4">{title}</Typography>
