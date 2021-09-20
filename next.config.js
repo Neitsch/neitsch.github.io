@@ -7,38 +7,35 @@ const { withSentryConfig } = require('@sentry/nextjs');
 const withImages = require('next-images')
 const withOffline = require('next-offline')
 
-const SentryWebpackPluginOptions = {
-    // Additional config options for the Sentry Webpack plugin. Keep in mind that
-    // the following options are set automatically, and overriding them is not
-    // recommended:
-    //   release, url, org, project, authToken, configFile, stripPrefix,
-    //   urlPrefix, include, ignore
+let config = withOffline(withImages({
+    reactStrictMode: true,
+    images: {
+        domains: ['media.graphcms.com'],
+        loader: 'custom'
+    },
+    workboxOpts: {
+        runtimeCaching: [
+            {
+                urlPattern: /^https?.*/,
+                handler: 'NetworkFirst',
+                options: {
+                    cacheName: 'offlineCache',
+                    expiration: {
+                        maxEntries: 200,
+                    },
+                },
+            },
+        ],
+    },
+}));
 
-    silent: true, // Suppresses all logs
-    // For all available options, see:
-    // https://github.com/getsentry/sentry-webpack-plugin#options.
-};
+if (!process.env.SKIP_SENTRY) {
+    const SentryWebpackPluginOptions = {
+        silent: true,
+    };
+    config = withSentryConfig(config, SentryWebpackPluginOptions);
+}
 
 // Make sure adding Sentry options is the last code to run before exporting, to
 // ensure that your source maps include changes from all other Webpack plugins
-module.exports = withOffline(withSentryConfig(withImages({
-  reactStrictMode: true,
-  images: {
-    domains: ['media.graphcms.com'],
-      loader: 'custom'
-  },
-  workboxOpts: {
-    runtimeCaching: [
-      {
-        urlPattern: /^https?.*/,
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'offlineCache',
-          expiration: {
-            maxEntries: 200,
-          },
-        },
-      },
-    ],
-  },
-}), SentryWebpackPluginOptions))
+module.exports = config
