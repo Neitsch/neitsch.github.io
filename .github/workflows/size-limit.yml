@@ -25,4 +25,4 @@ jobs:
           CI_JOB_NUMBER: 1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          build_script: size-limit
+          build_script: size-build
