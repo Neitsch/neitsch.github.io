@@ -21,7 +21,7 @@ jobs:
       - uses: andresz1/size-limit-action@v1
         env:
           SKIP_SENTRY: "true"
-          GRAPHCMS_PROJECT_API: ${{ secrets.GRAPHCMS_PROJECT_API }}
+          GRAPHCMS_PROJECT_API: "https://api-us-east-1.graphcms.com/v2/ckswjodgd0syb01xr1ayu7841/master"
           CI_JOB_NUMBER: 1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
