@@ -105,7 +105,8 @@
     },
     "size-limit": [
         {
-            "path": "out/_next/static/chunks/**/*.js"
+          "path": "out/_next/static/chunks/**/*.js",
+          "name": "static-files"
         }
     ]
 }
