@@ -1,3 +1,4 @@
+import AuthorChip, { AUTHOR_CHIP_FRAGMENT } from "../../components/author-chip";
 import Container from "../../components/container";
 import Header from "../../components/header";
 import Layout from "../../components/layout";
@@ -8,8 +9,6 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/graphcms";
 import {
   Card,
   Box,
-  Chip,
-  Avatar,
   Typography,
   CardContent,
   CardMedia,
@@ -31,6 +30,7 @@ import {
 import rehypeHighlight from "rehype-highlight";
 
 export const POST_FRAGMENT = gql`
+  ${AUTHOR_CHIP_FRAGMENT}
   fragment Post on Post {
     title
     excerpt
@@ -52,14 +52,7 @@ export const POST_FRAGMENT = gql`
       )
     }
     author {
-      name
-      picture {
-        url(
-          transformation: {
-            image: { resize: { fit: crop, width: 100, height: 100 } }
-          }
-        )
-      }
+      ...AuthorChip
     }
   }
 `;
@@ -96,16 +89,11 @@ export default function Post({
         </Typography>
       </Box>
     );
-    const authorElem = (
+    const authorElem = post.author ? (
       <Box alignSelf="flex-end">
-        <Chip
-          avatar={
-            <Avatar alt={post.author?.name} src={post.author?.picture?.url} />
-          }
-          label={post.author?.name}
-        />
+        <AuthorChip author={post.author} />
       </Box>
-    );
+    ) : null;
     const body = (
       <Card>
         <CardMedia component="img" src={post.coverImage?.url} />

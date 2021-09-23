@@ -6,8 +6,16 @@ import type {
   AllPostsWithSlugQueryVariables,
 } from "../generated/graphql";
 import { Stage } from "../generated/graphql";
+import type { NormalizedCacheObject } from "@apollo/client";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import gql from "graphql-tag";
+
+export function getApolloClient(): ApolloClient<NormalizedCacheObject> {
+  return new ApolloClient({
+    uri: process.env.GRAPHCMS_PROJECT_API ?? "",
+    cache: new InMemoryCache(),
+  });
+}
 
 const ALL_POSTS_WITH_SLUG = gql`
   query AllPostsWithSlug {
@@ -18,11 +26,7 @@ const ALL_POSTS_WITH_SLUG = gql`
 `;
 
 export async function getAllPostsWithSlug(): Promise<AllPostsWithSlugQuery> {
-  const client = new ApolloClient({
-    uri: process.env.GRAPHCMS_PROJECT_API ?? "",
-    cache: new InMemoryCache(),
-  });
-  return client
+  return getApolloClient()
     .query<AllPostsWithSlugQuery, AllPostsWithSlugQueryVariables>({
       query: ALL_POSTS_WITH_SLUG,
     })
@@ -55,13 +59,7 @@ const POST_AND_MORE_POSTS = gql`
       }
       author {
         name
-        picture {
-          url(
-            transformation: {
-              image: { resize: { fit: crop, width: 100, height: 100 } }
-            }
-          )
-        }
+        ...AuthorChip
       }
     }
     ...MoreStories

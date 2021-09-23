@@ -1,9 +1,8 @@
 import type { HeroPostFragment } from "../generated/graphql";
+import AuthorChip, { AUTHOR_CHIP_FRAGMENT } from "./author-chip";
 import {
   Card,
   Box,
-  Chip,
-  Avatar,
   Link as MuiLink,
   Typography,
   CardContent,
@@ -14,6 +13,7 @@ import gql from "graphql-tag";
 import Link from "next/link";
 
 export const HERO_POST_FRAGMENT = gql`
+  ${AUTHOR_CHIP_FRAGMENT}
   fragment HeroPost on Post {
     title
     slug
@@ -26,14 +26,7 @@ export const HERO_POST_FRAGMENT = gql`
       )
     }
     author {
-      name
-      picture {
-        url(
-          transformation: {
-            image: { resize: { width: 100, height: 100, fit: crop } }
-          }
-        )
-      }
+      ...AuthorChip
     }
   }
 `;
@@ -53,10 +46,7 @@ export default function HeroPost({
       {titleElem}
       {author ? (
         <Box alignSelf="flex-end">
-          <Chip
-            avatar={<Avatar alt={author.name} src={author.picture?.url} />}
-            label={author.name || "Anonymous"}
-          />
+          <AuthorChip author={author} />
         </Box>
       ) : null}
     </Box>
