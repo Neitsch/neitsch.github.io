@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import PostPreview, {
   POST_PREVIEW_FRAGMENT,
 } from "../../components/post-preview";
+import SectionSeparator from "../../components/section-separator";
 import type {
   AllAuthorsQuery,
   AllAuthorsQueryVariables,
@@ -11,7 +12,7 @@ import type {
   LookupAuthorQueryVariables,
 } from "../../generated/graphql";
 import { getApolloClient } from "../../lib/graphcms";
-import { Typography, Grid } from "@material-ui/core";
+import { Card, CardContent, Typography, Grid } from "@mui/material";
 import gql from "graphql-tag";
 import type { GetStaticProps, GetStaticPaths } from "next";
 import ReactMarkdown from "react-markdown";
@@ -58,12 +59,18 @@ export default function Author({
     <Layout>
       <Container>
         <Header />
-        <Typography component="h1" variant="h4">
-          Author - {author.name} ({author.title})
-        </Typography>
-        <ReactMarkdown rehypePlugins={[[rehypeHighlight]]}>
-          {author.biography}
-        </ReactMarkdown>
+        <Card>
+          <CardContent>
+            <Typography component="h1" variant="h4">
+              {author.name} ({author.title})
+            </Typography>
+            <ReactMarkdown rehypePlugins={[[rehypeHighlight]]}>
+              {author.biography}
+            </ReactMarkdown>
+          </CardContent>
+        </Card>
+        <SectionSeparator />
+        <Typography variant="h4">Posts by the author</Typography>
         <Grid container spacing={5}>
           {postsConnection.edges.map(({ node }) => (
             <Grid item key={node.slug} md={6} xs={12}>

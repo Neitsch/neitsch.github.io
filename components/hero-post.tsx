@@ -8,7 +8,7 @@ import {
   CardContent,
   CardActionArea,
   CardMedia,
-} from "@material-ui/core";
+} from "@mui/material";
 import gql from "graphql-tag";
 import Link from "next/link";
 

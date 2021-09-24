@@ -1,5 +1,5 @@
 import type { AuthorChipFragment } from "../generated/graphql";
-import { Chip, Avatar } from "@material-ui/core";
+import { Chip, Avatar } from "@mui/material";
 import gql from "graphql-tag";
 import Link from "next/link";
 

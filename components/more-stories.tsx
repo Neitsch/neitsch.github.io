@@ -1,7 +1,7 @@
 import PostPreview from "../components/post-preview";
 import type { MoreStoriesFragment } from "../generated/graphql";
 import { POST_PREVIEW_FRAGMENT } from "./post-preview";
-import { Typography, Grid } from "@material-ui/core";
+import { Typography, Grid } from "@mui/material";
 import gql from "graphql-tag";
 
 export const MORE_STORIES = gql`

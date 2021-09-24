@@ -1,4 +1,4 @@
-import { Container as MuiContainer } from "@material-ui/core";
+import { Container as MuiContainer } from "@mui/material";
 import type { ReactNode } from "react";
 
 export default function Container({

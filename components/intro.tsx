@@ -1,5 +1,5 @@
 import Header from "./header";
-import { Typography, Box } from "@material-ui/core";
+import { Typography, Box } from "@mui/material";
 
 export default function Intro(): JSX.Element {
   return (

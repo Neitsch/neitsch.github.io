@@ -1,5 +1,5 @@
 import Container from "./container";
-import { Typography, Link as MuiLink } from "@material-ui/core";
+import { Typography, Link as MuiLink } from "@mui/material";
 import Link from "next/link";
 
 export default function Footer(): JSX.Element {

@@ -6,13 +6,7 @@ import MoreStories, { MORE_STORIES } from "../../components/more-stories";
 import SectionSeparator from "../../components/section-separator";
 import type { PostLookupFragment } from "../../generated/graphql";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/graphcms";
-import {
-  Card,
-  Box,
-  Typography,
-  CardContent,
-  CardMedia,
-} from "@material-ui/core";
+import { Card, Box, Typography, CardContent, CardMedia } from "@mui/material";
 import gql from "graphql-tag";
 import langx86 from "highlight.js/lib/languages/x86asm";
 import "highlight.js/styles/default.css";

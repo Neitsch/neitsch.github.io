@@ -30,7 +30,7 @@
         "@emotion/react": "11.4.1",
         "@emotion/server": "11.4.0",
         "@emotion/styled": "11.3.0",
-        "@material-ui/core": "next",
+        "@mui/material": "^5.0.1",
         "@sentry/nextjs": "^6.13.2",
         "classnames": "2.3.1",
         "concurrently": "^6.2.1",
@@ -105,8 +105,8 @@
     },
     "size-limit": [
         {
-          "path": "out/_next/static/chunks/**/*.js",
-          "name": "static-files"
+            "path": "out/_next/static/chunks/**/*.js",
+            "name": "static-files"
         }
     ]
 }
