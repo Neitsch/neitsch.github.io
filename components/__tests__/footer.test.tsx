@@ -9,25 +9,26 @@ describe("footer", () => {
     const { container } = render(<Footer />);
 
     expect(container).toMatchInlineSnapshot(`
-      <div>
-        <footer
-          class="bg-accent-1 border-t border-accent-2"
+<div>
+  <footer>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+      >
+        Built with NextJS. Find the source 
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1iwtne7-MuiTypography-root-MuiLink-root"
+          href="https://github.com/Neitsch/neitsch.github.io"
         >
-          <div
-            class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
-          >
-            <div
-              class="py-28 flex flex-col lg:flex-row items-center"
-            >
-              <h3
-                class="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2"
-              >
-                Nigel Schuster's blog.
-              </h3>
-            </div>
-          </div>
-        </footer>
-      </div>
-    `);
+          here
+        </a>
+        .
+      </p>
+    </div>
+  </footer>
+</div>
+`);
   });
 });

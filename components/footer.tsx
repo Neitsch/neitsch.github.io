@@ -1,17 +1,17 @@
 import Container from "./container";
+import { Typography, Link as MuiLink } from "@material-ui/core";
+import Link from "next/link";
 
 export default function Footer(): JSX.Element {
-  const footerText = (
-    <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-      Nigel Schuster&apos;s blog.
-    </h3>
+  const link = (
+    <Link href="https://github.com/Neitsch/neitsch.github.io" passHref>
+      <MuiLink underline="always">here</MuiLink>
+    </Link>
   );
   return (
-    <footer className="bg-accent-1 border-t border-accent-2">
+    <footer>
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          {footerText}
-        </div>
+        <Typography>Built with NextJS. Find the source {link}.</Typography>
       </Container>
     </footer>
   );
