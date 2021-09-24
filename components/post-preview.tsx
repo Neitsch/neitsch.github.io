@@ -1,19 +1,19 @@
 import type { PostPreviewFragment } from "../generated/graphql";
+import AuthorChip, { AUTHOR_CHIP_FRAGMENT } from "./author-chip";
 import {
   Card,
-  Avatar,
   Link as MuiLink,
   CardActionArea,
   CardContent,
   CardMedia,
   Box,
   Typography,
-  Chip,
 } from "@material-ui/core";
 import gql from "graphql-tag";
 import Link from "next/link";
 
 export const POST_PREVIEW_FRAGMENT = gql`
+  ${AUTHOR_CHIP_FRAGMENT}
   fragment PostPreview on Post {
     title
     slug
@@ -26,14 +26,7 @@ export const POST_PREVIEW_FRAGMENT = gql`
       )
     }
     author {
-      name
-      picture {
-        url(
-          transformation: {
-            image: { resize: { width: 100, height: 100, fit: crop } }
-          }
-        )
-      }
+      ...AuthorChip
     }
   }
 `;
@@ -60,10 +53,7 @@ export default function PostPreview({
       {titleElem}
       {author ? (
         <Box alignSelf="flex-end">
-          <Chip
-            avatar={<Avatar alt={author.name} src={author.picture?.url} />}
-            label={author.name}
-          />
+          <AuthorChip author={author} />
         </Box>
       ) : null}
     </Box>

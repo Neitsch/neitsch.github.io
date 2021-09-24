@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "concurrently \"next dev\" \"nodemon --exec 'next lint --fix' -e ts,tsx,js,jsx\" \"npm run graphql-codegen -- --watch\"",
+        "dev": "concurrently \"next dev\" \"nodemon --exec 'next lint --fix' -e ts,tsx,js,jsx\" \"npm run graphql-codegen -- --watch\" \"npm run test -- --coverage=false --watch\"",
         "build": "next build",
         "start": "next start",
         "export": "next export",

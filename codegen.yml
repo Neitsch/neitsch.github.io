@@ -4,6 +4,7 @@ documents:
   - "lib/**/*.ts"
   - "components/**/*.tsx"
   - "pages/**/*.tsx"
+  - "pages/author/[author].tsx"
   - "pages/index.tsx"
 generates:
   generated/graphql.tsx:
