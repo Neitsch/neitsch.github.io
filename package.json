@@ -62,7 +62,7 @@
         "@graphql-codegen/typescript-react-apollo": "3.1.2",
         "@size-limit/file": "^6.0.1",
         "@stryker-mutator/core": "^5.4.1",
-        "@stryker-mutator/jest-runner": "^5.4.0",
+        "@stryker-mutator/jest-runner": "^5.4.1",
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^12.1.2",
         "@trivago/prettier-plugin-sort-imports": "^2.0.4",
