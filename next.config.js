@@ -6,8 +6,9 @@
 const { withSentryConfig } = require('@sentry/nextjs');
 const withImages = require('next-images')
 const withOffline = require('next-offline')
+const withTM = require('next-transpile-modules')(["react-markdown"])
 
-let config = withOffline(withImages({
+let config = withOffline(withImages(withTM({
     reactStrictMode: true,
     images: {
         domains: ['media.graphcms.com'],
@@ -27,7 +28,7 @@ let config = withOffline(withImages({
             },
         ],
     },
-}));
+})));
 
 if (!process.env.SKIP_SENTRY) {
     const SentryWebpackPluginOptions = {
