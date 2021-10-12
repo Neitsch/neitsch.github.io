@@ -67,7 +67,7 @@
         "@testing-library/react": "^12.1.1",
         "@trivago/prettier-plugin-sort-imports": "^2.0.4",
         "@types/react": "^17.0.24",
-        "@typescript-eslint/eslint-plugin": "^4.31.2",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
         "@typescript-eslint/parser": "^4.31.2",
         "autoprefixer": "10.3.7",
         "babel-cli": "^6.26.0",
