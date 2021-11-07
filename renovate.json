@@ -1,5 +1,33 @@
 {
-  "extends": [
-    "config:base"
-  ]
+    "dependencyDashboard": true,
+    "enabled": true,
+    "extends": [
+        "group:monorepos",
+        "group:recommended",
+        "workarounds:all"
+    ],
+    "ignorePaths": [
+        "**/node_modules/**",
+        "**/__tests__/**",
+        "**/test/**",
+        "**/tests/**",
+        "**/__fixtures__/**"
+      ],
+    "packageRules": [
+        {
+          "matchPackagePatterns": [
+            "*"
+          ],
+          "semanticCommitType": "chore"
+        },
+        {
+          "matchDepTypes": [
+            "dependencies",
+            "require"
+          ],
+          "semanticCommitType": "fix"
+        }
+    ],
+    "prConcurrentLimit": 20,
+    "rangeStrategy": "auto"
 }
