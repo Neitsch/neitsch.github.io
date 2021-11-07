@@ -24,7 +24,8 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
