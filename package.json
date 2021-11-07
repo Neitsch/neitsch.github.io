@@ -25,7 +25,7 @@
         ]
     },
     "dependencies": {
-        "@apollo/client": "^3.4.16",
+        "@apollo/client": "3.4.16",
         "@emotion/cache": "11.5.0",
         "@emotion/react": "11.5.0",
         "@emotion/server": "11.4.0",
@@ -85,7 +85,7 @@
         "eslint-plugin-prettier": "4.0.0",
         "eslint-plugin-react": "7.26.1",
         "eslint-plugin-react-hooks": "4.2.0",
-        "graphql-tag": "^2.12.6",
+        "graphql-tag": "2.12.6",
         "husky": "7.0.4",
         "identity-obj-proxy": "3.0.0",
         "jest": "27.3.1",
