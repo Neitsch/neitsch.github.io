@@ -1,4 +1,7 @@
 {
+    "automerge": true,
+    "automergeStrategy": "squash",
+    "automergeType": "pr",
     "dependencyDashboard": true,
     "enabled": true,
     "extends": [
@@ -18,16 +21,19 @@
           "matchPackagePatterns": [
             "*"
           ],
-          "semanticCommitType": "chore"
+          "semanticCommitType": "chore",
+          "automerge": true
         },
         {
           "matchDepTypes": [
             "dependencies",
             "require"
           ],
-          "semanticCommitType": "fix"
+          "semanticCommitType": "fix",
+          "automerge": true
         }
     ],
+    "platformAutomerge": true,
     "prConcurrentLimit": 20,
     "rangeStrategy": "auto"
 }
