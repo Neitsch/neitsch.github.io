@@ -3,6 +3,7 @@ import type { MoreStoriesFragment } from "../generated/graphql";
 import { POST_PREVIEW_FRAGMENT } from "./post-preview";
 import { Typography, Grid } from "@mui/material";
 import gql from "graphql-tag";
+import * as React from "react";
 
 export const MORE_STORIES = gql`
   ${POST_PREVIEW_FRAGMENT}

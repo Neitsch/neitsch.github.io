@@ -1,5 +1,6 @@
 import Footer from "../components/footer";
 import Meta from "../components/meta";
+import * as React from "react";
 
 export default function Layout({
   children,

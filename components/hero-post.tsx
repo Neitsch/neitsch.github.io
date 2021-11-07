@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import gql from "graphql-tag";
 import Link from "next/link";
+import * as React from "react";
 
 export const HERO_POST_FRAGMENT = gql`
   ${AUTHOR_CHIP_FRAGMENT}
