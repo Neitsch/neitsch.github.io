@@ -9,6 +9,7 @@ const withOffline = require('next-offline')
 const withTM = require('next-transpile-modules')(["react-markdown"])
 
 let config = withOffline(withImages(withTM({
+    swcMinify: true,
     reactStrictMode: true,
     images: {
         domains: ['media.graphcms.com'],

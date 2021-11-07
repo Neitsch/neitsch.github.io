@@ -1,5 +1,6 @@
 import Header from "./header";
 import { Typography, Box } from "@mui/material";
+import * as React from "react";
 
 export default function Intro(): JSX.Element {
   return (
