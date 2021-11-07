@@ -89,7 +89,7 @@
         "identity-obj-proxy": "^3.0.0",
         "jest": "^27.2.5",
         "lint-staged": "^11.2.3",
-        "next-sitemap": "^1.6.184",
+        "next-sitemap": "^1.6.203",
         "next-transpile-modules": "^8.0.0",
         "nodemon": "^2.0.13",
         "postcss": "8.3.9",
