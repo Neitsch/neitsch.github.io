@@ -103,6 +103,9 @@ export default function Post({
           >
             {post.content}
           </ReactMarkdown>
+          <Typography sx={{ fontStyle: "italic", paddingBottom: "1.5em" }}>
+            Published on {post.date}.
+          </Typography>
           <div suppressHydrationWarning>
             {process.browser && (
               <div>
