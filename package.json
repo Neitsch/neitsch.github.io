@@ -9,7 +9,7 @@
         "lint": "next lint",
         "mutation-test": "stryker run",
         "preinstall": "npx only-allow pnpm",
-        "prepare": "echo husky install",
+        "prepare": "husky install",
         "serve:prod": "pnpm run build:prod && cd out && python3 -m http.server",
         "sitemap": "next-sitemap",
         "size-build": "pnpm run graphql-codegen && pnpm run build && pnpm run sitemap && pnpm run export",

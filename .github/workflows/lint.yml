@@ -32,7 +32,7 @@ jobs:
           version: 6.20.3
           run_install: |
             - recursive: false
-              args: [--frozen-lockfile]
+              args: [--no-frozen-lockfile]
 
       - name: pnpm install and lint
         run: |
