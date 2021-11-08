@@ -16,7 +16,6 @@ jobs:
         with:
           node-version: "lts/*"
           cache: "npm"
-          cache-dependency-path: "package-lock.json"
 
       - uses: andresz1/size-limit-action@v1
         env:
