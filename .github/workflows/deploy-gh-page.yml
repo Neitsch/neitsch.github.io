@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-   - cron: "0 8 * * *"
+    - cron: "0 8 * * *"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,17 +16,29 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
-          cache-dependency-path: 'package-lock.json'
+          node-version: "lts/*"
+
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
+          run_install: |
+            - recursive: false
+              args: [--no-frozen-lockfile]
 
       - name: Install and Build
         run: |
-          npm install
-          npm run graphql-codegen
-          npm run build
-          npm run sitemap
-          npm run export
+          pnpm run graphql-codegen
+          pnpm run build
+          pnpm run sitemap
+          pnpm run export
         env:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}

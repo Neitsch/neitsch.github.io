@@ -3,10 +3,10 @@ name: Typecheck
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - master
+      - master
 
 jobs:
   typecheck:
@@ -17,15 +17,27 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
-          cache-dependency-path: 'package-lock.json'
+          node-version: "lts/*"
 
-      - name: npm install and lint
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
+          run_install: |
+            - recursive: false
+              args: [--no-frozen-lockfile]
+
+      - name: pnpm install and lint
         run: |
-          npm install
-          npm run graphql-codegen
-          npm run ts
+          pnpm run graphql-codegen
+          pnpm run ts
         env:
           SKIP_SENTRY: "true"
           GRAPHCMS_PROJECT_API: ${{ secrets.GRAPHCMS_PROJECT_API }}
