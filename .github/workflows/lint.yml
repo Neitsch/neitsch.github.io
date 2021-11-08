@@ -15,18 +15,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.4.0
 
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.20.3
-          run_install:
-            recursive: false
-            args: ["--frozen-lockfile"]
-
       - uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
-          cache: "pnpm"
-          cache-dependency-path: "pnpm-lock.yml"
+
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
+          run_install: |
+            - recursive: false
+              args: [--frozen-lockfile]
 
       - name: pnpm install and lint
         run: |
