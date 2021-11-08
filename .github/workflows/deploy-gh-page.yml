@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-   - cron: "0 8 * * *"
+    - cron: "0 8 * * *"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,17 +16,17 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
-          cache-dependency-path: 'package-lock.json'
+          node-version: "lts/*"
+          cache: "pnpm"
+          cache-dependency-path: "package-lock.json"
 
       - name: Install and Build
         run: |
-          npm install
-          npm run graphql-codegen
-          npm run build
-          npm run sitemap
-          npm run export
+          pnpm install
+          pnpm run graphql-codegen
+          pnpm run build
+          pnpm run sitemap
+          pnpm run export
         env:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: ${{ secrets.SENTRY_ORG }}

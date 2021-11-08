@@ -11,11 +11,11 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
-          cache: 'npm'
-          cache-dependency-path: 'package-lock.json'
+          node-version: "lts/*"
+          cache: "pnpm"
+          cache-dependency-path: "package-lock.json"
 
-      - name: npm install and test
+      - name: pnpm install and test
         run: |
-          npm install
-          npm run mutation-test
+          pnpm install
+          pnpm run mutation-test
