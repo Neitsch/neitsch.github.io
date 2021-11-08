@@ -14,20 +14,27 @@ jobs:
         with:
           ref: master
 
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.20.3
-          run_install: true
-
       - uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
-          cache: "pnpm"
-          cache-dependency-path: "pnpm-lock.yml"
+
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
+          run_install: |
+            - recursive: false
+              args: [--no-frozen-lockfile]
 
       - name: Install and Build
         run: |
-          pnpm install
           pnpm run graphql-codegen
           pnpm run build
           pnpm run sitemap

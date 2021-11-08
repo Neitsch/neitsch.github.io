@@ -36,6 +36,5 @@ jobs:
 
       - name: pnpm install and lint
         run: |
-          pnpm install
           pnpm run graphql-codegen
           pnpm run lint
