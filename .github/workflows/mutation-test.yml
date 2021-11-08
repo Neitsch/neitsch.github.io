@@ -13,7 +13,6 @@ jobs:
         with:
           version: 6.20.3
           run_install: true
-          args: ["--frozen-lockfile"]
 
       - uses: actions/setup-node@v2
         with:
