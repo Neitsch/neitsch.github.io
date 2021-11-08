@@ -16,6 +16,11 @@ jobs:
         with:
           node-version: "lts/*"
 
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          run_install: false
+          version: 6.20.3
+
       - uses: andresz1/size-limit-action@v1
         env:
           SKIP_SENTRY: "true"
