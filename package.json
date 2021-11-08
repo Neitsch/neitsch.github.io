@@ -8,7 +8,6 @@
         "graphql-codegen": "graphql-codegen --config codegen.yml",
         "lint": "next lint",
         "mutation-test": "stryker run",
-        "preinstall": "npx only-allow pnpm",
         "prepare": "husky install",
         "serve:prod": "pnpm run build:prod && cd out && python3 -m http.server",
         "sitemap": "next-sitemap",
