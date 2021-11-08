@@ -1,7 +1,9 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-export default createTheme({
-  components: {
-    MuiLink: { defaultProps: { underline: "none", color: "inherit" } },
-  },
-});
+export default responsiveFontSizes(
+  createTheme({
+    components: {
+      MuiLink: { defaultProps: { underline: "none", color: "inherit" } },
+    },
+  }),
+);
