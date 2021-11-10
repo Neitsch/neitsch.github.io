@@ -60,7 +60,7 @@ specifiers:
   next-offline: 5.0.5
   next-sitemap: 1.6.203
   next-transpile-modules: 9.0.0
-  nodemon: 2.0.14
+  nodemon: 2.0.15
   postcss: 8.3.11
   prettier: 2.4.1
   prettier-eslint: 13.0.0
@@ -142,7 +142,7 @@ devDependencies:
   lint-staged: 11.2.6
   next-sitemap: 1.6.203_next@12.0.3
   next-transpile-modules: 9.0.0
-  nodemon: 2.0.14
+  nodemon: 2.0.15
   postcss: 8.3.11
   prettier: 2.4.1
   prettier-eslint: 13.0.0
@@ -11162,8 +11162,8 @@ packages:
   /node-releases/2.0.1:
     resolution: {integrity: sha512-CqyzN6z7Q6aMeF/ktcMVTzhAHCEpf8SOarwpzpf8pNBY2k5/oM34UHldUwp8VKI7uxct2HxSRdJjBaZeESzcxA==}
 
-  /nodemon/2.0.14:
-    resolution: {integrity: sha512-frcpDx+PviKEQRSYzwhckuO2zoHcBYLHI754RE9z5h1RGtrngerc04mLpQQCPWBkH/2ObrX7We9YiwVSYZpFJQ==}
+  /nodemon/2.0.15:
+    resolution: {integrity: sha512-gdHMNx47Gw7b3kWxJV64NI+Q5nfl0y5DgDbiVtShiwa7Z0IZ07Ll4RLFo6AjrhzMtoEZn5PDE3/c2AbVsiCkpA==}
     engines: {node: '>=8.10.0'}
     hasBin: true
     requiresBuild: true
