@@ -63,7 +63,7 @@
         "@size-limit/file": "6.0.4",
         "@stryker-mutator/core": "5.4.1",
         "@stryker-mutator/jest-runner": "5.4.1",
-        "@swc-node/jest": "1.4.0",
+        "@swc-node/jest": "1.4.1",
         "@testing-library/jest-dom": "5.15.0",
         "@testing-library/react": "12.1.2",
         "@trivago/prettier-plugin-sort-imports": "3.1.0",
