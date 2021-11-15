@@ -11,10 +11,10 @@ specifiers:
   '@emotion/react': 11.5.0
   '@emotion/server': 11.4.0
   '@emotion/styled': 11.3.0
-  '@graphql-codegen/cli': 2.2.2
+  '@graphql-codegen/cli': 2.3.0
   '@graphql-codegen/fragment-matcher': 3.2.0
   '@graphql-codegen/introspection': 2.1.0
-  '@graphql-codegen/typescript': 2.3.1
+  '@graphql-codegen/typescript': 2.4.0
   '@graphql-codegen/typescript-document-nodes': 2.2.0
   '@graphql-codegen/typescript-operations': 2.2.0
   '@graphql-codegen/typescript-react-apollo': 3.2.1
@@ -103,10 +103,10 @@ devDependencies:
   '@commitlint/cli': 14.1.0
   '@commitlint/config-conventional': 14.1.0
   '@commitlint/cz-commitlint': 14.1.0_commitizen@4.2.4
-  '@graphql-codegen/cli': 2.2.2_graphql@16.0.1+typescript@4.4.4
+  '@graphql-codegen/cli': 2.3.0_graphql@16.0.1+typescript@4.4.4
   '@graphql-codegen/fragment-matcher': 3.2.0_graphql@16.0.1
   '@graphql-codegen/introspection': 2.1.0_graphql@16.0.1
-  '@graphql-codegen/typescript': 2.3.1_graphql@16.0.1
+  '@graphql-codegen/typescript': 2.4.0_graphql@16.0.1
   '@graphql-codegen/typescript-document-nodes': 2.2.0_graphql@16.0.1
   '@graphql-codegen/typescript-operations': 2.2.0_graphql@16.0.1
   '@graphql-codegen/typescript-react-apollo': 3.2.1_54bba07b46b44ef856de5b4ed24df738
@@ -1994,11 +1994,11 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/cli/2.2.2_graphql@16.0.1+typescript@4.4.4:
-    resolution: {integrity: sha512-QTijlvgmzBkSQ/7+VTxQbkcEoSfX/qpX2yg6xXQPISU71Q+6k2dGvYfRrjchwGu7/cNeSaYfgh8S/MhkmNg7Uw==}
+  /@graphql-codegen/cli/2.3.0_graphql@16.0.1+typescript@4.4.4:
+    resolution: {integrity: sha512-5pgrcnBFeOJbDGfZwhnytwMqpwFDrmdaAgD6HYywT9Fggsrx2yWSkVrxoAjEcbDMFLhxzjxECwfJYklm967AKA==}
     hasBin: true
     peerDependencies:
-      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@graphql-codegen/core': 2.3.0_graphql@16.0.1
       '@graphql-codegen/plugin-helpers': 2.3.1_graphql@16.0.1
@@ -2127,7 +2127,7 @@ packages:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
     dependencies:
       '@graphql-codegen/plugin-helpers': 2.3.1_graphql@16.0.1
-      '@graphql-codegen/typescript': 2.3.1_graphql@16.0.1
+      '@graphql-codegen/typescript': 2.4.0_graphql@16.0.1
       '@graphql-codegen/visitor-plugin-common': 2.5.0_graphql@16.0.1
       auto-bind: 4.0.0
       graphql: 16.0.1
@@ -2153,8 +2153,8 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/typescript/2.3.1_graphql@16.0.1:
-    resolution: {integrity: sha512-5wfuJhXnDVdufznLZG2/YlPMy5qGVYAEodBACVT8Dfgnt7T8eQOdaTfEPh04hqf/WR6DDoiLrJDcdyqWUO305w==}
+  /@graphql-codegen/typescript/2.4.0_graphql@16.0.1:
+    resolution: {integrity: sha512-zsqwajqC1WduPVfg1+yfHDUnag+S6s1bs6IPZoY5AaScbfLuJe8p3G7qyBEstaZGzLGNxvZs7jeujCBwj2B2yw==}
     peerDependencies:
       graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
@@ -8641,7 +8641,7 @@ packages:
       mute-stream: 0.0.8
       ora: 5.4.1
       run-async: 2.4.1
-      rxjs: 7.3.1
+      rxjs: 7.4.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
       through: 2.3.8
@@ -13350,7 +13350,7 @@ packages:
       graphql: 16.0.1
       iterall: 1.3.0
       symbol-observable: 1.2.0
-      ws: 7.4.5
+      ws: 7.5.5
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
