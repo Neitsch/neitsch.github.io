@@ -6,7 +6,14 @@ import MoreStories, { MORE_STORIES } from "../../components/more-stories";
 import SectionSeparator from "../../components/section-separator";
 import type { PostLookupFragment } from "../../generated/graphql";
 import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/graphcms";
-import { Card, Box, Typography, CardContent, CardMedia } from "@mui/material";
+import {
+  Card,
+  Box,
+  Typography,
+  CardContent,
+  CardMedia,
+  NoSsr,
+} from "@mui/material";
 import gql from "graphql-tag";
 import langx86 from "highlight.js/lib/languages/x86asm";
 import "highlight.js/styles/default.css";
@@ -106,7 +113,7 @@ export default function Post({
           <Typography sx={{ fontStyle: "italic", paddingBottom: "1.5em" }}>
             Published on {post.date}.
           </Typography>
-          <div suppressHydrationWarning>
+          <NoSsr>
             {process.browser && (
               <div>
                 <EmailShareButton url={window.location.href}>
@@ -120,7 +127,7 @@ export default function Post({
                 </RedditShareButton>
               </div>
             )}
-          </div>
+          </NoSsr>
         </CardContent>
       </Card>
     );

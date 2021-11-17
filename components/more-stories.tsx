@@ -1,7 +1,8 @@
 import PostPreview from "../components/post-preview";
 import type { MoreStoriesFragment } from "../generated/graphql";
 import { POST_PREVIEW_FRAGMENT } from "./post-preview";
-import { Typography, Grid } from "@mui/material";
+import { Typography } from "@mui/material";
+import Masonry from "@mui/lab/Masonry";
 import gql from "graphql-tag";
 import * as React from "react";
 
@@ -24,13 +25,13 @@ export default function MoreStories({
   return (
     <div>
       <Typography variant="h4">More Stories</Typography>
-      <Grid container spacing={5}>
+      <Masonry columns={{ xs: 1, sm: 2 }} spacing={{ xs: 1, sm: 1, md: 2 }}>
         {moreStories.map((post) => (
-          <Grid item key={post.slug} md={6} xs={12}>
+          <div key={post.slug}>
             <PostPreview post={post} />
-          </Grid>
+          </div>
         ))}
-      </Grid>
+      </Masonry>
     </div>
   );
 }

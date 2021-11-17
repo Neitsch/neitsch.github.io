@@ -1,4 +1,5 @@
 import createEmotionCache from "../lib/createEmotionCache";
+import Head from "next/head";
 import theme from "../lib/theme";
 import "../styles/index.css";
 import type { EmotionCache } from "@emotion/cache";
@@ -19,12 +20,17 @@ function MyApp({
 }): JSX.Element {
   /* eslint-disable react/jsx-props-no-spreading */
   return (
-    <CacheProvider value={emotionCache}>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </CacheProvider>
+    <>
+      <Head>
+        <meta content="initial-scale=1, width=device-width" name="viewport" />
+      </Head>
+      <CacheProvider value={emotionCache}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </CacheProvider>
+    </>
   );
   /* eslint-enable react/jsx-props-no-spreading */
 }

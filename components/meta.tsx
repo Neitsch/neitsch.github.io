@@ -25,11 +25,7 @@ export default function Meta(): JSX.Element {
   }, [router.events]);
   return (
     <Head>
-      <link
-        href="/favicon/apple-touch-icon.png"
-        rel="apple-touch-icon"
-        sizes="180x180"
-      />
+      <link href="/favicon/apple-touch-icon.png" sizes="180x180" />
       <link
         href="/favicon/favicon-32x32.png"
         rel="icon"
@@ -43,12 +39,8 @@ export default function Meta(): JSX.Element {
         type="image/png"
       />
       <link href="/favicon/site.webmanifest" rel="manifest" />
-      <link
-        color="#000000"
-        href="/favicon/safari-pinned-tab.svg"
-        rel="mask-icon"
-      />
-      <link href="/favicon/favicon.ico" rel="shortcut icon" />
+      <link color="#000000" href="/favicon/safari-pinned-tab.svg" />
+      <link href="/favicon/favicon.ico" rel="icon" />
       <meta content="#000000" name="msapplication-TileColor" />
       <meta content="/favicon/browserconfig.xml" name="msapplication-config" />
       <meta content="#000" name="theme-color" />
