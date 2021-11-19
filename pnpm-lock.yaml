@@ -47,7 +47,7 @@ specifiers:
   eslint-plugin-jsx-a11y: 6.5.1
   eslint-plugin-only-error: 1.0.2
   eslint-plugin-prettier: 4.0.0
-  eslint-plugin-react: 7.27.0
+  eslint-plugin-react: 7.27.1
   eslint-plugin-react-hooks: 4.3.0
   graphql: 16.0.1
   graphql-tag: 2.12.6
@@ -135,7 +135,7 @@ devDependencies:
   eslint-plugin-jsx-a11y: 6.5.1_eslint@7.32.0
   eslint-plugin-only-error: 1.0.2
   eslint-plugin-prettier: 4.0.0_6e975bd57c7acf028c1a9ddbbf60c898
-  eslint-plugin-react: 7.27.0_eslint@7.32.0
+  eslint-plugin-react: 7.27.1_eslint@7.32.0
   eslint-plugin-react-hooks: 4.3.0_eslint@7.32.0
   graphql-tag: 2.12.6_graphql@16.0.1
   husky: 7.0.4
@@ -6979,7 +6979,7 @@ packages:
       eslint-import-resolver-typescript: 2.5.0_560ef94424f7023f0ab025f67f79aa67
       eslint-plugin-import: 2.25.2_eslint@7.32.0
       eslint-plugin-jsx-a11y: 6.5.1_eslint@7.32.0
-      eslint-plugin-react: 7.27.0_eslint@7.32.0
+      eslint-plugin-react: 7.27.1_eslint@7.32.0
       eslint-plugin-react-hooks: 4.3.0_eslint@7.32.0
       next: 12.0.4_aae888dfa296766acacf1a733aa50b3a
       typescript: 4.4.4
@@ -7144,8 +7144,8 @@ packages:
       eslint: 7.32.0
     dev: true
 
-  /eslint-plugin-react/7.27.0_eslint@7.32.0:
-    resolution: {integrity: sha512-0Ut+CkzpppgFtoIhdzi2LpdpxxBvgFf99eFqWxJnUrO7mMe0eOiNpou6rvNYeVVV6lWZvTah0BFne7k5xHjARg==}
+  /eslint-plugin-react/7.27.1_eslint@7.32.0:
+    resolution: {integrity: sha512-meyunDjMMYeWr/4EBLTV1op3iSG3mjT/pz5gti38UzfM4OPpNc2m0t2xvKCOMU5D6FSdd34BIMFOvQbW+i8GAA==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
