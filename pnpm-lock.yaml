@@ -38,7 +38,7 @@ specifiers:
   commitizen: 4.2.4
   concurrently: 6.4.0
   cz-conventional-changelog: 3.3.0
-  date-fns: 2.25.0
+  date-fns: 2.26.0
   eslint: 7.32.0
   eslint-config-next: 12.0.4
   eslint-config-prettier: 8.3.0
@@ -81,12 +81,12 @@ dependencies:
   '@emotion/react': 11.6.0_f6c5a15aa5ec2e0fdeb6035d8ba56bed
   '@emotion/server': 11.4.0
   '@emotion/styled': 11.6.0_f29c3904a47513b46ae8dc7d3e981dfa
-  '@mui/lab': 5.0.0-alpha.55_3468a679e3b27a8275b0f488c1346b73
+  '@mui/lab': 5.0.0-alpha.55_3be71346b206a5e7e457a31f02e1594e
   '@mui/material': 5.1.1_26eea1f46552c35d279bfc70a69f8f41
   '@sentry/nextjs': 6.15.0_next@12.0.4+react@17.0.2
   classnames: 2.3.1
   concurrently: 6.4.0
-  date-fns: 2.25.0
+  date-fns: 2.26.0
   graphql: 16.0.1
   highlight.js: 11.3.1
   next: 12.0.4_aae888dfa296766acacf1a733aa50b3a
@@ -1811,7 +1811,7 @@ packages:
     resolution: {integrity: sha512-DvPBnNoeuLaoSJZaxgpu54qzRhRKjSYVyQjhznTFrllKuDpm0sDFjHo6lvNLCM/cfMx2gb2PM2zY2kc9C8nmuw==}
     dev: false
 
-  /@date-io/date-fns/2.11.0_date-fns@2.25.0:
+  /@date-io/date-fns/2.11.0_date-fns@2.26.0:
     resolution: {integrity: sha512-mPQ71plBeFrArvBSHtjWMHXA89IUbZ6kuo2dsjlRC/1uNOybo91spIb+wTu03NxKTl8ut07s0jJ9svF71afpRg==}
     peerDependencies:
       date-fns: ^2.0.0
@@ -1820,7 +1820,7 @@ packages:
         optional: true
     dependencies:
       '@date-io/core': 2.11.0
-      date-fns: 2.25.0
+      date-fns: 2.26.0
     dev: false
 
   /@date-io/dayjs/2.11.0:
@@ -2958,7 +2958,7 @@ packages:
       react-is: 17.0.2
     dev: false
 
-  /@mui/lab/5.0.0-alpha.55_3468a679e3b27a8275b0f488c1346b73:
+  /@mui/lab/5.0.0-alpha.55_3be71346b206a5e7e457a31f02e1594e:
     resolution: {integrity: sha512-ahjGdvh8Dc7FXcWPzOjTK8kXW5musONsw3r5whGpSa/04vqgMJXiAF/Pmu15vbA9VWBqPABf+acfVN8H24ztdA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2983,7 +2983,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.16.3
-      '@date-io/date-fns': 2.11.0_date-fns@2.25.0
+      '@date-io/date-fns': 2.11.0_date-fns@2.26.0
       '@date-io/dayjs': 2.11.0
       '@date-io/luxon': 2.11.1
       '@date-io/moment': 2.11.0
@@ -2993,7 +2993,7 @@ packages:
       '@mui/utils': 5.1.1_react@17.0.2
       '@types/react': 17.0.35
       clsx: 1.1.1
-      date-fns: 2.25.0
+      date-fns: 2.26.0
       prop-types: 15.7.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -6093,7 +6093,7 @@ packages:
     hasBin: true
     dependencies:
       chalk: 4.1.2
-      date-fns: 2.25.0
+      date-fns: 2.26.0
       lodash: 4.17.21
       rxjs: 6.6.7
       spawn-command: 0.0.2-1
@@ -6471,8 +6471,8 @@ packages:
     resolution: {integrity: sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==}
     dev: true
 
-  /date-fns/2.25.0:
-    resolution: {integrity: sha512-ovYRFnTrbGPD4nqaEqescPEv1mNwvt+UTqI3Ay9SzNtey9NZnYu6E2qCcBBgJ6/2VF1zGGygpyTDITqpQQ5e+w==}
+  /date-fns/2.26.0:
+    resolution: {integrity: sha512-VQI812dRi3cusdY/fhoBKvc6l2W8BPWU1FNVnFH9Nttjx4AFBRzfSVb/Eyc7jBT6e9sg1XtAGsYpBQ6c/jygbg==}
     engines: {node: '>=0.11'}
     dev: false
 
