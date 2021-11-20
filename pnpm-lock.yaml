@@ -72,7 +72,7 @@ specifiers:
   react-test-renderer: 17.0.2
   rehype-highlight: 5.0.0
   sharp: 0.29.3
-  size-limit: 6.0.4
+  size-limit: 7.0.3
   typescript: 4.4.4
 
 dependencies:
@@ -112,7 +112,7 @@ devDependencies:
   '@graphql-codegen/typescript-document-nodes': 2.2.0_graphql@16.0.1
   '@graphql-codegen/typescript-operations': 2.2.0_graphql@16.0.1
   '@graphql-codegen/typescript-react-apollo': 3.2.1_54bba07b46b44ef856de5b4ed24df738
-  '@size-limit/file': 6.0.4_size-limit@6.0.4
+  '@size-limit/file': 6.0.4_size-limit@7.0.3
   '@stryker-mutator/core': 5.4.1
   '@stryker-mutator/jest-runner': 5.4.1_d5a8f076440fc857e7c08cc242a26cb1
   '@swc-node/jest': 1.4.1
@@ -149,7 +149,7 @@ devDependencies:
   prettier: 2.4.1
   prettier-eslint: 13.0.0
   react-test-renderer: 17.0.2_react@17.0.2
-  size-limit: 6.0.4
+  size-limit: 7.0.3
   typescript: 4.4.4
 
 packages:
@@ -3680,14 +3680,14 @@ packages:
       '@sinonjs/commons': 1.8.3
     dev: true
 
-  /@size-limit/file/6.0.4_size-limit@6.0.4:
+  /@size-limit/file/6.0.4_size-limit@7.0.3:
     resolution: {integrity: sha512-SoGUUNEHsZJTDlw6znuMbR0z6apr/NmeEXSFT6iB6gUPyOHIdFtFJpvWeS1vijC7OFQhWHskedB6nBJ6L+bd+A==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     peerDependencies:
       size-limit: 6.0.4
     dependencies:
       semver: 7.3.5
-      size-limit: 6.0.4
+      size-limit: 7.0.3
     dev: true
 
   /@stryker-mutator/api/5.4.1:
@@ -12860,8 +12860,8 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /size-limit/6.0.4:
-    resolution: {integrity: sha512-zo/9FrXzetvZGFJnd1LC4mR9GvirElALlerMY3EOwEGdW7Lwgl2WT0hTRC2559ZR2PGfRpnXEgAFkayGAJOebg==}
+  /size-limit/7.0.3:
+    resolution: {integrity: sha512-CDGzcnw8f34yZ8ckh0dZ0ZNVfbfwJoG1+DWHdn63GieS0dnAB7oUH6Rok3Xaz4Ba+RUAd+4kXoJyZWHw5KkArw==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -12870,6 +12870,7 @@ packages:
       ci-job-number: 1.2.2
       globby: 11.0.4
       lilconfig: 2.0.4
+      mkdirp: 1.0.4
       nanospinner: 0.4.0
       picocolors: 1.0.0
     dev: true
