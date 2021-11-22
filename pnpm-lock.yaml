@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@apollo/client': 3.4.17
+  '@apollo/client': 3.5.4
   '@babel/core': 7.16.0
   '@babel/register': 7.16.0
   '@commitlint/cli': 15.0.0
@@ -76,7 +76,7 @@ specifiers:
   typescript: 4.5.2
 
 dependencies:
-  '@apollo/client': 3.4.17_graphql@16.0.1+react@17.0.2
+  '@apollo/client': 3.5.4_graphql@16.0.1+react@17.0.2
   '@emotion/cache': 11.6.0
   '@emotion/react': 11.6.0_ae0aa6f62664a7cb3b2f54c37ede002d
   '@emotion/server': 11.4.0
@@ -154,10 +154,10 @@ devDependencies:
 
 packages:
 
-  /@apollo/client/3.4.17_graphql@16.0.1+react@17.0.2:
-    resolution: {integrity: sha512-MDt2rwMX1GqodiVEKJqmDmAz8xr0qJmq5PdWeIt0yDaT4GOkKYWZiWkyfhfv3raTk8PyJvbsNG9q2CqmUrlGfg==}
+  /@apollo/client/3.5.4_graphql@16.0.1+react@17.0.2:
+    resolution: {integrity: sha512-6kybsXEdtRYGUDap4kOded6OFw501H+wL3/WGeRtO+NBcLfhuvRwkfCNpm0oTJWDDSxhQnWKCbxJgrLgoxCeFg==}
     peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
       react: ^16.8.0 || ^17.0.0
       subscriptions-transport-ws: ^0.9.0 || ^0.11.0
     peerDependenciesMeta:
@@ -179,7 +179,7 @@ packages:
       symbol-observable: 4.0.0
       ts-invariant: 0.9.3
       tslib: 2.3.1
-      zen-observable-ts: 1.1.0
+      zen-observable-ts: 1.2.3
     dev: false
 
   /@ardatan/aggregate-error/0.0.6:
@@ -4212,10 +4212,6 @@ packages:
     dependencies:
       '@types/yargs-parser': 20.2.1
     dev: true
-
-  /@types/zen-observable/0.8.3:
-    resolution: {integrity: sha512-fbF6oTd4sGGy0xjHPKAt+eS2CrxJ3+6gQ3FGcBoIJR2TLAyCkCyI8JqZNy+FeON0AhVgNJoUumVoZQjBFUqHkw==}
-    dev: false
 
   /@typescript-eslint/eslint-plugin/5.4.0_9f0e1d5746e2901a819ac9b47a32b38c:
     resolution: {integrity: sha512-9/yPSBlwzsetCsGEn9j24D8vGQgJkOTr4oMLas/w886ZtzKIs1iyoqFrwsX2fqYEeUwsdBpC21gcjRGo57u0eg==}
@@ -14802,10 +14798,9 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  /zen-observable-ts/1.1.0:
-    resolution: {integrity: sha512-1h4zlLSqI2cRLPJUHJFL8bCWHhkpuXkF+dbGkRaWjgDIG26DmzyshUMrdV/rL3UnR+mhaX4fRq8LPouq0MYYIA==}
+  /zen-observable-ts/1.2.3:
+    resolution: {integrity: sha512-hc/TGiPkAWpByykMwDcem3SdUgA4We+0Qb36bItSuJC9xD0XVBZoFHYoadAomDSNf64CG8Ydj0Qb8Od8BUWz5g==}
     dependencies:
-      '@types/zen-observable': 0.8.3
       zen-observable: 0.8.15
     dev: false
 
