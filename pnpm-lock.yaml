@@ -25,7 +25,7 @@ specifiers:
   '@stryker-mutator/core': 5.5.0
   '@stryker-mutator/jest-runner': 5.5.0
   '@swc-node/jest': 1.4.1
-  '@testing-library/jest-dom': 5.15.0
+  '@testing-library/jest-dom': 5.15.1
   '@testing-library/react': 12.1.2
   '@trivago/prettier-plugin-sort-imports': 3.1.1
   '@types/react': 17.0.36
@@ -116,7 +116,7 @@ devDependencies:
   '@stryker-mutator/core': 5.5.0
   '@stryker-mutator/jest-runner': 5.5.0_5d46484f92ac0a845f7dc0b74a8970ee
   '@swc-node/jest': 1.4.1
-  '@testing-library/jest-dom': 5.15.0
+  '@testing-library/jest-dom': 5.15.1
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@trivago/prettier-plugin-sort-imports': 3.1.1_prettier@2.4.1
   '@types/react': 17.0.36
@@ -3847,11 +3847,11 @@ packages:
       pretty-format: 27.3.1
     dev: true
 
-  /@testing-library/jest-dom/5.15.0:
-    resolution: {integrity: sha512-lOMuQidnL1tWHLEWIhL6UvSZC1Qt3OkNe1khvi2h6xFiqpe5O8arYs46OU0qyUGq0cSTbroQyMktYNXu3a7sAA==}
+  /@testing-library/jest-dom/5.15.1:
+    resolution: {integrity: sha512-kmj8opVDRE1E4GXyLlESsQthCXK7An28dFWxhiMwD7ZUI7ZxA6sjdJRxLerD9Jd8cHX4BDc1jzXaaZKqzlUkvg==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
-      '@babel/runtime': 7.16.0
+      '@babel/runtime': 7.16.3
       '@types/testing-library__jest-dom': 5.14.1
       aria-query: 4.2.2
       chalk: 3.0.0
