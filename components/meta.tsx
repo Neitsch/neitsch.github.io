@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import * as React from "react";
 
+const site = "https://www.nigel-schuster.de";
+
 export default function Meta(): JSX.Element {
   const router = useRouter();
 
@@ -23,8 +25,10 @@ export default function Meta(): JSX.Element {
       router.events.off("routeChangeStart", handleRouteChange);
     };
   }, [router.events]);
+  const canonicalURL = site + useRouter().asPath;
   return (
     <Head>
+      <link href={canonicalURL} rel="canonical" />
       <link href="/favicon/apple-touch-icon.png" sizes="180x180" />
       <link
         href="/favicon/favicon-32x32.png"
