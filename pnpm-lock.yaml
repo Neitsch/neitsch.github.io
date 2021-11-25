@@ -57,7 +57,7 @@ specifiers:
   jest: 27.3.1
   lint-staged: 12.1.2
   next: 12.0.4
-  next-images: 1.8.3
+  next-images: 1.8.4
   next-offline: 5.0.5
   next-sitemap: 1.6.203
   next-transpile-modules: 9.0.0
@@ -90,7 +90,7 @@ dependencies:
   graphql: 16.0.1
   highlight.js: 11.3.1
   next: 12.0.4_aae888dfa296766acacf1a733aa50b3a
-  next-images: 1.8.3
+  next-images: 1.8.4
   next-offline: 5.0.5_next@12.0.4
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -10844,8 +10844,8 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
 
-  /next-images/1.8.3:
-    resolution: {integrity: sha512-LQZcroUeWVLZn6H3B8M8x7oppm1Q/efTF6IVehgZYCBDVMZe29B1l0S9I74qZJdUoFxNsKaE3ksAKw/5lS4vwQ==}
+  /next-images/1.8.4:
+    resolution: {integrity: sha512-E6JV+aMxeUCh8A+cwn1xgmlh/zINSW4JC/XLNbM+PWQd5LBdfB+m1IDCAfNnGOKMo96kzw+4LsKxnX/Kldw78Q==}
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
