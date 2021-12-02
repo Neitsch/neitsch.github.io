@@ -70,7 +70,7 @@ specifiers:
   react-markdown: 7.1.1
   react-share: 4.4.0
   react-test-renderer: 17.0.2
-  rehype-highlight: 5.0.0
+  rehype-highlight: 5.0.1
   sharp: 0.29.3
   size-limit: 7.0.3
   typescript: 4.5.2
@@ -96,7 +96,7 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-markdown: 7.1.1_cfedea9b3ed0faf0dded75c187406c5e
   react-share: 4.4.0_react@17.0.2
-  rehype-highlight: 5.0.0
+  rehype-highlight: 5.0.1
   sharp: 0.29.3
 
 devDependencies:
@@ -12247,8 +12247,8 @@ packages:
       jsesc: 0.5.0
     dev: false
 
-  /rehype-highlight/5.0.0:
-    resolution: {integrity: sha512-LXbdRzHM0PNzVfHvbiF+r/BZzCHSdtpSTCnJej6ZuvJKDKRVfwl0Io5b81gWqUnfZmpzjhPAzm5es4iikv1jzg==}
+  /rehype-highlight/5.0.1:
+    resolution: {integrity: sha512-OyKw8dFiZnuWhI+BnQCVD9LT8hDRqUszQPGtzMaVioWgGCR5UwhPn5CPyW1cs776VwQuA8rLrKTbPI/fKCpKHA==}
     dependencies:
       '@types/hast': 2.3.4
       hast-util-to-text: 3.1.1
