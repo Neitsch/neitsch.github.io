@@ -72,7 +72,7 @@ specifiers:
   react-test-renderer: 17.0.2
   rehype-highlight: 5.0.1
   sharp: 0.29.3
-  size-limit: 7.0.3
+  size-limit: 7.0.4
   typescript: 4.5.2
 
 dependencies:
@@ -112,7 +112,7 @@ devDependencies:
   '@graphql-codegen/typescript-document-nodes': 2.2.1_graphql@16.0.1
   '@graphql-codegen/typescript-operations': 2.2.1_graphql@16.0.1
   '@graphql-codegen/typescript-react-apollo': 3.2.2_54bba07b46b44ef856de5b4ed24df738
-  '@size-limit/file': 7.0.4_size-limit@7.0.3
+  '@size-limit/file': 7.0.4_size-limit@7.0.4
   '@stryker-mutator/core': 5.5.1
   '@stryker-mutator/jest-runner': 5.5.1_c2ecc2a3128e44486f82027f28ed93f1
   '@swc-node/jest': 1.4.1
@@ -149,7 +149,7 @@ devDependencies:
   prettier: 2.5.1
   prettier-eslint: 13.0.0
   react-test-renderer: 17.0.2_react@17.0.2
-  size-limit: 7.0.3
+  size-limit: 7.0.4
   typescript: 4.5.2
 
 packages:
@@ -3581,14 +3581,14 @@ packages:
       '@sinonjs/commons': 1.8.3
     dev: true
 
-  /@size-limit/file/7.0.4_size-limit@7.0.3:
+  /@size-limit/file/7.0.4_size-limit@7.0.4:
     resolution: {integrity: sha512-/UfiOp8bDIdmNs0c8IQgGKlByo1esoayZ6+Pr/LQCJPZWPyQWVeGTo+J/+aYa9+5+r6ezvmAF5aR7VVt+rvW2Q==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     peerDependencies:
       size-limit: 7.0.4
     dependencies:
       semver: 7.3.5
-      size-limit: 7.0.3
+      size-limit: 7.0.4
     dev: true
 
   /@stryker-mutator/api/5.5.1:
@@ -10829,8 +10829,8 @@ packages:
     dev: true
     optional: true
 
-  /nanospinner/0.4.0:
-    resolution: {integrity: sha512-FhxiB9PcEztMw6XfQDSLJBMlmN4n7B2hl/oiK4Hy9479r1+df0i2099DgcEx+m6yBfBJVUuKpILvP8fM3rK3Sw==}
+  /nanospinner/0.5.0:
+    resolution: {integrity: sha512-VaEzZRHgdgvru4qr5Oe7SjalSGQsoCZrl42FEnAYHp8R+ghcok6u8Yo5U37kD+ABOjRh1IUOA64qqff+TznDfg==}
     dependencies:
       picocolors: 1.0.0
     dev: true
@@ -12696,8 +12696,8 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /size-limit/7.0.3:
-    resolution: {integrity: sha512-CDGzcnw8f34yZ8ckh0dZ0ZNVfbfwJoG1+DWHdn63GieS0dnAB7oUH6Rok3Xaz4Ba+RUAd+4kXoJyZWHw5KkArw==}
+  /size-limit/7.0.4:
+    resolution: {integrity: sha512-IkY30erk6psU6UCg/R0crNUIWIQsTTVv1/tMtY0ifOtq6Y2F2cUC3Z0zXNAmKcncnl9HJjUIQhw2WNYRlDiv0Q==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -12707,7 +12707,7 @@ packages:
       globby: 11.0.4
       lilconfig: 2.0.4
       mkdirp: 1.0.4
-      nanospinner: 0.4.0
+      nanospinner: 0.5.0
       picocolors: 1.0.0
     dev: true
 
