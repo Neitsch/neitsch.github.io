@@ -51,7 +51,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.3.0
   graphql: 16.2.0
   graphql-tag: 2.12.6
-  highlight.js: 11.3.1
+  highlight.js: 11.4.0
   husky: 7.0.4
   identity-obj-proxy: 3.0.0
   jest: 27.4.7
@@ -88,7 +88,7 @@ dependencies:
   concurrently: 7.0.0
   date-fns: 2.28.0
   graphql: 16.2.0
-  highlight.js: 11.3.1
+  highlight.js: 11.4.0
   next: 12.0.7_dfc0b93d99fba272c9564d3139a2581a
   next-images: 1.8.4
   next-offline: 5.0.5_next@12.0.7
@@ -8297,6 +8297,11 @@ packages:
 
   /highlight.js/11.3.1:
     resolution: {integrity: sha512-PUhCRnPjLtiLHZAQ5A/Dt5F8cWZeMyj9KRsACsWT+OD6OP0x6dp5OmT5jdx0JgEyPxPZZIPQpRN2TciUT7occw==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
+  /highlight.js/11.4.0:
+    resolution: {integrity: sha512-nawlpCBCSASs7EdvZOYOYVkJpGmAOKMYZgZtUqSRqodZE0GRVcFKwo1RcpeOemqh9hyttTdd5wDBwHkuSyUfnA==}
     engines: {node: '>=12.0.0'}
     dev: false
 
