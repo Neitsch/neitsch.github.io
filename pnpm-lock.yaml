@@ -31,7 +31,7 @@ specifiers:
   '@types/react': 17.0.38
   '@typescript-eslint/eslint-plugin': 5.9.0
   '@typescript-eslint/parser': 5.9.0
-  autoprefixer: 10.4.1
+  autoprefixer: 10.4.2
   babel-cli: 6.26.0
   babel-jest: 27.4.6
   classnames: 2.3.1
@@ -122,7 +122,7 @@ devDependencies:
   '@types/react': 17.0.38
   '@typescript-eslint/eslint-plugin': 5.9.0_c05e6fca5974c04442e7c260534af929
   '@typescript-eslint/parser': 5.9.0_eslint@7.32.0+typescript@4.5.4
-  autoprefixer: 10.4.1_postcss@8.4.5
+  autoprefixer: 10.4.2_postcss@8.4.5
   babel-cli: 6.26.0
   babel-jest: 27.4.6_@babel+core@7.16.7
   commitizen: 4.2.4
@@ -4855,15 +4855,15 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /autoprefixer/10.4.1_postcss@8.4.5:
-    resolution: {integrity: sha512-B3ZEG7wtzXDRCEFsan7HmR2AeNsxdJB0+sEC0Hc5/c2NbhJqPwuZm+tn233GBVw82L+6CtD6IPSfVruwKjfV3A==}
+  /autoprefixer/10.4.2_postcss@8.4.5:
+    resolution: {integrity: sha512-9fOPpHKuDW1w/0EKfRmVnxTDt8166MAnLI3mgZ1JCnhNtYWxcJ6Ud5CO/AVOZi/AvFa8DY9RTy3h3+tFBlrrdQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.19.1
-      caniuse-lite: 1.0.30001294
+      caniuse-lite: 1.0.30001297
       fraction.js: 4.1.2
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -5399,7 +5399,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001294
+      caniuse-lite: 1.0.30001297
       colorette: 1.4.0
       electron-to-chromium: 1.4.29
       escalade: 3.1.1
@@ -5411,7 +5411,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001294
+      caniuse-lite: 1.0.30001297
       electron-to-chromium: 1.4.29
       escalade: 3.1.1
       node-releases: 2.0.1
@@ -5564,8 +5564,8 @@ packages:
     resolution: {integrity: sha512-mpF9KeH8u5cMoEmIic/cr7PNS+F5LWBk0t2ekGT60lFf0Wq+n9LspAj0g3P+o7DQhD3sUdlMln4YFAWhFYn9jg==}
     dev: false
 
-  /caniuse-lite/1.0.30001294:
-    resolution: {integrity: sha512-LiMlrs1nSKZ8qkNhpUf5KD0Al1KCBE3zaT7OLOwEkagXMEDij98SiOovn9wxVGQpklk9vVC/pUSqgYmkmKOS8g==}
+  /caniuse-lite/1.0.30001297:
+    resolution: {integrity: sha512-6bbIbowYG8vFs/Lk4hU9jFt7NknGDleVAciK916tp6ft1j+D//ZwwL6LbF1wXMQ32DMSjeuUV8suhh6dlmFjcA==}
 
   /capital-case/1.0.4:
     resolution: {integrity: sha512-ds37W8CytHgwnhGGTi88pcPyR15qoNkOpYwmMMfnWqqWgESapLqvDx6huFjQ5vqWSn2Z06173XNA7LtMOeUh1A==}
@@ -6310,7 +6310,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      caniuse-lite: 1.0.30001294
+      caniuse-lite: 1.0.30001297
       postcss: 8.2.15
     dev: false
 
