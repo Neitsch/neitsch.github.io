@@ -59,7 +59,7 @@ specifiers:
   next: 12.0.7
   next-images: 1.8.4
   next-offline: 5.0.5
-  next-sitemap: 1.6.245
+  next-sitemap: 1.6.261
   next-transpile-modules: 9.0.0
   nodemon: 2.0.15
   postcss: 8.4.5
@@ -142,7 +142,7 @@ devDependencies:
   identity-obj-proxy: 3.0.0
   jest: 27.4.7
   lint-staged: 12.1.7
-  next-sitemap: 1.6.245_next@12.0.7
+  next-sitemap: 1.6.261_next@12.0.7
   next-transpile-modules: 9.0.0
   nodemon: 2.0.15
   postcss: 8.4.5
@@ -10955,8 +10955,8 @@ packages:
       - supports-color
     dev: false
 
-  /next-sitemap/1.6.245_next@12.0.7:
-    resolution: {integrity: sha512-n7pfIWoL4UyA/HIB1V7btOEVe6978opDSQpRjE7SKI9b2+cTVtaRn1UiELfHxgZ9qC6PjZKpyu+3H9NTnOC8wQ==}
+  /next-sitemap/1.6.261_next@12.0.7:
+    resolution: {integrity: sha512-4RGogAJE2IsMffeH1Lfa6eT85BI1TWO8Fn1hmwX1h40UnvIaJKephlLnp+3F4C4jXKDAZ6P+xHLtVPmyQznVPQ==}
     hasBin: true
     peerDependencies:
       next: '*'
