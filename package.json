@@ -51,7 +51,7 @@
     "devDependencies": {
         "@babel/core": "7.16.7",
         "@babel/register": "7.16.7",
-        "@commitlint/cli": "16.0.1",
+        "@commitlint/cli": "16.0.2",
         "@commitlint/config-conventional": "16.0.0",
         "@commitlint/cz-commitlint": "16.0.0",
         "@graphql-codegen/cli": "2.3.1",
