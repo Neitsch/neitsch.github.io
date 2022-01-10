@@ -18,8 +18,8 @@ specifiers:
   '@graphql-codegen/typescript-document-nodes': 2.2.2
   '@graphql-codegen/typescript-operations': 2.2.2
   '@graphql-codegen/typescript-react-apollo': 3.2.3
-  '@mui/lab': 5.0.0-alpha.63
-  '@mui/material': 5.2.7
+  '@mui/lab': 5.0.0-alpha.64
+  '@mui/material': 5.2.8
   '@sentry/nextjs': 6.16.1
   '@size-limit/file': 7.0.5
   '@stryker-mutator/core': 5.6.0
@@ -81,8 +81,8 @@ dependencies:
   '@emotion/react': 11.7.1_b3e67f1b1cc68ee82c343add0615c039
   '@emotion/server': 11.4.0
   '@emotion/styled': 11.6.0_023218a630dedcfdc5aa065bf93ff9d7
-  '@mui/lab': 5.0.0-alpha.63_e6915d62143363e24ff5b4e62b732c07
-  '@mui/material': 5.2.7_f5341c4d41f1e34c3a73251df9f98a19
+  '@mui/lab': 5.0.0-alpha.64_9331e2d1da69e282a4312fac09d08776
+  '@mui/material': 5.2.8_f5341c4d41f1e34c3a73251df9f98a19
   '@sentry/nextjs': 6.16.1_next@12.0.7+react@17.0.2
   classnames: 2.3.1
   concurrently: 7.0.0
@@ -2878,8 +2878,8 @@ packages:
     resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
     dev: true
 
-  /@mui/base/5.0.0-alpha.63_b3482aaf5744fc7c2aeb7941b0e0a78f:
-    resolution: {integrity: sha512-/jURXlBAYqZaWw92XfJgc6aiHnDcNVuRxBskub57HXWCMK3OiVVdfUEWJEdCjOacCKiw3+Etc5alI9Omaqrg2g==}
+  /@mui/base/5.0.0-alpha.64_b3482aaf5744fc7c2aeb7941b0e0a78f:
+    resolution: {integrity: sha512-lqUFbAyYPl3uDaTxGWIUWx9Zin5APv5Rrn/oUcnm/71Isd5dJ94zoGHCTdNy2sxhDRcXRshsdC2dfdwIWxhkZA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/react': ^16.8.6 || ^17.0.0
@@ -2901,8 +2901,8 @@ packages:
       react-is: 17.0.2
     dev: false
 
-  /@mui/lab/5.0.0-alpha.63_e6915d62143363e24ff5b4e62b732c07:
-    resolution: {integrity: sha512-BFexWjiiXZ2aWfSq+4j1cua7XmCt7BIDC27MgFWoKY6O0Fe3zeUz/6WH0M5+4VKT+yn3DC3vzWGAWKmNDa3TUQ==}
+  /@mui/lab/5.0.0-alpha.64_9331e2d1da69e282a4312fac09d08776:
+    resolution: {integrity: sha512-YqTWT4TBHSGyV3dS4/TQctpKh0s4CDgWNrA2UnEnXFAfXmFET2Zm6W06fJ1VZDmJfyCVD8Wq0WsiwVZj4ay+Uw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@mui/material': ^5.0.0
@@ -2930,9 +2930,9 @@ packages:
       '@date-io/dayjs': 2.11.0
       '@date-io/luxon': 2.11.1
       '@date-io/moment': 2.11.0
-      '@mui/base': 5.0.0-alpha.63_b3482aaf5744fc7c2aeb7941b0e0a78f
-      '@mui/material': 5.2.7_f5341c4d41f1e34c3a73251df9f98a19
-      '@mui/system': 5.2.6_bcb8cb45f4440c38ab7df0ee3f383339
+      '@mui/base': 5.0.0-alpha.64_b3482aaf5744fc7c2aeb7941b0e0a78f
+      '@mui/material': 5.2.8_f5341c4d41f1e34c3a73251df9f98a19
+      '@mui/system': 5.2.8_bcb8cb45f4440c38ab7df0ee3f383339
       '@mui/utils': 5.2.3_react@17.0.2
       '@types/react': 17.0.38
       clsx: 1.1.1
@@ -2948,8 +2948,8 @@ packages:
       - '@emotion/styled'
     dev: false
 
-  /@mui/material/5.2.7_f5341c4d41f1e34c3a73251df9f98a19:
-    resolution: {integrity: sha512-JaDl9GJSV17QLf4OoDUZKvVjZ/7UvqOBAxwLwUTnKZEME4REaGTkaAeHrzLpcKCm0LlNGD2HOKAIeykI6WJiqg==}
+  /@mui/material/5.2.8_f5341c4d41f1e34c3a73251df9f98a19:
+    resolution: {integrity: sha512-GYNYoTDw3C07D1rkB9pTS3xMH3gL0p3kb27SVMrMqP3AWrFxfrS73OnsonJh6Uy/F22pYX6rJxiFOhPq5+i4Eg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -2968,8 +2968,8 @@ packages:
       '@babel/runtime': 7.16.3
       '@emotion/react': 11.7.1_b3e67f1b1cc68ee82c343add0615c039
       '@emotion/styled': 11.6.0_023218a630dedcfdc5aa065bf93ff9d7
-      '@mui/base': 5.0.0-alpha.63_b3482aaf5744fc7c2aeb7941b0e0a78f
-      '@mui/system': 5.2.6_bcb8cb45f4440c38ab7df0ee3f383339
+      '@mui/base': 5.0.0-alpha.64_b3482aaf5744fc7c2aeb7941b0e0a78f
+      '@mui/system': 5.2.8_bcb8cb45f4440c38ab7df0ee3f383339
       '@mui/types': 7.1.0_@types+react@17.0.38
       '@mui/utils': 5.2.3_react@17.0.2
       '@types/react': 17.0.38
@@ -3022,8 +3022,8 @@ packages:
       react: 17.0.2
     dev: false
 
-  /@mui/system/5.2.6_bcb8cb45f4440c38ab7df0ee3f383339:
-    resolution: {integrity: sha512-PZ7bmpWOLikWgqn2zWv9/Xa7lxnRBOmfjoMH7c/IVYJs78W3971brXJ3xV9MEWWQcoqiYQeXzUJaNf4rFbKCBA==}
+  /@mui/system/5.2.8_bcb8cb45f4440c38ab7df0ee3f383339:
+    resolution: {integrity: sha512-tje1HRubQUk+cDJBG5F83X1j0XzVe+qhellKxByrJVOEEDHoSpbc8UW+NCLSuBBHvOikxihuv3SS4VOWOo2/BQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
