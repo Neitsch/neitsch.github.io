@@ -17,7 +17,7 @@ specifiers:
   '@graphql-codegen/typescript': 2.4.2
   '@graphql-codegen/typescript-document-nodes': 2.2.2
   '@graphql-codegen/typescript-operations': 2.2.2
-  '@graphql-codegen/typescript-react-apollo': 3.2.3
+  '@graphql-codegen/typescript-react-apollo': 3.2.4
   '@mui/lab': 5.0.0-alpha.64
   '@mui/material': 5.2.8
   '@sentry/nextjs': 6.16.1
@@ -111,7 +111,7 @@ devDependencies:
   '@graphql-codegen/typescript': 2.4.2_graphql@16.2.0
   '@graphql-codegen/typescript-document-nodes': 2.2.2_graphql@16.2.0
   '@graphql-codegen/typescript-operations': 2.2.2_graphql@16.2.0
-  '@graphql-codegen/typescript-react-apollo': 3.2.3_401d6065eaf5e49c8f9188bbd71d6697
+  '@graphql-codegen/typescript-react-apollo': 3.2.4_401d6065eaf5e49c8f9188bbd71d6697
   '@size-limit/file': 7.0.5_size-limit@7.0.5
   '@stryker-mutator/core': 5.6.0
   '@stryker-mutator/jest-runner': 5.6.0_eb39eb411f4720a423e81544e7a34e80
@@ -2131,8 +2131,8 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/typescript-react-apollo/3.2.3_401d6065eaf5e49c8f9188bbd71d6697:
-    resolution: {integrity: sha512-OjnrLF8c62IRVa6vJOeizBEH9y/QKbptVgaD1o5IWpEZGFg/+mY7BDRLmu83+E2bSdrZbt6miFQTWfSme6XJow==}
+  /@graphql-codegen/typescript-react-apollo/3.2.4_401d6065eaf5e49c8f9188bbd71d6697:
+    resolution: {integrity: sha512-IcbvGYHZy2hX9aGvxm3t9EBQ1lBgAod3jY/is53QEstdUWHNB+cEVtePgtUJGMm637KYcw4tvygaqrSeoWq8Sw==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
       graphql-tag: ^2.0.0
