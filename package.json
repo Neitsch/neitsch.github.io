@@ -49,7 +49,7 @@
         "sharp": "0.29.3"
     },
     "devDependencies": {
-        "@babel/core": "7.16.10",
+        "@babel/core": "7.16.12",
         "@babel/register": "7.16.9",
         "@commitlint/cli": "16.1.0",
         "@commitlint/config-conventional": "16.0.0",
