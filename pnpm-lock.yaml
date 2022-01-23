@@ -55,7 +55,7 @@ specifiers:
   husky: 7.0.4
   identity-obj-proxy: 3.0.0
   jest: 27.4.7
-  lint-staged: 12.2.2
+  lint-staged: 12.3.0
   next: 12.0.8
   next-images: 1.8.4
   next-offline: 5.0.5
@@ -141,7 +141,7 @@ devDependencies:
   husky: 7.0.4
   identity-obj-proxy: 3.0.0
   jest: 27.4.7
-  lint-staged: 12.2.2
+  lint-staged: 12.3.0
   next-sitemap: 1.9.12_next@12.0.8
   next-transpile-modules: 9.0.0
   nodemon: 2.0.15
@@ -9660,8 +9660,8 @@ packages:
   /lines-and-columns/1.1.6:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
 
-  /lint-staged/12.2.2:
-    resolution: {integrity: sha512-bcHEoM1M/f+K1BYdHcEuIn8K+zMOSJR3mkny6PAuQiTgcSUcRbUWaUD6porAYypxF4k1vYZZ2HutZt1p94Z1jQ==}
+  /lint-staged/12.3.0:
+    resolution: {integrity: sha512-bk+jvy5H+12Srg8MGlSmBt78B9GEbMtd4BETHdHS1mMmbgt3Gw18d8KwrJXCcJmICMGQTCiKBUMZSZ3NlfQ8PQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
