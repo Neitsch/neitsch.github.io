@@ -7,3 +7,4 @@ Host: https://www.nigel-schuster.de
 
 # Sitemaps
 Sitemap: https://www.nigel-schuster.de/sitemap.xml
+Sitemap: https://www.nigel-schuster.de/sitemap-0.xml
