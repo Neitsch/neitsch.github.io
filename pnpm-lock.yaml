@@ -16,7 +16,7 @@ specifiers:
   '@graphql-codegen/introspection': 2.1.1
   '@graphql-codegen/typescript': 2.4.2
   '@graphql-codegen/typescript-document-nodes': 2.2.2
-  '@graphql-codegen/typescript-operations': 2.2.2
+  '@graphql-codegen/typescript-operations': 2.2.3
   '@graphql-codegen/typescript-react-apollo': 3.2.4
   '@mui/lab': 5.0.0-alpha.66
   '@mui/material': 5.3.1
@@ -110,7 +110,7 @@ devDependencies:
   '@graphql-codegen/introspection': 2.1.1_graphql@16.3.0
   '@graphql-codegen/typescript': 2.4.2_graphql@16.3.0
   '@graphql-codegen/typescript-document-nodes': 2.2.2_graphql@16.3.0
-  '@graphql-codegen/typescript-operations': 2.2.2_graphql@16.3.0
+  '@graphql-codegen/typescript-operations': 2.2.3_graphql@16.3.0
   '@graphql-codegen/typescript-react-apollo': 3.2.4_e20029557891e0afb887c44ec7f516f8
   '@size-limit/file': 7.0.5_size-limit@7.0.5
   '@stryker-mutator/core': 5.6.1
@@ -214,7 +214,7 @@ packages:
       '@babel/helper-compilation-targets': 7.16.7_@babel+core@7.13.10
       '@babel/helper-module-transforms': 7.16.7
       '@babel/helpers': 7.16.7
-      '@babel/parser': 7.16.10
+      '@babel/parser': 7.16.12
       '@babel/template': 7.16.7
       '@babel/traverse': 7.16.10
       '@babel/types': 7.16.8
@@ -507,12 +507,6 @@ packages:
 
   /@babel/parser/7.15.8:
     resolution: {integrity: sha512-BRYa3wcQnjS/nqI8Ac94pYYpJfojHVvVXJ97+IDCImX4Jc8W8Xv1+47enbruk+q1etOpsQNwnfFcNGw+gtPGxA==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
-    dev: true
-
-  /@babel/parser/7.16.10:
-    resolution: {integrity: sha512-Sm/S9Or6nN8uiFsQU1yodyDW3MWXQhFeqzMPM+t8MJjM+pLsnFVxFZzkpXKvUXh+Gz9cbMoYYs484+Jw/NTEFQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dev: true
@@ -1472,7 +1466,7 @@ packages:
       '@babel/generator': 7.16.8
       '@babel/helper-function-name': 7.16.7
       '@babel/helper-split-export-declaration': 7.16.7
-      '@babel/parser': 7.16.10
+      '@babel/parser': 7.16.12
       '@babel/types': 7.16.8
       debug: 4.3.3
       globals: 11.12.0
@@ -2110,8 +2104,8 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/typescript-operations/2.2.2_graphql@16.3.0:
-    resolution: {integrity: sha512-J50AuTA37RYv67hP2oHbfr3iGxexTCoadQsbr5pEUGucrIupCA0hLEJH2W+9/h6YNh0UlZT3kRTJp81ARoAjOA==}
+  /@graphql-codegen/typescript-operations/2.2.3_graphql@16.3.0:
+    resolution: {integrity: sha512-72fzmnxAkjtbfCvLI7MC2WFVygXGAtkmg1SJO39Bby69VIeIA2E/N+EpA6xHDL0TpG+Q3If9aiCFYxa6827SDg==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
