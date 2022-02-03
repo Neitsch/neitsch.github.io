@@ -72,7 +72,7 @@ specifiers:
   react-test-renderer: 17.0.2
   rehype-highlight: 5.0.2
   sharp: 0.30.0
-  size-limit: 7.0.5
+  size-limit: 7.0.6
   typescript: 4.5.5
 
 dependencies:
@@ -112,7 +112,7 @@ devDependencies:
   '@graphql-codegen/typescript-document-nodes': 2.2.2_graphql@16.3.0
   '@graphql-codegen/typescript-operations': 2.2.3_graphql@16.3.0
   '@graphql-codegen/typescript-react-apollo': 3.2.4_e20029557891e0afb887c44ec7f516f8
-  '@size-limit/file': 7.0.6_size-limit@7.0.5
+  '@size-limit/file': 7.0.6_size-limit@7.0.6
   '@stryker-mutator/core': 5.6.1
   '@stryker-mutator/jest-runner': 5.6.1_18620d72120dc1c748a912127ee26126
   '@swc-node/jest': 1.4.3
@@ -149,7 +149,7 @@ devDependencies:
   prettier: 2.5.1
   prettier-eslint: 13.0.0
   react-test-renderer: 17.0.2_react@17.0.2
-  size-limit: 7.0.5
+  size-limit: 7.0.6
   typescript: 4.5.5
 
 packages:
@@ -2217,7 +2217,7 @@ packages:
     dependencies:
       '@graphql-tools/graphql-tag-pluck': 7.1.3_graphql@16.3.0
       '@graphql-tools/utils': 8.5.3_graphql@16.3.0
-      globby: 11.0.4
+      globby: 11.1.0
       graphql: 16.3.0
       tslib: 2.3.1
       unixify: 1.0.0
@@ -2304,7 +2304,7 @@ packages:
     dependencies:
       '@graphql-tools/import': 6.6.1_graphql@16.3.0
       '@graphql-tools/utils': 8.5.3_graphql@16.3.0
-      globby: 11.0.4
+      globby: 11.1.0
       graphql: 16.3.0
       tslib: 2.3.1
       unixify: 1.0.0
@@ -2352,7 +2352,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@graphql-tools/utils': 8.5.3_graphql@16.3.0
-      globby: 11.0.4
+      globby: 11.1.0
       graphql: 16.3.0
       tslib: 2.3.1
       unixify: 1.0.0
@@ -3586,14 +3586,14 @@ packages:
       '@sinonjs/commons': 1.8.3
     dev: true
 
-  /@size-limit/file/7.0.6_size-limit@7.0.5:
+  /@size-limit/file/7.0.6_size-limit@7.0.6:
     resolution: {integrity: sha512-4k7kaqkB111zWqF18AkFWla+6Q0uiEqpRMiXUBuIeQGCmXeUioh8vu5d8tbqNS11Lf0wy11IIVogaKtaZw3ocw==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     peerDependencies:
       size-limit: 7.0.6
     dependencies:
       semver: 7.3.5
-      size-limit: 7.0.5
+      size-limit: 7.0.6
     dev: true
 
   /@stryker-mutator/api/5.6.1:
@@ -4304,7 +4304,7 @@ packages:
       '@typescript-eslint/types': 5.10.0
       '@typescript-eslint/visitor-keys': 5.10.0
       debug: 4.3.3
-      globby: 11.0.4
+      globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.3.5
       tsutils: 3.21.0_typescript@4.5.5
@@ -4325,7 +4325,7 @@ packages:
       '@typescript-eslint/types': 5.10.2
       '@typescript-eslint/visitor-keys': 5.10.2
       debug: 4.3.3
-      globby: 11.0.4
+      globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.3.5
       tsutils: 3.21.0_typescript@4.5.5
@@ -5527,6 +5527,21 @@ packages:
 
   /chokidar/3.5.2:
     resolution: {integrity: sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ==}
+    engines: {node: '>= 8.10.0'}
+    dependencies:
+      anymatch: 3.1.2
+      braces: 3.0.2
+      glob-parent: 5.1.2
+      is-binary-path: 2.1.0
+      is-glob: 4.0.3
+      normalize-path: 3.0.0
+      readdirp: 3.6.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /chokidar/3.5.3:
+    resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
     dependencies:
       anymatch: 3.1.2
@@ -7147,9 +7162,9 @@ packages:
     resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
     dev: true
 
-  /fast-glob/3.2.7:
-    resolution: {integrity: sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q==}
-    engines: {node: '>=8'}
+  /fast-glob/3.2.11:
+    resolution: {integrity: sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew==}
+    engines: {node: '>=8.6.0'}
     dependencies:
       '@nodelib/fs.stat': 2.0.5
       '@nodelib/fs.walk': 1.2.8
@@ -7701,7 +7716,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.7
+      fast-glob: 3.2.11
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 3.0.0
@@ -7713,7 +7728,19 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.7
+      fast-glob: 3.2.11
+      ignore: 5.2.0
+      merge2: 1.4.1
+      slash: 3.0.0
+    dev: true
+
+  /globby/11.1.0:
+    resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
+    engines: {node: '>=10'}
+    dependencies:
+      array-union: 2.1.0
+      dir-glob: 3.0.1
+      fast-glob: 3.2.11
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 3.0.0
@@ -10488,8 +10515,8 @@ packages:
     dev: true
     optional: true
 
-  /nanospinner/0.6.0:
-    resolution: {integrity: sha512-G2QQwVJListXbtsBW5r5kJs8WXybsO9/SQxzcvSmPRSIOQOeR0v/ETI9hncOna0tzWscdjjcCZUVCJoR4eJlag==}
+  /nanospinner/1.0.0:
+    resolution: {integrity: sha512-14c2r2QQ9xfTmdbqdF51FKCNvww+0ZON9GeEHur+pBdOufoFvxD4CZQRaYWmFrGH3Nuv7PZ/9Q+wsV+hFSp32g==}
     dependencies:
       picocolors: 1.0.0
     dev: true
@@ -12169,18 +12196,18 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /size-limit/7.0.5:
-    resolution: {integrity: sha512-dve+Vaq/a6H7QZhFbozAUBKNO9ZnZkPX3EF1ETI8yv3YCMdC7e63HmVZDXKB//o3FCTHqtZQ0p3ZtOwN/PSiqQ==}
+  /size-limit/7.0.6:
+    resolution: {integrity: sha512-lBeDhbKd7Y2AUwmSUuWV5/PQbbBKUwA3adlA6erUjdGsjgsavSYa0OquKf4KMNbNCIVTlj8Zajo2Uq1Iwqky2g==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     hasBin: true
     dependencies:
       bytes-iec: 3.1.1
-      chokidar: 3.5.2
+      chokidar: 3.5.3
       ci-job-number: 1.2.2
-      globby: 11.0.4
+      globby: 11.1.0
       lilconfig: 2.0.4
       mkdirp: 1.0.4
-      nanospinner: 0.6.0
+      nanospinner: 1.0.0
       picocolors: 1.0.0
     dev: true
 
