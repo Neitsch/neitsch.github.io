@@ -26,7 +26,7 @@ specifiers:
   '@stryker-mutator/jest-runner': 5.6.1
   '@swc-node/jest': 1.4.3
   '@testing-library/jest-dom': 5.16.2
-  '@testing-library/react': 12.1.2
+  '@testing-library/react': 12.1.4
   '@trivago/prettier-plugin-sort-imports': 3.2.0
   '@types/react': 17.0.39
   '@typescript-eslint/eslint-plugin': 5.10.2
@@ -117,7 +117,7 @@ devDependencies:
   '@stryker-mutator/jest-runner': 5.6.1_9b8573e97d8cce72d5709abac83bdb39
   '@swc-node/jest': 1.4.3
   '@testing-library/jest-dom': 5.16.2
-  '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
+  '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
   '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.5.1
   '@types/react': 17.0.39
   '@typescript-eslint/eslint-plugin': 5.10.2_2595c2126aec4d4b6e944b931dabb4c2
@@ -3985,7 +3985,7 @@ packages:
       chalk: 4.1.2
       dom-accessibility-api: 0.5.10
       lz-string: 1.4.4
-      pretty-format: 27.4.6
+      pretty-format: 27.5.0
     dev: true
 
   /@testing-library/jest-dom/5.16.2:
@@ -4003,15 +4003,16 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/12.1.2_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-ihQiEOklNyHIpo2Y8FREkyD1QAea054U0MVbwH1m8N9TxeFz+KoJ9LkqoKqJlzx2JDm56DVwaJ1r36JYxZM05g==}
+  /@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '*'
       react-dom: '*'
     dependencies:
-      '@babel/runtime': 7.16.0
+      '@babel/runtime': 7.16.7
       '@testing-library/dom': 8.11.0
+      '@types/react-dom': 17.0.13
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
@@ -4200,6 +4201,12 @@ packages:
 
   /@types/prop-types/15.7.4:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
+
+  /@types/react-dom/17.0.13:
+    resolution: {integrity: sha512-wEP+B8hzvy6ORDv1QBhcQia4j6ea4SFIBttHYpXKPFZRviBvknq0FRh3VrIxeXUmsPkwuXVZrVGG7KUVONmXCQ==}
+    dependencies:
+      '@types/react': 17.0.39
+    dev: true
 
   /@types/react-is/17.0.3:
     resolution: {integrity: sha512-aBTIWg1emtu95bLTLx0cpkxwGW3ueZv71nE2YFBpL8k/z5czEW8yYpOo8Dp+UUAFAtKwNaOsh/ioSeQnWlZcfw==}
