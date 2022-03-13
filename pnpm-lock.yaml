@@ -71,7 +71,7 @@ specifiers:
   react-share: 4.4.0
   react-test-renderer: 17.0.2
   rehype-highlight: 5.0.2
-  sharp: 0.30.0
+  sharp: 0.30.2
   size-limit: 7.0.8
   typescript: 4.5.5
 
@@ -97,7 +97,7 @@ dependencies:
   react-markdown: 8.0.0_a0c521d4794c7ad97f5f4c1c4a7d5818
   react-share: 4.4.0_react@17.0.2
   rehype-highlight: 5.0.2
-  sharp: 0.30.0
+  sharp: 0.30.2
 
 devDependencies:
   '@babel/core': 7.17.0
@@ -5825,8 +5825,9 @@ packages:
       simple-swizzle: 0.2.2
     dev: false
 
-  /color/4.2.0:
-    resolution: {integrity: sha512-hHTcrbvEnGjC7WBMk6ibQWFVDgEFTVmjrz2Q5HlU6ltwxv0JJN2Z8I7uRbWeQLF04dikxs8zgyZkazRJvSMtyQ==}
+  /color/4.2.1:
+    resolution: {integrity: sha512-MFJr0uY4RvTQUKvPq7dh9grVOTYSFeXja2mBXioCGjnjJoXrAp9jJ1NQTDR73c9nwBSAQiNKloKl5zq9WB9UPw==}
+    engines: {node: '>=12.5.0'}
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.0
@@ -6429,8 +6430,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /detect-libc/2.0.0:
-    resolution: {integrity: sha512-S55LzUl8HUav8l9E2PBTlC5PAJrHK7tkM+XXFGD+fbsbkTzhCpG6K05LxJcUOEWzMa4v6ptcMZ9s3fOdJDu0Zw==}
+  /detect-libc/2.0.1:
+    resolution: {integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==}
     engines: {node: '>=8'}
     dev: false
 
@@ -11311,7 +11312,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      detect-libc: 2.0.0
+      detect-libc: 2.0.1
       expand-template: 2.0.3
       github-from-package: 0.0.0
       minimist: 1.2.5
@@ -12232,13 +12233,13 @@ packages:
       kind-of: 6.0.3
     dev: true
 
-  /sharp/0.30.0:
-    resolution: {integrity: sha512-L3m/l6yQFr3oGBUzcSAlN/R9yGFPYqM9FpMUe6Z4nHg4sWtP3hW1rcz+aaHklhD4wX5Jqh5PY9z+A1d4Qt3Hfg==}
+  /sharp/0.30.2:
+    resolution: {integrity: sha512-mrMeKI5ECTdYhslPlA2TbBtU3nZXMEBcQwI6qYXjPlu1LpW4HBZLFm6xshMI1HpIdEEJ3UcYp5AKifLT/fEHZQ==}
     engines: {node: '>=12.13.0'}
     requiresBuild: true
     dependencies:
-      color: 4.2.0
-      detect-libc: 2.0.0
+      color: 4.2.1
+      detect-libc: 2.0.1
       node-addon-api: 4.3.0
       prebuild-install: 7.0.1
       semver: 7.3.5
