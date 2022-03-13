@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@apollo/client': 3.5.8
+  '@apollo/client': 3.5.10
   '@babel/core': 7.17.0
   '@babel/register': 7.17.0
   '@commitlint/cli': 16.1.0
@@ -76,7 +76,7 @@ specifiers:
   typescript: 4.5.5
 
 dependencies:
-  '@apollo/client': 3.5.8_graphql@16.3.0+react@17.0.2
+  '@apollo/client': 3.5.10_graphql@16.3.0+react@17.0.2
   '@emotion/cache': 11.7.1
   '@emotion/react': 11.7.1_1f521ea4d22f56301c9243450fe7194f
   '@emotion/server': 11.4.0
@@ -161,13 +161,16 @@ packages:
       '@jridgewell/trace-mapping': 0.2.4
       sourcemap-codec: 1.4.8
 
-  /@apollo/client/3.5.8_graphql@16.3.0+react@17.0.2:
-    resolution: {integrity: sha512-MAm05+I1ullr64VLpZwon/ISnkMuNLf6vDqgo9wiMhHYBGT4yOAbAIseRdjCHZwfSx/7AUuBgaTNOssZPIr6FQ==}
+  /@apollo/client/3.5.10_graphql@16.3.0+react@17.0.2:
+    resolution: {integrity: sha512-tL3iSpFe9Oldq7gYikZK1dcYxp1c01nlSwtsMz75382HcI6fvQXyFXUCJTTK3wgO2/ckaBvRGw7VqjFREdVoRw==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+      graphql-ws: ^5.5.5
       react: ^16.8.0 || ^17.0.0
       subscriptions-transport-ws: ^0.9.0 || ^0.11.0
     peerDependenciesMeta:
+      graphql-ws:
+        optional: true
       react:
         optional: true
       subscriptions-transport-ws:
