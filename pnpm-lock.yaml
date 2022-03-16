@@ -4,9 +4,9 @@ specifiers:
   '@apollo/client': 3.5.10
   '@babel/core': 7.17.7
   '@babel/register': 7.17.7
-  '@commitlint/cli': 16.2.1
+  '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@commitlint/cz-commitlint': 16.2.1
+  '@commitlint/cz-commitlint': 16.2.3
   '@emotion/cache': 11.7.1
   '@emotion/react': 11.8.2
   '@emotion/server': 11.4.0
@@ -102,9 +102,9 @@ dependencies:
 devDependencies:
   '@babel/core': 7.17.7
   '@babel/register': 7.17.7_@babel+core@7.17.7
-  '@commitlint/cli': 16.2.1
+  '@commitlint/cli': 16.2.3
   '@commitlint/config-conventional': 16.2.1
-  '@commitlint/cz-commitlint': 16.2.1_commitizen@4.2.4
+  '@commitlint/cz-commitlint': 16.2.3_commitizen@4.2.4
   '@graphql-codegen/cli': 2.6.2_graphql@16.3.0+typescript@4.6.2
   '@graphql-codegen/fragment-matcher': 3.2.1_graphql@16.3.0
   '@graphql-codegen/introspection': 2.1.1_graphql@16.3.0
@@ -1651,14 +1651,14 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@commitlint/cli/16.2.1:
-    resolution: {integrity: sha512-zfKf+B9osuiDbxGMJ7bWFv7XFCW8wlQYPtCffNp7Ukdb7mdrep5R9e03vPUZysnwp8NX6hg05kPEvnD/wRIGWw==}
+  /@commitlint/cli/16.2.3:
+    resolution: {integrity: sha512-VsJBQLvhhlOgEfxs/Z5liYuK0dXqLE5hz1VJzLBxiOxG31kL/X5Q4OvK292BmO7IGZcm1yJE3XQPWSiFaEHbWA==}
     engines: {node: '>=v12'}
     hasBin: true
     dependencies:
       '@commitlint/format': 16.2.1
       '@commitlint/lint': 16.2.1
-      '@commitlint/load': 16.2.1
+      '@commitlint/load': 16.2.3
       '@commitlint/read': 16.2.1
       '@commitlint/types': 16.2.1
       lodash: 4.17.21
@@ -1685,15 +1685,15 @@ packages:
       ajv: 6.12.6
     dev: true
 
-  /@commitlint/cz-commitlint/16.2.1_commitizen@4.2.4:
-    resolution: {integrity: sha512-qkluaFI7TpfTSNvcXpv0F7xfjSfi4CRPpmIDRnktphf83Jhsa7/8zzsyy1ISjWOpbCdAatKEP2HfdwXFAFwCXA==}
+  /@commitlint/cz-commitlint/16.2.3_commitizen@4.2.4:
+    resolution: {integrity: sha512-G9rRnBJ/5te7RiOzp7EdqII9rQYvtsfsqwMxcoK4B7l0Rc57nFCOlf0e4Bn70E4aOsLeMzNe+PvVVrEsPStEHg==}
     engines: {node: '>=v12'}
     peerDependencies:
       commitizen: ^4.0.3
       inquirer: ^8.0.0
     dependencies:
       '@commitlint/ensure': 16.2.1
-      '@commitlint/load': 16.2.1
+      '@commitlint/load': 16.2.3
       '@commitlint/types': 16.2.1
       chalk: 4.1.2
       commitizen: 4.2.4
@@ -1743,8 +1743,8 @@ packages:
       '@commitlint/types': 16.2.1
     dev: true
 
-  /@commitlint/load/16.2.1:
-    resolution: {integrity: sha512-oSpz0jTyVI/A1AIImxJINTLDOMB8YF7lWGm+Jg5wVWM0r7ucpuhyViVvpSRTgvL0z09oIxlctyFGWUQQpI42uw==}
+  /@commitlint/load/16.2.3:
+    resolution: {integrity: sha512-Hb4OUlMnBUK6UxJEZ/VJ5k0LocIS7PtEMbRXEAA7eSpOgORIFexC4K/RaRpVd5UTtu3M0ST3ddPPijF9rdW6nw==}
     engines: {node: '>=v12'}
     dependencies:
       '@commitlint/config-validator': 16.2.1
@@ -6282,7 +6282,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.3
     optionalDependencies:
-      '@commitlint/load': 16.2.1
+      '@commitlint/load': 16.2.3
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -6299,7 +6299,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.3
     optionalDependencies:
-      '@commitlint/load': 16.2.1
+      '@commitlint/load': 16.2.3
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
