@@ -26,7 +26,7 @@ specifiers:
   '@stryker-mutator/jest-runner': 5.6.1
   '@swc-node/jest': 1.4.3
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/react': 12.1.4
+  '@testing-library/react': 12.1.5
   '@trivago/prettier-plugin-sort-imports': 3.2.0
   '@types/react': 17.0.45
   '@typescript-eslint/eslint-plugin': 5.16.0
@@ -117,7 +117,7 @@ devDependencies:
   '@stryker-mutator/jest-runner': 5.6.1_4d48d07f32cebc01d2b975d7c797ab3a
   '@swc-node/jest': 1.4.3
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
+  '@testing-library/react': 12.1.5_react-dom@17.0.2+react@17.0.2
   '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.6.0
   '@types/react': 17.0.45
   '@typescript-eslint/eslint-plugin': 5.16.0_3fed250b11519414a4c7d52468dd6bf5
@@ -1592,6 +1592,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
+    dev: false
 
   /@babel/runtime/7.17.8:
     resolution: {integrity: sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==}
@@ -4050,14 +4051,14 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/12.1.4_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-jiPKOm7vyUw311Hn/HlNQ9P8/lHNtArAx0PisXyFixDDvfl8DbD6EUdbshK5eqauvBSvzZd19itqQ9j3nferJA==}
+  /@testing-library/react/12.1.5_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-OfTXCJUFgjd/digLUuPxa0+/3ZxsQmE7ub9kcbW/wi96Bh3o/p5vrETcBGfP17NWPGqeYYl5LTRpwyGoMC4ysg==}
     engines: {node: '>=12'}
     peerDependencies:
-      react: '*'
-      react-dom: '*'
+      react: <18.0.0
+      react-dom: <18.0.0
     dependencies:
-      '@babel/runtime': 7.16.7
+      '@babel/runtime': 7.17.8
       '@testing-library/dom': 8.11.0
       '@types/react-dom': 17.0.13
       react: 17.0.2
