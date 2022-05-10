@@ -36,7 +36,7 @@ specifiers:
   babel-jest: 27.5.1
   classnames: 2.3.1
   commitizen: 4.2.4
-  concurrently: 7.0.0
+  concurrently: 7.1.0
   cz-conventional-changelog: 3.3.0
   date-fns: 2.28.0
   eslint: 8.11.0
@@ -85,7 +85,7 @@ dependencies:
   '@mui/material': 5.5.2_78e61854d81b39da5e9ad4ef04b13775
   '@sentry/nextjs': 6.19.2_next@12.1.0+react@17.0.2
   classnames: 2.3.1
-  concurrently: 7.0.0
+  concurrently: 7.1.0
   date-fns: 2.28.0
   graphql: 16.3.0
   highlight.js: 11.5.0
@@ -6001,8 +6001,8 @@ packages:
       typedarray: 0.0.6
     dev: false
 
-  /concurrently/7.0.0:
-    resolution: {integrity: sha512-WKM7PUsI8wyXpF80H+zjHP32fsgsHNQfPLw/e70Z5dYkV7hF+rf8q3D+ScWJIEr57CpkO3OWBko6hwhQLPR8Pw==}
+  /concurrently/7.1.0:
+    resolution: {integrity: sha512-Bz0tMlYKZRUDqJlNiF/OImojMB9ruKUz6GCfmhFnSapXgPe+3xzY4byqoKG9tUZ7L2PGEUjfLPOLfIX3labnmw==}
     engines: {node: ^12.20.0 || ^14.13.0 || >=16.0.0}
     hasBin: true
     dependencies:
