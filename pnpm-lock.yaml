@@ -26,7 +26,7 @@ specifiers:
   '@stryker-mutator/jest-runner': 6.0.2
   '@swc-node/jest': 1.4.3
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/react': 12.1.5
+  '@testing-library/react': 13.2.0
   '@trivago/prettier-plugin-sort-imports': 3.2.0
   '@types/react': 17.0.45
   '@typescript-eslint/eslint-plugin': 5.23.0
@@ -117,7 +117,7 @@ devDependencies:
   '@stryker-mutator/jest-runner': 6.0.2_@stryker-mutator+core@6.0.2
   '@swc-node/jest': 1.4.3
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/react': 12.1.5_react-dom@18.1.0+react@18.1.0
+  '@testing-library/react': 13.2.0_react-dom@18.1.0+react@18.1.0
   '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.6.2
   '@types/react': 17.0.45
   '@typescript-eslint/eslint-plugin': 5.23.0_17b6d2ce7129f0b36f2c30ae592c16e7
@@ -3918,16 +3918,16 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/12.1.5_react-dom@18.1.0+react@18.1.0:
-    resolution: {integrity: sha512-OfTXCJUFgjd/digLUuPxa0+/3ZxsQmE7ub9kcbW/wi96Bh3o/p5vrETcBGfP17NWPGqeYYl5LTRpwyGoMC4ysg==}
+  /@testing-library/react/13.2.0_react-dom@18.1.0+react@18.1.0:
+    resolution: {integrity: sha512-Bprbz/SZVONCJy5f7hcihNCv313IJXdYiv0nSJklIs1SQCIHHNlnGNkosSXnGZTmesyGIcBGNppYhXcc11pb7g==}
     engines: {node: '>=12'}
     peerDependencies:
-      react: <18.0.0
-      react-dom: <18.0.0
+      react: ^18.0.0
+      react-dom: ^18.0.0
     dependencies:
       '@babel/runtime': 7.17.8
       '@testing-library/dom': 8.11.0
-      '@types/react-dom': 17.0.13
+      '@types/react-dom': 18.0.3
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
     dev: true
@@ -4119,8 +4119,8 @@ packages:
   /@types/prop-types/15.7.4:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
 
-  /@types/react-dom/17.0.13:
-    resolution: {integrity: sha512-wEP+B8hzvy6ORDv1QBhcQia4j6ea4SFIBttHYpXKPFZRviBvknq0FRh3VrIxeXUmsPkwuXVZrVGG7KUVONmXCQ==}
+  /@types/react-dom/18.0.3:
+    resolution: {integrity: sha512-1RRW9kst+67gveJRYPxGmVy8eVJ05O43hg77G2j5m76/RFJtMbcfAs2viQ2UNsvvDg8F7OfQZx8qQcl6ymygaQ==}
     dependencies:
       '@types/react': 17.0.45
     dev: true
