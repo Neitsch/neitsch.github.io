@@ -43,7 +43,7 @@ specifiers:
   eslint-config-next: 12.1.6
   eslint-config-prettier: 8.5.0
   eslint-plugin-graphql: 4.0.0
-  eslint-plugin-jest: 26.2.1
+  eslint-plugin-jest: 26.2.2
   eslint-plugin-jsx-a11y: 6.5.1
   eslint-plugin-only-error: 1.0.2
   eslint-plugin-prettier: 4.0.0
@@ -133,7 +133,7 @@ devDependencies:
   eslint-config-next: 12.1.6_f546b4809beafe775933990b9cc90cd9
   eslint-config-prettier: 8.5.0_eslint@8.15.0
   eslint-plugin-graphql: 4.0.0_graphql@16.5.0+typescript@4.6.4
-  eslint-plugin-jest: 26.2.1_5e4d115218e7e37c7bf1e0cd714aaeb3
+  eslint-plugin-jest: 26.2.2_5e4d115218e7e37c7bf1e0cd714aaeb3
   eslint-plugin-jsx-a11y: 6.5.1_eslint@8.15.0
   eslint-plugin-only-error: 1.0.2
   eslint-plugin-prettier: 4.0.0_440b30a60bbe5bb6e3ad0057150b2782
@@ -6808,8 +6808,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-jest/26.2.1_5e4d115218e7e37c7bf1e0cd714aaeb3:
-    resolution: {integrity: sha512-4MffeAWEiC5z6rtPo8AFm59T32EIUwyLxpa46eNNrcewfpN6OfXChlnvaErjO2Kyhhi6BNo5ocsnpUg2mCRJPA==}
+  /eslint-plugin-jest/26.2.2_5e4d115218e7e37c7bf1e0cd714aaeb3:
+    resolution: {integrity: sha512-etSFZ8VIFX470aA6kTqDPhIq7YWe0tjBcboFNV3WeiC18PJ/AVonGhuTwlmuz2fBkH8FJHA7JQ4k7GsQIj1Gew==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.0.0
