@@ -12,11 +12,17 @@ import type {
   RenderPageResult,
 } from "next/dist/shared/lib/utils";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import React, {ReactFragment, ReactElement} from "react";
+import React from "react";
+import type { ReactFragment, ReactElement } from "react";
 
 export default class MyDocument extends Document {
   public static async getInitialProps(ctx: DocumentContext): Promise<{
-    styles: (string | number | ReactFragment | ReactElement<unknown, string | JSXElementConstructor<unknwon>>)[];
+    styles: (
+      | ReactElement<unknown, JSXElementConstructor<unknwon> | string>
+      | ReactFragment
+      | number
+      | string
+    )[];
     html: string;
     head?: (JSX.Element | null)[] | undefined;
   }> {
