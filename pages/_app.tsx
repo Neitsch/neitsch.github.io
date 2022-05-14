@@ -15,7 +15,7 @@ function MyApp({
   emotionCache = clientSideEmotionCache,
 }: {
   Component: React.ComponentType;
-  pageProps: { children?: React.ReactNode };
+  pageProps: JSX.IntrinsicAttributes;
   emotionCache: EmotionCache;
 }): JSX.Element {
   /* eslint-disable react/jsx-props-no-spreading */
