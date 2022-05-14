@@ -13,7 +13,7 @@ import type {
 } from "next/dist/shared/lib/utils";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import React from "react";
-import type { ReactFragment, ReactElement } from "react";
+import type { ReactFragment, ReactElement, JSXElementConstructor } from "react";
 
 export default class MyDocument extends Document {
   public static async getInitialProps(ctx: DocumentContext): Promise<{
