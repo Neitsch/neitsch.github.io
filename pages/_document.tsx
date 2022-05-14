@@ -18,7 +18,7 @@ import type { ReactFragment, ReactElement } from "react";
 export default class MyDocument extends Document {
   public static async getInitialProps(ctx: DocumentContext): Promise<{
     styles: (
-      | ReactElement<unknown, JSXElementConstructor<unknwon> | string>
+      | ReactElement<unknown, JSXElementConstructor<unknown> | string>
       | ReactFragment
       | number
       | string
