@@ -52,9 +52,9 @@
     "devDependencies": {
         "@babel/core": "7.17.10",
         "@babel/register": "7.17.7",
-        "@commitlint/cli": "16.3.0",
-        "@commitlint/config-conventional": "16.2.4",
-        "@commitlint/cz-commitlint": "16.3.0",
+        "@commitlint/cli": "17.0.0",
+        "@commitlint/config-conventional": "17.0.0",
+        "@commitlint/cz-commitlint": "17.0.0",
         "@graphql-codegen/cli": "2.6.2",
         "@graphql-codegen/fragment-matcher": "3.2.1",
         "@graphql-codegen/introspection": "2.1.1",
