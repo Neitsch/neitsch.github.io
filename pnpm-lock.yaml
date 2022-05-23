@@ -72,7 +72,7 @@ specifiers:
   react-share: 4.4.0
   react-test-renderer: 18.1.0
   rehype-highlight: 5.0.2
-  sharp: 0.30.4
+  sharp: 0.30.5
   size-limit: 7.0.8
   typescript: 4.6.4
 
@@ -99,7 +99,7 @@ dependencies:
   react-markdown: 8.0.3_@types+react@18.0.9+react@18.1.0
   react-share: 4.4.0_react@18.1.0
   rehype-highlight: 5.0.2
-  sharp: 0.30.4
+  sharp: 0.30.5
 
 devDependencies:
   '@babel/core': 7.18.0
@@ -4746,11 +4746,11 @@ packages:
     dev: true
 
   /ansi-regex/2.1.1:
-    resolution: {integrity: sha1-w7M6te42DYbg5ijwRorn7yfWVN8=}
+    resolution: {integrity: sha512-TIGnTpdo+E3+pCyAluZvtED5p5wCqLdezCyhPZzKPcxvFplEt4i+W7OONCKgeZFT3+y5NZZfOOS/Bdcanm1MYA==}
     engines: {node: '>=0.10.0'}
 
   /ansi-regex/3.0.0:
-    resolution: {integrity: sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=}
+    resolution: {integrity: sha512-wFUFA5bg5dviipbQQ32yOQhl6gcJaJXiHE7dvR8VYPG97+J/GNC5FKGepKdEDUFeXRzDxPF1X/Btc8L+v7oqIQ==}
     engines: {node: '>=4'}
     dev: true
 
@@ -10823,8 +10823,8 @@ packages:
       semver: 7.3.7
     dev: false
 
-  /node-addon-api/4.3.0:
-    resolution: {integrity: sha512-73sE9+3UaLYYFmDsFZnqCInzPyh3MqIwZO9cw58yIqAZhONrrabrYyYe3TuIqtIiOuTXVhsGau8hcrhhwSsDIQ==}
+  /node-addon-api/5.0.0:
+    resolution: {integrity: sha512-CvkDw2OEnme7ybCykJpVcKH+uAOLV2qLqiyla128dN9TkEWfrYmxG6C2boDe5KcNQqZF3orkqzGgOMvZ/JNekA==}
     dev: false
 
   /node-fetch/2.6.1:
@@ -11428,8 +11428,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /prebuild-install/7.0.1:
-    resolution: {integrity: sha512-QBSab31WqkyxpnMWQxubYAHR5S9B2+r81ucocew34Fkl98FhvKIF50jIJnNOBmAZfyNV7vE5T6gd3hTVWgY6tg==}
+  /prebuild-install/7.1.0:
+    resolution: {integrity: sha512-CNcMgI1xBypOyGqjp3wOc8AAo1nMhZS3Cwd3iHIxOdAUbb+YxdNuM4Z5iIrZ8RLvOsf3F3bl7b7xGq6DjQoNYA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -12374,15 +12374,15 @@ packages:
       kind-of: 6.0.3
     dev: true
 
-  /sharp/0.30.4:
-    resolution: {integrity: sha512-3Onig53Y6lji4NIZo69s14mERXXY/GV++6CzOYx/Rd8bnTwbhFbL09WZd7Ag/CCnA0WxFID8tkY0QReyfL6v0Q==}
+  /sharp/0.30.5:
+    resolution: {integrity: sha512-0T28KxqY4DzUMLSAp1/IhGVeHpPIQyp1xt7esmuXCAfyi/+6tYMUeRhQok+E/+E52Yk5yFjacXp90cQOkmkl4w==}
     engines: {node: '>=12.13.0'}
     requiresBuild: true
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.1
-      node-addon-api: 4.3.0
-      prebuild-install: 7.0.1
+      node-addon-api: 5.0.0
+      prebuild-install: 7.1.0
       semver: 7.3.7
       simple-get: 4.0.1
       tar-fs: 2.1.1
