@@ -60,7 +60,7 @@ specifiers:
   next: 12.1.6
   next-images: 1.8.4
   next-offline: 5.0.5
-  next-sitemap: 2.5.28
+  next-sitemap: 3.0.2
   next-transpile-modules: 9.0.0
   nodemon: 2.0.16
   postcss: 8.4.14
@@ -144,7 +144,7 @@ devDependencies:
   identity-obj-proxy: 3.0.0
   jest: 28.1.0
   lint-staged: 13.0.0
-  next-sitemap: 2.5.28_next@12.1.6
+  next-sitemap: 3.0.2_next@12.1.6
   next-transpile-modules: 9.0.0
   nodemon: 2.0.16
   postcss: 8.4.14
@@ -1844,8 +1844,8 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@corex/deepmerge/2.6.148:
-    resolution: {integrity: sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA==}
+  /@corex/deepmerge/4.0.14:
+    resolution: {integrity: sha512-Sh6eHsEwxHVKu6Cu90I+nJ/6Ql1MuHqjNuFQVBOuFHpUDtv2rL5FYlhAfd/Gfj6W76nBt9zqj5lBPHhwrFxU9g==}
     dev: true
 
   /@cspotcode/source-map-consumer/0.8.0:
@@ -10740,14 +10740,15 @@ packages:
       - supports-color
     dev: false
 
-  /next-sitemap/2.5.28_next@12.1.6:
-    resolution: {integrity: sha512-rDMTa7nLE0ikYnu8JDCrwQufIRm4b4Sg8BK11DGdDAmYpXmcmw4Qvm+oVBR8gUL97E6i2ihTM+cRx8mgENDACA==}
+  /next-sitemap/3.0.2_next@12.1.6:
+    resolution: {integrity: sha512-65PufQuQiaF2I2r4by5pu+47YDk04Wwzgwn30UZ3ieQft8MOaG5JXsNqhTu2/NvR0BlWdOwPhShxeTrxZYdunQ==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
+      '@next/env': '*'
       next: '*'
     dependencies:
-      '@corex/deepmerge': 2.6.148
+      '@corex/deepmerge': 4.0.14
       minimist: 1.2.6
       next: 12.1.6_f27a4c237496d6873c96491b66a1e77e
     dev: true
