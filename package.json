@@ -47,7 +47,7 @@
         "react-markdown": "8.0.3",
         "react-share": "4.4.0",
         "rehype-highlight": "5.0.2",
-        "sharp": "0.30.6"
+        "sharp": "0.30.7"
     },
     "devDependencies": {
         "@babel/core": "7.18.5",
