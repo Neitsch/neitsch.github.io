@@ -62,7 +62,7 @@ specifiers:
   next-offline: 5.0.5
   next-sitemap: 3.1.6
   next-transpile-modules: 9.0.0
-  nodemon: 2.0.16
+  nodemon: 2.0.18
   postcss: 8.4.14
   prettier: 2.7.1
   prettier-eslint: 15.0.1
@@ -146,7 +146,7 @@ devDependencies:
   lint-staged: 13.0.2
   next-sitemap: 3.1.6_next@12.1.6
   next-transpile-modules: 9.0.0
-  nodemon: 2.0.16
+  nodemon: 2.0.18
   postcss: 8.4.14
   prettier: 2.7.1
   prettier-eslint: 15.0.1
@@ -6265,7 +6265,7 @@ packages:
     dev: true
 
   /crypto-random-string/1.0.0:
-    resolution: {integrity: sha1-ojD2T1aDEOFJgAmUB5DsmVRbyn4=}
+    resolution: {integrity: sha512-GsVpkFPlycH7/fRR7Dhcmnoii54gV1nz7y4CWyeFS14N+JVBBhY+r8amRHE4BwSYal7BPTDp8isvAlCxyFt3Hg==}
     engines: {node: '>=4'}
     dev: false
 
@@ -8296,7 +8296,7 @@ packages:
     dev: false
 
   /ignore-by-default/1.0.1:
-    resolution: {integrity: sha1-SMptcvbGo68Aqa1K5odr44ieKwk=}
+    resolution: {integrity: sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==}
     dev: true
 
   /ignore/3.3.10:
@@ -8337,7 +8337,7 @@ packages:
     dev: true
 
   /import-lazy/2.1.0:
-    resolution: {integrity: sha1-BWmOPUXIjo1+nZLLBYTnfwlvPkM=}
+    resolution: {integrity: sha512-m7ZEHgtw69qOGw+jwxXkHlrlIPdTGkyh66zXZ1ajZbxkDBNjSY/LGbmjc7h0s2ELsUDTAhFr55TrPSSqJGPG0A==}
     engines: {node: '>=4'}
     dev: true
 
@@ -8492,7 +8492,7 @@ packages:
     dev: true
 
   /is-binary-path/1.0.1:
-    resolution: {integrity: sha1-dfFmQrSA8YenEcgUFh/TpKdlWJg=}
+    resolution: {integrity: sha512-9fRVlXc0uCxEDj1nQzaWONSpbTfx0FmJfzHF7pwlI8DkWGoHBBea4Pg5Ky0ojwwxQmnSifgbKkI06Qv0Ljgj+Q==}
     engines: {node: '>=0.10.0'}
     dependencies:
       binary-extensions: 1.13.1
@@ -8878,7 +8878,7 @@ packages:
     dev: true
 
   /is-typedarray/1.0.0:
-    resolution: {integrity: sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=}
+    resolution: {integrity: sha512-cyA56iCMHAh5CdzjJIa4aohJyeO1YbwLi3Jc35MmRU6poroFjIGZzUzupGiRPOjgHg9TLu43xbpwXk523fMxKA==}
     dev: true
 
   /is-unc-path/1.0.0:
@@ -10857,8 +10857,8 @@ packages:
   /node-releases/2.0.4:
     resolution: {integrity: sha512-gbMzqQtTtDz/00jQzZ21PQzdI9PyLYqUSvD0p3naOhX4odFji0ZxYdnVwPTxmSwkmxhcFImpozceidSG+AgoPQ==}
 
-  /nodemon/2.0.16:
-    resolution: {integrity: sha512-zsrcaOfTWRuUzBn3P44RDliLlp263Z/76FPoHFr3cFFkOz0lTPAcIw8dCzfdVIx/t3AtDYCZRCDkoCojJqaG3w==}
+  /nodemon/2.0.18:
+    resolution: {integrity: sha512-uAvrKipi2zAz8E7nkSz4qW4F4zd5fs2wNGsTx+xXlP8KXqd9ucE0vY9wankOsPboeDyuUGN9vsXGV1pLn80l/A==}
     engines: {node: '>=8.10.0'}
     hasBin: true
     requiresBuild: true
@@ -10876,7 +10876,7 @@ packages:
     dev: true
 
   /nopt/1.0.10:
-    resolution: {integrity: sha1-bd0hvSoxQXuScn3Vhfim83YI6+4=}
+    resolution: {integrity: sha512-NWmpvLSqUrgrAC9HCuxEvb+PSloHpqVu+FqcO4eeF2h5qYRhA7ev6KvelyQAKtegUbC6RypJnlEOhd8vloNKYg==}
     hasBin: true
     dependencies:
       abbrev: 1.1.1
@@ -13513,7 +13513,7 @@ packages:
     dev: false
 
   /unique-string/1.0.0:
-    resolution: {integrity: sha1-nhBXzKhRq7kzmPizOuGHuZyuwRo=}
+    resolution: {integrity: sha512-ODgiYu03y5g76A1I9Gt0/chLCzQjvzDy7DsZGsLOE/1MrF6wriEskSncj1+/C58Xk/kPZDppSctDybCwOSaGAg==}
     engines: {node: '>=4'}
     dependencies:
       crypto-random-string: 1.0.0
