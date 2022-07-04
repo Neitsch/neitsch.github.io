@@ -18,8 +18,8 @@ specifiers:
   '@graphql-codegen/typescript-document-nodes': 2.2.14
   '@graphql-codegen/typescript-operations': 2.4.3
   '@graphql-codegen/typescript-react-apollo': 3.2.17
-  '@mui/lab': 5.0.0-alpha.88
-  '@mui/material': 5.8.6
+  '@mui/lab': 5.0.0-alpha.89
+  '@mui/material': 5.8.7
   '@sentry/nextjs': 7.5.0
   '@size-limit/file': 7.0.8
   '@stryker-mutator/core': 6.1.2
@@ -82,8 +82,8 @@ dependencies:
   '@emotion/react': 11.9.3_e2411a0b23aea974a76b0eae15228247
   '@emotion/server': 11.4.0
   '@emotion/styled': 11.9.3_9b919fcda315b99d07e6bb184774aa15
-  '@mui/lab': 5.0.0-alpha.88_9bc41152299c53fab8016dd362dbd320
-  '@mui/material': 5.8.6_3ea9e06dc8acf0e155372289fb8aab28
+  '@mui/lab': 5.0.0-alpha.89_f55668c07c37eef4cf2c2350e63da40a
+  '@mui/material': 5.8.7_3ea9e06dc8acf0e155372289fb8aab28
   '@sentry/nextjs': 7.5.0_next@12.2.0+react@18.2.0
   classnames: 2.3.1
   concurrently: 7.2.2
@@ -2983,8 +2983,8 @@ packages:
     resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
     dev: true
 
-  /@mui/base/5.0.0-alpha.87_9db07cc20f55ab534598201e37791c66:
-    resolution: {integrity: sha512-PuxRYrvG63Yj/UTwf4hSwZ5ClMv88iXHK+5hUV1CrG3kNPo6FFQiIFNRaNpRt/3nsXj6+xygJByNFA8m4Leetg==}
+  /@mui/base/5.0.0-alpha.88_9db07cc20f55ab534598201e37791c66:
+    resolution: {integrity: sha512-uL7ej2F/3GUnZewsDQSHUVHoSBT3AQcTIdfdy6QeCHy7X26mtbcIvTRcjl2PzbbNQplppavSTibPiQG/giJ+ng==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
@@ -3000,15 +3000,15 @@ packages:
       '@mui/utils': 5.8.6_react@18.2.0
       '@popperjs/core': 2.11.5
       '@types/react': 18.0.14
-      clsx: 1.1.1
+      clsx: 1.2.0
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 17.0.2
     dev: false
 
-  /@mui/lab/5.0.0-alpha.88_9bc41152299c53fab8016dd362dbd320:
-    resolution: {integrity: sha512-YS2NPw0D0CHG9z9Y6Wjocl3g2LNzdXdkvORPoyc05ea9Xm+m8buddvMeTuL/r/e3S7yLK8HOMN2uHE0rwD/oVQ==}
+  /@mui/lab/5.0.0-alpha.89_f55668c07c37eef4cf2c2350e63da40a:
+    resolution: {integrity: sha512-u5bMi/V+Utwouo9awVzGasj/LudlRqPFyMo2L5/y60uFo0EaG17bt1jh/U7smQCdjd+7tvJ39HNMkEmIoGr7BQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -3040,13 +3040,13 @@ packages:
       '@babel/runtime': 7.18.3
       '@emotion/react': 11.9.3_e2411a0b23aea974a76b0eae15228247
       '@emotion/styled': 11.9.3_9b919fcda315b99d07e6bb184774aa15
-      '@mui/base': 5.0.0-alpha.87_9db07cc20f55ab534598201e37791c66
-      '@mui/material': 5.8.6_3ea9e06dc8acf0e155372289fb8aab28
-      '@mui/system': 5.8.6_d37db35f80e9c05b7c51226c7df6c175
+      '@mui/base': 5.0.0-alpha.88_9db07cc20f55ab534598201e37791c66
+      '@mui/material': 5.8.7_3ea9e06dc8acf0e155372289fb8aab28
+      '@mui/system': 5.8.7_d37db35f80e9c05b7c51226c7df6c175
       '@mui/utils': 5.8.6_react@18.2.0
-      '@mui/x-date-pickers': 5.0.0-alpha.1_da7c31087b1da31f86682ea155b9132b
+      '@mui/x-date-pickers': 5.0.0-alpha.1_063bfb5882d8593141bca0afed3b5479
       '@types/react': 18.0.14
-      clsx: 1.1.1
+      clsx: 1.2.0
       date-fns: 2.28.0
       prop-types: 15.8.1
       react: 18.2.0
@@ -3056,8 +3056,8 @@ packages:
       rifm: 0.12.1_react@18.2.0
     dev: false
 
-  /@mui/material/5.8.6_3ea9e06dc8acf0e155372289fb8aab28:
-    resolution: {integrity: sha512-9fo5AiNHs+HY5ArMzsDMFrAmJSRw90y/qu81oDIszgK7Bfrm8GuI7Eb0mO6WADWPEyKOzOov/WZsm4G6jPEM4g==}
+  /@mui/material/5.8.7_3ea9e06dc8acf0e155372289fb8aab28:
+    resolution: {integrity: sha512-Oo62UhrgEi+BMLr3nUEASJgScE2/hhq14CbBUmrVV3GQlEGtqMZsy26Vb0AqEmphFeN3TXlsbM9aeW5yq8ZFlw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -3076,13 +3076,13 @@ packages:
       '@babel/runtime': 7.18.3
       '@emotion/react': 11.9.3_e2411a0b23aea974a76b0eae15228247
       '@emotion/styled': 11.9.3_9b919fcda315b99d07e6bb184774aa15
-      '@mui/base': 5.0.0-alpha.87_9db07cc20f55ab534598201e37791c66
-      '@mui/system': 5.8.6_d37db35f80e9c05b7c51226c7df6c175
+      '@mui/base': 5.0.0-alpha.88_9db07cc20f55ab534598201e37791c66
+      '@mui/system': 5.8.7_d37db35f80e9c05b7c51226c7df6c175
       '@mui/types': 7.1.4_@types+react@18.0.14
       '@mui/utils': 5.8.6_react@18.2.0
       '@types/react': 18.0.14
-      '@types/react-transition-group': 4.4.4
-      clsx: 1.1.1
+      '@types/react-transition-group': 4.4.5
+      clsx: 1.2.0
       csstype: 3.1.0
       prop-types: 15.8.1
       react: 18.2.0
@@ -3108,8 +3108,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@mui/styled-engine/5.8.0_28db0a4ca0163f5d998b133de2adf2dc:
-    resolution: {integrity: sha512-Q3spibB8/EgeMYHc+/o3RRTnAYkSl7ROCLhXJ830W8HZ2/iDiyYp16UcxKPurkXvLhUaILyofPVrP3Su2uKsAw==}
+  /@mui/styled-engine/5.8.7_28db0a4ca0163f5d998b133de2adf2dc:
+    resolution: {integrity: sha512-tVqtowjbYmiRq+qcqXK731L9eWoL9H8xTRhuTgaDGKdch1zlt4I2UwInUe1w2N9N/u3/jHsFbLcl1Un3uOwpQg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.4.1
@@ -3125,12 +3125,13 @@ packages:
       '@emotion/cache': 11.9.3
       '@emotion/react': 11.9.3_e2411a0b23aea974a76b0eae15228247
       '@emotion/styled': 11.9.3_9b919fcda315b99d07e6bb184774aa15
+      csstype: 3.1.0
       prop-types: 15.8.1
       react: 18.2.0
     dev: false
 
-  /@mui/system/5.8.6_d37db35f80e9c05b7c51226c7df6c175:
-    resolution: {integrity: sha512-+a+rD58XltKQHDrrjcuCta2cUBqdnLDUDwnphSLCMFigRl8/uk+R+fdQRlMNRXAOgnMb8ioWIgfjxri5pmTH4A==}
+  /@mui/system/5.8.7_d37db35f80e9c05b7c51226c7df6c175:
+    resolution: {integrity: sha512-yFoFbfO42FWeSUDrFPixYjpqySQMqVMOSbSlAxiKnwFpvXGGn/bkfQTboCRNO31fvES29FJLQd4mwwMHd5mXng==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -3149,11 +3150,11 @@ packages:
       '@emotion/react': 11.9.3_e2411a0b23aea974a76b0eae15228247
       '@emotion/styled': 11.9.3_9b919fcda315b99d07e6bb184774aa15
       '@mui/private-theming': 5.8.6_5d30e9718ea38d687b3bb00a1dc49c11
-      '@mui/styled-engine': 5.8.0_28db0a4ca0163f5d998b133de2adf2dc
+      '@mui/styled-engine': 5.8.7_28db0a4ca0163f5d998b133de2adf2dc
       '@mui/types': 7.1.4_@types+react@18.0.14
       '@mui/utils': 5.8.6_react@18.2.0
       '@types/react': 18.0.14
-      clsx: 1.1.1
+      clsx: 1.2.0
       csstype: 3.1.0
       prop-types: 15.8.1
       react: 18.2.0
@@ -3184,7 +3185,7 @@ packages:
       react-is: 17.0.2
     dev: false
 
-  /@mui/x-date-pickers/5.0.0-alpha.1_da7c31087b1da31f86682ea155b9132b:
+  /@mui/x-date-pickers/5.0.0-alpha.1_063bfb5882d8593141bca0afed3b5479:
     resolution: {integrity: sha512-dLPkRiIn2Gr0momblxiOnIwrxn4SijVix+8e08mwAGWhiWcmWep1O9XTRDpZsjB0kjHYCf+kZjlRX4dxnj2acg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3210,10 +3211,10 @@ packages:
       '@date-io/dayjs': 2.13.1
       '@date-io/luxon': 2.13.1
       '@date-io/moment': 2.13.1
-      '@mui/material': 5.8.6_3ea9e06dc8acf0e155372289fb8aab28
-      '@mui/system': 5.8.6_d37db35f80e9c05b7c51226c7df6c175
+      '@mui/material': 5.8.7_3ea9e06dc8acf0e155372289fb8aab28
+      '@mui/system': 5.8.7_d37db35f80e9c05b7c51226c7df6c175
       '@mui/utils': 5.8.6_react@18.2.0
-      clsx: 1.1.1
+      clsx: 1.2.0
       date-fns: 2.28.0
       prop-types: 15.8.1
       react: 18.2.0
@@ -4273,8 +4274,8 @@ packages:
       '@types/react': 18.0.14
     dev: false
 
-  /@types/react-transition-group/4.4.4:
-    resolution: {integrity: sha512-7gAPz7anVK5xzbeQW9wFBDg7G++aPLAFY0QaSMOou9rJZpbuI58WAuJrgu+qR92l61grlnCUe7AFX8KGahAgug==}
+  /@types/react-transition-group/4.4.5:
+    resolution: {integrity: sha512-juKD/eiSM3/xZYzjuzH6ZwpP+/lejltmiS3QEzV/vmb/Q8+HfDmxu+Baga8UEMGBqV88Nbg4l2hY/K2DkyaLLA==}
     dependencies:
       '@types/react': 18.0.14
     dev: false
@@ -5874,8 +5875,8 @@ packages:
     engines: {node: '>=0.8'}
     dev: true
 
-  /clsx/1.1.1:
-    resolution: {integrity: sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==}
+  /clsx/1.2.0:
+    resolution: {integrity: sha512-EPRP7XJsM1y0iCU3Z7C7jFKdQboXSeHgEfzQUTlz7m5NP3hDrlz48aUsmNGp4pC+JOW9WA3vIRqlYuo/bl4Drw==}
     engines: {node: '>=6'}
     dev: false
 
