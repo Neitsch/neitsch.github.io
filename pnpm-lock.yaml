@@ -11,7 +11,7 @@ specifiers:
   '@emotion/react': 11.9.3
   '@emotion/server': 11.4.0
   '@emotion/styled': 11.9.3
-  '@graphql-codegen/cli': 2.9.0
+  '@graphql-codegen/cli': 2.9.1
   '@graphql-codegen/fragment-matcher': 3.3.0
   '@graphql-codegen/introspection': 2.2.0
   '@graphql-codegen/typescript': 2.7.2
@@ -107,7 +107,7 @@ devDependencies:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@commitlint/cz-commitlint': 17.0.3_commitizen@4.2.5
-  '@graphql-codegen/cli': 2.9.0_graphql@16.5.0+typescript@4.6.4
+  '@graphql-codegen/cli': 2.9.1_graphql@16.5.0+typescript@4.6.4
   '@graphql-codegen/fragment-matcher': 3.3.0_graphql@16.5.0
   '@graphql-codegen/introspection': 2.2.0_graphql@16.5.0
   '@graphql-codegen/typescript': 2.7.2_graphql@16.5.0
@@ -1918,8 +1918,8 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/cli/2.9.0_graphql@16.5.0+typescript@4.6.4:
-    resolution: {integrity: sha512-4YnJLW+E3XKCtO6kfKLQKtaU/NfPmLi4izf/VTOH+7/uCaDGfPfRqkoyX1q7QtNxQC4l0Zn0ltbBJwguT/fuEg==}
+  /@graphql-codegen/cli/2.9.1_graphql@16.5.0+typescript@4.6.4:
+    resolution: {integrity: sha512-RyGrJTKySi5irJjdgg/9GTnFSCJtKh1YGD9idh2CIsEbkbUx3M7aBk4A+W7Q1afLmC16l59KSXodG8Bqi2eJmg==}
     hasBin: true
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
