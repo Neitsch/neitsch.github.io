@@ -11,7 +11,7 @@ specifiers:
   '@emotion/react': 11.9.3
   '@emotion/server': 11.4.0
   '@emotion/styled': 11.9.3
-  '@graphql-codegen/cli': 2.10.0
+  '@graphql-codegen/cli': 2.11.0
   '@graphql-codegen/fragment-matcher': 3.3.0
   '@graphql-codegen/introspection': 2.2.0
   '@graphql-codegen/typescript': 2.7.2
@@ -107,7 +107,7 @@ devDependencies:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@commitlint/cz-commitlint': 17.0.3_commitizen@4.2.5
-  '@graphql-codegen/cli': 2.10.0_graphql@16.5.0+typescript@4.6.4
+  '@graphql-codegen/cli': 2.11.0_graphql@16.5.0+typescript@4.6.4
   '@graphql-codegen/fragment-matcher': 3.3.0_graphql@16.5.0
   '@graphql-codegen/introspection': 2.2.0_graphql@16.5.0
   '@graphql-codegen/typescript': 2.7.2_graphql@16.5.0
@@ -1918,14 +1918,14 @@ packages:
       - supports-color
     dev: true
 
-  /@graphql-codegen/cli/2.10.0_graphql@16.5.0+typescript@4.6.4:
-    resolution: {integrity: sha512-v87yzrQ4Q/PpGPC59O0xusQknWWKtUdITqahpUBDddT8ZWHNhadx2BjvPkinFoPZmCkG8yVoAHx7FJ2uLzqjww==}
+  /@graphql-codegen/cli/2.11.0_graphql@16.5.0+typescript@4.6.4:
+    resolution: {integrity: sha512-5twZs3PVSPg9mfaptoNFm1x0YQQsF4WPmgu0zbB4XSuIZ/gaAKA4LT1WEiuFSQNcgvbBbD9cpFdauyD4GS+Wwg==}
     hasBin: true
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@graphql-codegen/core': 2.6.0_graphql@16.5.0
-      '@graphql-codegen/plugin-helpers': 2.6.0_graphql@16.5.0
+      '@graphql-codegen/plugin-helpers': 2.6.1_graphql@16.5.0
       '@graphql-tools/apollo-engine-loader': 7.3.1_graphql@16.5.0
       '@graphql-tools/code-file-loader': 7.3.0_graphql@16.5.0
       '@graphql-tools/git-loader': 7.2.0_graphql@16.5.0
@@ -1971,7 +1971,7 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 2.6.0_graphql@16.5.0
+      '@graphql-codegen/plugin-helpers': 2.6.1_graphql@16.5.0
       '@graphql-tools/schema': 8.5.0_graphql@16.5.0
       '@graphql-tools/utils': 8.8.0_graphql@16.5.0
       graphql: 16.5.0
@@ -2030,12 +2030,26 @@ packages:
       tslib: 2.4.0
     dev: true
 
+  /@graphql-codegen/plugin-helpers/2.6.1_graphql@16.5.0:
+    resolution: {integrity: sha512-RbkCPu8rZo+d3tWPUzqnZhgGutp15GVcs9UhaOcenKpCDDQxNxqGGTn76LuAAymT9y7BSnXdY20k1CW59z4nTw==}
+    peerDependencies:
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+    dependencies:
+      '@graphql-tools/utils': 8.8.0_graphql@16.5.0
+      change-case-all: 1.0.14
+      common-tags: 1.8.2
+      graphql: 16.5.0
+      import-from: 4.0.0
+      lodash: 4.17.21
+      tslib: 2.4.0
+    dev: true
+
   /@graphql-codegen/schema-ast/2.5.0_graphql@16.5.0:
     resolution: {integrity: sha512-nlF4Yc7h90nmogG2E11TeFJ3/hCkb4SDMSdbJX68b1mhvVEji/kq3zWYKAQ+lAzjZ7HF94Eylm3MrZAjjpCKIA==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 2.6.0_graphql@16.5.0
+      '@graphql-codegen/plugin-helpers': 2.6.1_graphql@16.5.0
       '@graphql-tools/utils': 8.8.0_graphql@16.5.0
       graphql: 16.5.0
       tslib: 2.4.0
@@ -2111,7 +2125,7 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 2.6.0_graphql@16.5.0
+      '@graphql-codegen/plugin-helpers': 2.6.1_graphql@16.5.0
       '@graphql-tools/optimize': 1.3.0_graphql@16.5.0
       '@graphql-tools/relay-operation-optimizer': 6.5.0_graphql@16.5.0
       '@graphql-tools/utils': 8.8.0_graphql@16.5.0
@@ -2132,7 +2146,7 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
-      '@graphql-codegen/plugin-helpers': 2.6.0_graphql@16.5.0
+      '@graphql-codegen/plugin-helpers': 2.6.1_graphql@16.5.0
       '@graphql-tools/optimize': 1.3.0_graphql@16.5.0
       '@graphql-tools/relay-operation-optimizer': 6.5.0_graphql@16.5.0
       '@graphql-tools/utils': 8.8.0_graphql@16.5.0
