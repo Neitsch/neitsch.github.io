@@ -62,7 +62,7 @@
         "@graphql-codegen/typescript-document-nodes": "2.3.2",
         "@graphql-codegen/typescript-operations": "2.5.2",
         "@graphql-codegen/typescript-react-apollo": "3.3.2",
-        "@size-limit/file": "7.0.8",
+        "@size-limit/file": "8.0.0",
         "@stryker-mutator/core": "6.1.2",
         "@stryker-mutator/jest-runner": "6.1.2",
         "@swc-node/jest": "1.5.2",

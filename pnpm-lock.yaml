@@ -21,7 +21,7 @@ specifiers:
   '@mui/lab': 5.0.0-alpha.92
   '@mui/material': 5.9.2
   '@sentry/nextjs': 7.8.0
-  '@size-limit/file': 7.0.8
+  '@size-limit/file': 8.0.0
   '@stryker-mutator/core': 6.1.2
   '@stryker-mutator/jest-runner': 6.1.2
   '@swc-node/jest': 1.5.2
@@ -114,7 +114,7 @@ devDependencies:
   '@graphql-codegen/typescript-document-nodes': 2.3.2_graphql@16.5.0
   '@graphql-codegen/typescript-operations': 2.5.2_graphql@16.5.0
   '@graphql-codegen/typescript-react-apollo': 3.3.2_a0633a4f3aa4457c1ed08eb355c13938
-  '@size-limit/file': 7.0.8_size-limit@7.0.8
+  '@size-limit/file': 8.0.0_size-limit@7.0.8
   '@stryker-mutator/core': 6.1.2
   '@stryker-mutator/jest-runner': 6.1.2_@stryker-mutator+core@6.1.2
   '@swc-node/jest': 1.5.2_typescript@4.6.4
@@ -3632,13 +3632,13 @@ packages:
     dependencies:
       '@sinonjs/commons': 1.8.3
 
-  /@size-limit/file/7.0.8_size-limit@7.0.8:
-    resolution: {integrity: sha512-1KeFQuMXIXAH/iELqIX7x+YNYDFvzIvmxcp9PrdwEoSNL0dXdaDIo9WE/yz8xvOmUcKaLfqbWkL75DM0k91WHQ==}
-    engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
+  /@size-limit/file/8.0.0_size-limit@7.0.8:
+    resolution: {integrity: sha512-xd4bBk/YyezsMQfpi2V3/blodCuPNVF5UwMd4L9LxBvon0PK4C1+3zBXxZpvN7AcMvPbJ8RUMS+iHpD4KcwaOg==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
-      size-limit: 7.0.8
+      size-limit: 8.0.0
     dependencies:
-      semver: 7.3.5
+      semver: 7.3.7
       size-limit: 7.0.8
     dev: true
 
@@ -11784,14 +11784,6 @@ packages:
   /semver/7.0.0:
     resolution: {integrity: sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==}
     hasBin: true
-
-  /semver/7.3.5:
-    resolution: {integrity: sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
-    dev: true
 
   /semver/7.3.7:
     resolution: {integrity: sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==}
