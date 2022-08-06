@@ -63,7 +63,7 @@ specifiers:
   next-sitemap: 3.1.16
   next-transpile-modules: 9.0.0
   nodemon: 2.0.19
-  postcss: 8.4.14
+  postcss: 8.4.16
   prettier: 2.7.1
   prettier-eslint: 15.0.1
   react: 18.2.0
@@ -124,7 +124,7 @@ devDependencies:
   '@types/react': 18.0.15
   '@typescript-eslint/eslint-plugin': 5.32.0_0c68223f487ea06d8fa5664a34ab53ba
   '@typescript-eslint/parser': 5.32.0_eslint@8.21.0+typescript@4.6.4
-  autoprefixer: 10.4.8_postcss@8.4.14
+  autoprefixer: 10.4.8_postcss@8.4.16
   babel-cli: 6.26.0
   babel-jest: 28.1.3_@babel+core@7.18.10
   commitizen: 4.2.5
@@ -147,7 +147,7 @@ devDependencies:
   next-sitemap: 3.1.16_next@12.2.4
   next-transpile-modules: 9.0.0
   nodemon: 2.0.19
-  postcss: 8.4.14
+  postcss: 8.4.16
   prettier: 2.7.1
   prettier-eslint: 15.0.1
   react-test-renderer: 18.2.0_react@18.2.0
@@ -4829,7 +4829,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /autoprefixer/10.4.8_postcss@8.4.14:
+  /autoprefixer/10.4.8_postcss@8.4.16:
     resolution: {integrity: sha512-75Jr6Q/XpTqEf6D2ltS5uMewJIx5irCU1oBYJrWjFenq/m12WRRrz6g15L1EIoYvPLXTbEry7rDOwrcYNj77xw==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -4841,7 +4841,7 @@ packages:
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.14
+      postcss: 8.4.16
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -11002,6 +11002,15 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /postcss/8.4.16:
+    resolution: {integrity: sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
 
   /prebuild-install/7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
