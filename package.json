@@ -81,7 +81,7 @@
         "eslint-config-next": "12.2.4",
         "eslint-config-prettier": "8.5.0",
         "eslint-plugin-graphql": "4.0.0",
-        "eslint-plugin-jest": "26.8.0",
+        "eslint-plugin-jest": "26.8.1",
         "eslint-plugin-jsx-a11y": "6.6.1",
         "eslint-plugin-only-error": "1.0.2",
         "eslint-plugin-prettier": "4.2.1",
