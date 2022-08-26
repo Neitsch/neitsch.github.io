@@ -7,7 +7,7 @@ specifiers:
   '@commitlint/cli': 17.0.3
   '@commitlint/config-conventional': 17.0.3
   '@commitlint/cz-commitlint': 17.0.3
-  '@emotion/cache': 11.10.1
+  '@emotion/cache': 11.10.3
   '@emotion/react': 11.10.0
   '@emotion/server': 11.10.0
   '@emotion/styled': 11.10.0
@@ -78,7 +78,7 @@ specifiers:
 
 dependencies:
   '@apollo/client': 3.6.9_graphql@16.5.0+react@18.2.0
-  '@emotion/cache': 11.10.1
+  '@emotion/cache': 11.10.3
   '@emotion/react': 11.10.0_9d35b476f76f941257da705780982323
   '@emotion/server': 11.10.0
   '@emotion/styled': 11.10.0_4f3ca0bbeb062a6b7881c9b0e9accd2d
@@ -1787,8 +1787,8 @@ packages:
       stylis: 4.0.13
     dev: false
 
-  /@emotion/cache/11.10.1:
-    resolution: {integrity: sha512-uZTj3Yz5D69GE25iFZcIQtibnVCFsc/6+XIozyL3ycgWvEdif2uEw9wlUt6umjLr4Keg9K6xRPHmD8LGi+6p1A==}
+  /@emotion/cache/11.10.3:
+    resolution: {integrity: sha512-Psmp/7ovAa8appWh3g51goxu/z3iVms7JXOreq136D8Bbn6dYraPnmL6mdM8GThEx9vwSn92Fz+mGSjBzN8UPQ==}
     dependencies:
       '@emotion/memoize': 0.8.0
       '@emotion/sheet': 1.2.0
@@ -1826,7 +1826,7 @@ packages:
       '@babel/core': 7.18.13
       '@babel/runtime': 7.18.9
       '@emotion/babel-plugin': 11.10.0_@babel+core@7.18.13
-      '@emotion/cache': 11.10.1
+      '@emotion/cache': 11.10.3
       '@emotion/serialize': 1.1.0
       '@emotion/utils': 1.2.0
       '@emotion/weak-memoize': 0.3.0
@@ -3037,7 +3037,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.18.9
-      '@emotion/cache': 11.10.1
+      '@emotion/cache': 11.10.3
       '@emotion/react': 11.10.0_9d35b476f76f941257da705780982323
       '@emotion/styled': 11.10.0_4f3ca0bbeb062a6b7881c9b0e9accd2d
       csstype: 3.1.0
