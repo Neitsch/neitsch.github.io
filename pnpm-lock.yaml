@@ -18,8 +18,8 @@ specifiers:
   '@graphql-codegen/typescript-document-nodes': 2.3.3
   '@graphql-codegen/typescript-operations': 2.5.3
   '@graphql-codegen/typescript-react-apollo': 3.3.3
-  '@mui/lab': 5.0.0-alpha.94
-  '@mui/material': 5.10.0
+  '@mui/lab': 5.0.0-alpha.96
+  '@mui/material': 5.10.2
   '@sentry/nextjs': 7.10.0
   '@size-limit/file': 8.0.1
   '@stryker-mutator/core': 6.1.2
@@ -82,8 +82,8 @@ dependencies:
   '@emotion/react': 11.10.0_9d35b476f76f941257da705780982323
   '@emotion/server': 11.10.0
   '@emotion/styled': 11.10.0_4f3ca0bbeb062a6b7881c9b0e9accd2d
-  '@mui/lab': 5.0.0-alpha.94_db257be3f9263b0f344d3075304e6af7
-  '@mui/material': 5.10.0_943379e34ffaae2d4d942726413d7655
+  '@mui/lab': 5.0.0-alpha.96_e5f0f7f3cf21792ab371cdf0f2669b46
+  '@mui/material': 5.10.2_943379e34ffaae2d4d942726413d7655
   '@sentry/nextjs': 7.10.0_next@12.2.5+react@18.2.0
   classnames: 2.3.1
   concurrently: 7.3.0
@@ -2914,8 +2914,8 @@ packages:
     resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
     dev: true
 
-  /@mui/base/5.0.0-alpha.92_cdd69cb2038decda11a15473ffdbfca6:
-    resolution: {integrity: sha512-ZgnSLrTXL4iUdLQhjp01dAOTQPQlnwrqjZRwDT3E6LZXEYn6cMv1MY6LZkWcF/zxrUnyasnsyMAgZ5d8AXS7bA==}
+  /@mui/base/5.0.0-alpha.94_cdd69cb2038decda11a15473ffdbfca6:
+    resolution: {integrity: sha512-IJXmgTF07H1Iv5zjDV7zJZGUmb9cN8ERzd2dgA1akh6NWZgwyIGyQx+Au9+QSDoM5vN3FqZvU/0YCU6inUwgeQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
@@ -2929,7 +2929,7 @@ packages:
       '@emotion/is-prop-valid': 1.2.0
       '@mui/types': 7.1.5_@types+react@18.0.17
       '@mui/utils': 5.9.3_react@18.2.0
-      '@popperjs/core': 2.11.5
+      '@popperjs/core': 2.11.6
       '@types/react': 18.0.17
       clsx: 1.2.1
       prop-types: 15.8.1
@@ -2938,8 +2938,12 @@ packages:
       react-is: 18.2.0
     dev: false
 
-  /@mui/lab/5.0.0-alpha.94_db257be3f9263b0f344d3075304e6af7:
-    resolution: {integrity: sha512-1GjH70Th5SBMJbUR1LQTCrdKMcdUSEduZ7foy80kMlzUUQXwV50iwWzeGa1WMP4mgCQ94i+3n704IYHIxC6KNg==}
+  /@mui/core-downloads-tracker/5.10.2:
+    resolution: {integrity: sha512-1guoGvL3QZ7VjA3y9zye9Rpm+jz18rVZIo3AauTGyW5ntDMxr/cR0M18nuc/NH2KqpMt+coh4NwPEO1uPuKM5w==}
+    dev: false
+
+  /@mui/lab/5.0.0-alpha.96_e5f0f7f3cf21792ab371cdf0f2669b46:
+    resolution: {integrity: sha512-hA3nef9cV50eIljPA/otQ6CrDeI276UGRJmVw6YZzSBtUeGuE9FY411VOZeST4I4OM88RD3lwiRbN5aTX5Nn3g==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -2959,9 +2963,9 @@ packages:
       '@babel/runtime': 7.18.9
       '@emotion/react': 11.10.0_9d35b476f76f941257da705780982323
       '@emotion/styled': 11.10.0_4f3ca0bbeb062a6b7881c9b0e9accd2d
-      '@mui/base': 5.0.0-alpha.92_cdd69cb2038decda11a15473ffdbfca6
-      '@mui/material': 5.10.0_943379e34ffaae2d4d942726413d7655
-      '@mui/system': 5.10.0_e4cf4d6611e5754095d74a311b83b48b
+      '@mui/base': 5.0.0-alpha.94_cdd69cb2038decda11a15473ffdbfca6
+      '@mui/material': 5.10.2_943379e34ffaae2d4d942726413d7655
+      '@mui/system': 5.10.2_e4cf4d6611e5754095d74a311b83b48b
       '@mui/utils': 5.9.3_react@18.2.0
       '@types/react': 18.0.17
       clsx: 1.2.1
@@ -2971,8 +2975,8 @@ packages:
       react-is: 18.2.0
     dev: false
 
-  /@mui/material/5.10.0_943379e34ffaae2d4d942726413d7655:
-    resolution: {integrity: sha512-MSEzkE2vhpM37m8Gh3+TcZCWL70p+MxzNvS8FHugBB6YZpafhBFmFKX7/pYJ2kVD87PpUhNR4szWub7/ohE02Q==}
+  /@mui/material/5.10.2_943379e34ffaae2d4d942726413d7655:
+    resolution: {integrity: sha512-ay43fuQLXROXkxFd6tqbj394Hu8BlbmpCdEDFtAisijulla2ZLfQa24pjhdX+56HrHReB3cZsf/sRq+DSfIgiA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -2991,8 +2995,9 @@ packages:
       '@babel/runtime': 7.18.9
       '@emotion/react': 11.10.0_9d35b476f76f941257da705780982323
       '@emotion/styled': 11.10.0_4f3ca0bbeb062a6b7881c9b0e9accd2d
-      '@mui/base': 5.0.0-alpha.92_cdd69cb2038decda11a15473ffdbfca6
-      '@mui/system': 5.10.0_e4cf4d6611e5754095d74a311b83b48b
+      '@mui/base': 5.0.0-alpha.94_cdd69cb2038decda11a15473ffdbfca6
+      '@mui/core-downloads-tracker': 5.10.2
+      '@mui/system': 5.10.2_e4cf4d6611e5754095d74a311b83b48b
       '@mui/types': 7.1.5_@types+react@18.0.17
       '@mui/utils': 5.9.3_react@18.2.0
       '@types/react': 18.0.17
@@ -3023,8 +3028,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@mui/styled-engine/5.10.0_8c36bd7602e41f0da796f3b97f9c13ce:
-    resolution: {integrity: sha512-V0MmOx7KBDomDYg2/dRItVsvrpHpd51uZZiNqeuXiZruUJ1vPwtxztpvtSjX/xKvIxN7C0mxf8jmuwVUn6uaEA==}
+  /@mui/styled-engine/5.10.2_8c36bd7602e41f0da796f3b97f9c13ce:
+    resolution: {integrity: sha512-YqnptNQ2E0cWwOTmLCEvrddiiR/neUfn2AD/4TDUXZu8B2n7NfDb9d3bAUfWZV+KmulQdAedoaZDqyXBFGLdbQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.4.1
@@ -3045,8 +3050,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@mui/system/5.10.0_e4cf4d6611e5754095d74a311b83b48b:
-    resolution: {integrity: sha512-HNu3LdA+37cWqgJBEhOF4F5LX4WVmvg6SoHRfajRO0neKXLdooibMP3W1bhSd27QcPxyMUmvY9/Dlp9znDeCRw==}
+  /@mui/system/5.10.2_e4cf4d6611e5754095d74a311b83b48b:
+    resolution: {integrity: sha512-YudwJhLcEoQiwCAmzeMr9P3ISiVGNsxBIIPzFxaGwJ8+mMrx3qoPVOV2sfm0ZuNiQuABshEw4KqHa5ftNC+pOQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -3065,7 +3070,7 @@ packages:
       '@emotion/react': 11.10.0_9d35b476f76f941257da705780982323
       '@emotion/styled': 11.10.0_4f3ca0bbeb062a6b7881c9b0e9accd2d
       '@mui/private-theming': 5.9.3_a1bdd43be9504ec770a838d8189f6868
-      '@mui/styled-engine': 5.10.0_8c36bd7602e41f0da796f3b97f9c13ce
+      '@mui/styled-engine': 5.10.2_8c36bd7602e41f0da796f3b97f9c13ce
       '@mui/types': 7.1.5_@types+react@18.0.17
       '@mui/utils': 5.9.3_react@18.2.0
       '@types/react': 18.0.17
@@ -3404,8 +3409,8 @@ packages:
       webcrypto-core: 1.7.5
     dev: true
 
-  /@popperjs/core/2.11.5:
-    resolution: {integrity: sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==}
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
     dev: false
 
   /@rollup/plugin-node-resolve/7.1.3_rollup@1.32.1:
