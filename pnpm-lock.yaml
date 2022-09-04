@@ -26,7 +26,7 @@ specifiers:
   '@stryker-mutator/jest-runner': 6.1.2
   '@swc-node/jest': 1.5.2
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/react': 13.3.0
+  '@testing-library/react': 13.4.0
   '@trivago/prettier-plugin-sort-imports': 3.3.0
   '@types/react': 18.0.18
   '@typescript-eslint/eslint-plugin': 5.36.1
@@ -119,7 +119,7 @@ devDependencies:
   '@stryker-mutator/jest-runner': 6.1.2_@stryker-mutator+core@6.1.2
   '@swc-node/jest': 1.5.2_typescript@4.8.2
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/react': 13.3.0_react-dom@18.2.0+react@18.2.0
+  '@testing-library/react': 13.4.0_react-dom@18.2.0+react@18.2.0
   '@trivago/prettier-plugin-sort-imports': 3.3.0_prettier@2.7.1
   '@types/react': 18.0.18
   '@typescript-eslint/eslint-plugin': 5.36.1_586c56b3bc76dec8ef0f241fb0cda488
@@ -1484,13 +1484,6 @@ packages:
 
   /@babel/runtime/7.16.0:
     resolution: {integrity: sha512-Nht8L0O8YCktmsDV6FqFue7vQLRx3Hb0B37lS5y0jDRqRxlBG4wIJHnf9/bgSE2UyipKFA01YtS+npRdTWBUyw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.9
-    dev: true
-
-  /@babel/runtime/7.17.8:
-    resolution: {integrity: sha512-dQpEpK0O9o6lj6oPu0gRDbbnk+4LeHlNcBpspf6Olzt3GIX4P1lWF1gS+pHLDFlaJvbR6q7jCfQ08zA4QJBnmA==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
@@ -3972,14 +3965,14 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/13.3.0_react-dom@18.2.0+react@18.2.0:
-    resolution: {integrity: sha512-DB79aA426+deFgGSjnf5grczDPiL4taK3hFaa+M5q7q20Kcve9eQottOG5kZ74KEr55v0tU2CQormSSDK87zYQ==}
+  /@testing-library/react/13.4.0_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-sXOGON+WNTh3MLE9rve97ftaZukN3oNf2KjDy7YTx6hcTO2uuLHuCGynMDhFwGw/jYf4OJ2Qk0i4i79qMNNkyw==}
     engines: {node: '>=12'}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@babel/runtime': 7.17.8
+      '@babel/runtime': 7.18.9
       '@testing-library/dom': 8.11.0
       '@types/react-dom': 18.0.3
       react: 18.2.0
@@ -9804,7 +9797,7 @@ packages:
     dev: false
 
   /lz-string/1.4.4:
-    resolution: {integrity: sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=}
+    resolution: {integrity: sha512-0ckx7ZHRPqb0oUm8zNr+90mtf9DQB60H1wMCjBtfi62Kl3a7JbHob6gA2bC+xRvZoOL+1hzUK8jeuEIQE8svEQ==}
     hasBin: true
     dev: true
 
