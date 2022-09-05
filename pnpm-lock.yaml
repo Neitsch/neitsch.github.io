@@ -72,7 +72,7 @@ specifiers:
   react-share: 4.4.0
   react-test-renderer: 18.2.0
   rehype-highlight: 5.0.2
-  sharp: 0.30.7
+  sharp: 0.31.0
   size-limit: 8.0.1
   typescript: 4.8.2
 
@@ -99,7 +99,7 @@ dependencies:
   react-markdown: 8.0.3_fd7dc7ab4c545c7b1f5a35feb8e7a8a9
   react-share: 4.4.0_react@18.2.0
   rehype-highlight: 5.0.2
-  sharp: 0.30.7
+  sharp: 0.31.0
 
 devDependencies:
   '@babel/core': 7.18.13
@@ -11952,9 +11952,9 @@ packages:
     dependencies:
       kind-of: 6.0.3
 
-  /sharp/0.30.7:
-    resolution: {integrity: sha512-G+MY2YW33jgflKPTXXptVO28HvNOo9G3j0MybYAHeEmby+QuD2U98dT6ueht9cv/XDqZspSpIhoSW+BAKJ7Hig==}
-    engines: {node: '>=12.13.0'}
+  /sharp/0.31.0:
+    resolution: {integrity: sha512-ft96f8WzGxavg0rkLpMw90MTPMUZDyf0tHjPPh8Ob59xt6KzX8EqtotcqZGUm7kwqpX2pmYiyYX2LL0IZ/FDEw==}
+    engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
       color: 4.2.3
