@@ -36,7 +36,7 @@ specifiers:
   babel-jest: 29.0.2
   classnames: 2.3.1
   commitizen: 4.2.5
-  concurrently: 7.3.0
+  concurrently: 7.4.0
   cz-conventional-changelog: 3.3.0
   date-fns: 2.29.2
   eslint: 8.23.0
@@ -86,7 +86,7 @@ dependencies:
   '@mui/material': 5.10.4_a86e21df1b0967221406a3a6b3016e65
   '@sentry/nextjs': 7.12.1_next@12.2.5+react@18.2.0
   classnames: 2.3.1
-  concurrently: 7.3.0
+  concurrently: 7.4.0
   date-fns: 2.29.2
   graphql: 16.6.0
   highlight.js: 11.6.0
@@ -5887,15 +5887,15 @@ packages:
       typedarray: 0.0.6
     dev: false
 
-  /concurrently/7.3.0:
-    resolution: {integrity: sha512-IiDwm+8DOcFEInca494A8V402tNTQlJaYq78RF2rijOrKEk/AOHTxhN4U1cp7GYKYX5Q6Ymh1dLTBlzIMN0ikA==}
+  /concurrently/7.4.0:
+    resolution: {integrity: sha512-M6AfrueDt/GEna/Vg9BqQ+93yuvzkSKmoTixnwEJkH0LlcGrRC2eCmjeG1tLLHIYfpYJABokqSGyMcXjm96AFA==}
     engines: {node: ^12.20.0 || ^14.13.0 || >=16.0.0}
     hasBin: true
     dependencies:
       chalk: 4.1.2
       date-fns: 2.29.2
       lodash: 4.17.21
-      rxjs: 7.5.5
+      rxjs: 7.5.6
       shell-quote: 1.7.3
       spawn-command: 0.0.2-1
       supports-color: 8.1.1
@@ -11854,17 +11854,10 @@ packages:
       aproba: 1.2.0
     dev: false
 
-  /rxjs/7.5.5:
-    resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
-    dependencies:
-      tslib: 2.4.0
-    dev: false
-
   /rxjs/7.5.6:
     resolution: {integrity: sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==}
     dependencies:
       tslib: 2.4.0
-    dev: true
 
   /sade/1.7.4:
     resolution: {integrity: sha512-y5yauMD93rX840MwUJr7C1ysLFBgMspsdTo4UVrDg3fXDvtwOyIqykhVAAm6fk/3au77773itJStObgK+LKaiA==}
