@@ -38,7 +38,7 @@ specifiers:
   commitizen: 4.2.5
   concurrently: 7.4.0
   cz-conventional-changelog: 3.3.0
-  date-fns: 2.29.2
+  date-fns: 2.29.3
   eslint: 8.23.1
   eslint-config-next: 12.3.0
   eslint-config-prettier: 8.5.0
@@ -87,7 +87,7 @@ dependencies:
   '@sentry/nextjs': 7.12.1_next@12.3.0+react@18.2.0
   classnames: 2.3.2
   concurrently: 7.4.0
-  date-fns: 2.29.2
+  date-fns: 2.29.3
   graphql: 16.6.0
   highlight.js: 11.6.0
   jest-environment-jsdom: 29.0.3
@@ -5896,7 +5896,7 @@ packages:
     hasBin: true
     dependencies:
       chalk: 4.1.2
-      date-fns: 2.29.2
+      date-fns: 2.29.3
       lodash: 4.17.21
       rxjs: 7.5.6
       shell-quote: 1.7.3
@@ -6188,8 +6188,8 @@ packages:
     resolution: {integrity: sha512-qTcEYLen3r7ojZNgVUaRggOI+KM7jrKxXeSHhogh/TWxYMeONEMqY+hmkobiYQozsGIyg9OYVzO4ZIfoB4I0pQ==}
     dev: true
 
-  /date-fns/2.29.2:
-    resolution: {integrity: sha512-0VNbwmWJDS/G3ySwFSJA3ayhbURMTJLtwM2DTxf9CWondCnh6DTNlO9JgRSq6ibf4eD0lfMJNBxUdEAHHix+bA==}
+  /date-fns/2.29.3:
+    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
     dev: false
 
