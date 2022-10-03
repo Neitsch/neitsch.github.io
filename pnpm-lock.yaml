@@ -18,8 +18,8 @@ specifiers:
   '@graphql-codegen/typescript-document-nodes': 2.3.3
   '@graphql-codegen/typescript-operations': 2.5.3
   '@graphql-codegen/typescript-react-apollo': 3.3.3
-  '@mui/lab': 5.0.0-alpha.101
-  '@mui/material': 5.10.7
+  '@mui/lab': 5.0.0-alpha.102
+  '@mui/material': 5.10.8
   '@sentry/nextjs': 7.14.1
   '@size-limit/file': 8.1.0
   '@stryker-mutator/core': 6.2.2
@@ -82,8 +82,8 @@ dependencies:
   '@emotion/react': 11.10.4_0a62ec33eabac52d56b66913c7ecd9b5
   '@emotion/server': 11.10.0
   '@emotion/styled': 11.10.4_71a83840eb94e48fd0c4e2d11f94bb9e
-  '@mui/lab': 5.0.0-alpha.101_e9339ab97d157dc812ad143030ac182d
-  '@mui/material': 5.10.7_4284650dafe05bb899f3031b309c2ef9
+  '@mui/lab': 5.0.0-alpha.102_227a295aaafa05e3101ddbaa9501f041
+  '@mui/material': 5.10.8_4284650dafe05bb899f3031b309c2ef9
   '@sentry/nextjs': 7.14.1_next@12.3.0+react@18.2.0
   classnames: 2.3.2
   concurrently: 7.4.0
@@ -2936,8 +2936,8 @@ packages:
     resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
     dev: true
 
-  /@mui/base/5.0.0-alpha.99_8a7eecd450dd0871ada9d8836c851d11:
-    resolution: {integrity: sha512-D04H6O1c0Jv561yI0SVbpa8MpqpW3G43CwJxV2o6ALfI0DMJ45w07dGafmDchb6aCWTRTdggd3rjgmuzyNwPiQ==}
+  /@mui/base/5.0.0-alpha.100_8a7eecd450dd0871ada9d8836c851d11:
+    resolution: {integrity: sha512-bSoJEKCENtmJrJDECHUe9PiqztIUACuSskyqw9ypqE7Dz3WxL3e8puFsWBkUsz+WOCjXh4B4Xljn88Ucxxv5HA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
@@ -2960,12 +2960,12 @@ packages:
       react-is: 18.2.0
     dev: false
 
-  /@mui/core-downloads-tracker/5.10.7:
-    resolution: {integrity: sha512-3N0UYVy3MbrHzM3j6f7fIUCZ+bQ1/sSZq143tLxwSssW3Z4AqE83brpr5flEY1Lx+Aowv/cPyQMmZxzRlFCGqw==}
+  /@mui/core-downloads-tracker/5.10.8:
+    resolution: {integrity: sha512-V5D7OInO4P9PdT/JACg7fwjbOORm3GklaMVgdGomjyxiyetgRND5CC9r35e1LK/DqHdoyDuhbFzdfrqWtpmEIw==}
     dev: false
 
-  /@mui/lab/5.0.0-alpha.101_e9339ab97d157dc812ad143030ac182d:
-    resolution: {integrity: sha512-Wvv3X4mhkCXy6VzaFECGHDpt91GuRIn+lvGjKiyBP0xHCAV3glsny4nbPB5PAnLtugnN9bTFY8nNR5oHgxdCwQ==}
+  /@mui/lab/5.0.0-alpha.102_227a295aaafa05e3101ddbaa9501f041:
+    resolution: {integrity: sha512-hIJ82FGdll2NmEp6b2kBhIZ5j/yiOThObBoSYo7WhH+cQCLowbgdAMH45JP9/R8J2qe2lq1K/PI3bLgcGVZ+Rw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -2985,9 +2985,9 @@ packages:
       '@babel/runtime': 7.19.0
       '@emotion/react': 11.10.4_0a62ec33eabac52d56b66913c7ecd9b5
       '@emotion/styled': 11.10.4_71a83840eb94e48fd0c4e2d11f94bb9e
-      '@mui/base': 5.0.0-alpha.99_8a7eecd450dd0871ada9d8836c851d11
-      '@mui/material': 5.10.7_4284650dafe05bb899f3031b309c2ef9
-      '@mui/system': 5.10.7_3ef6bf35e2d68dfa8a20fe84809651ab
+      '@mui/base': 5.0.0-alpha.100_8a7eecd450dd0871ada9d8836c851d11
+      '@mui/material': 5.10.8_4284650dafe05bb899f3031b309c2ef9
+      '@mui/system': 5.10.8_3ef6bf35e2d68dfa8a20fe84809651ab
       '@mui/types': 7.2.0_@types+react@18.0.21
       '@mui/utils': 5.10.6_react@18.2.0
       '@types/react': 18.0.21
@@ -2998,8 +2998,8 @@ packages:
       react-is: 18.2.0
     dev: false
 
-  /@mui/material/5.10.7_4284650dafe05bb899f3031b309c2ef9:
-    resolution: {integrity: sha512-o1jcQGii+q7ORrXhBiMmGzFDaboc1qTgOOC3zDW+NR9ryVzWzL7qEeqoORbgDB5zk9OBsXCjB91fUH/ls5xMwg==}
+  /@mui/material/5.10.8_4284650dafe05bb899f3031b309c2ef9:
+    resolution: {integrity: sha512-sF/Ka0IJjGXV52zoT4xAWEqXVRjNYbIjATo9L4Q5oQC5iJpGrKJFY16uNtWWB0+vp/nayAuPGZHrxtV+t3ecdQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -3018,9 +3018,9 @@ packages:
       '@babel/runtime': 7.19.0
       '@emotion/react': 11.10.4_0a62ec33eabac52d56b66913c7ecd9b5
       '@emotion/styled': 11.10.4_71a83840eb94e48fd0c4e2d11f94bb9e
-      '@mui/base': 5.0.0-alpha.99_8a7eecd450dd0871ada9d8836c851d11
-      '@mui/core-downloads-tracker': 5.10.7
-      '@mui/system': 5.10.7_3ef6bf35e2d68dfa8a20fe84809651ab
+      '@mui/base': 5.0.0-alpha.100_8a7eecd450dd0871ada9d8836c851d11
+      '@mui/core-downloads-tracker': 5.10.8
+      '@mui/system': 5.10.8_3ef6bf35e2d68dfa8a20fe84809651ab
       '@mui/types': 7.2.0_@types+react@18.0.21
       '@mui/utils': 5.10.6_react@18.2.0
       '@types/react': 18.0.21
@@ -3051,8 +3051,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@mui/styled-engine/5.10.7_397371a3030c427395eab52bb49eb664:
-    resolution: {integrity: sha512-CCrtW+vvCKEm6pOE/QcutQ+ORC/iE6D1ghscN4l7LE2JXPvTXO/z0yu8Wxug1JEDlWm4r1Qa0PzJe1P9bjKzNA==}
+  /@mui/styled-engine/5.10.8_397371a3030c427395eab52bb49eb664:
+    resolution: {integrity: sha512-w+y8WI18EJV6zM/q41ug19cE70JTeO6sWFsQ7tgePQFpy6ToCVPh0YLrtqxUZXSoMStW5FMw0t9fHTFAqPbngw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.4.1
@@ -3073,8 +3073,8 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@mui/system/5.10.7_3ef6bf35e2d68dfa8a20fe84809651ab:
-    resolution: {integrity: sha512-kwyhjjKGsgtBRFl6vSqidDZcNKU5S1juTgm4Xi2fyWxaEbIQb9Sh9y0iVP2bNCJzgDr0alLaENOZOEaDWHISAQ==}
+  /@mui/system/5.10.8_3ef6bf35e2d68dfa8a20fe84809651ab:
+    resolution: {integrity: sha512-hRQ354zcrYP/KHqK8FheICSvE9raQaUgQaV+A3oD4JETaFUCVI9Ytt+RcQYgTqx02xlCXIjl8LK1rPjTneySqw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -3093,7 +3093,7 @@ packages:
       '@emotion/react': 11.10.4_0a62ec33eabac52d56b66913c7ecd9b5
       '@emotion/styled': 11.10.4_71a83840eb94e48fd0c4e2d11f94bb9e
       '@mui/private-theming': 5.10.6_401f4652bc279224e5b6a5de5e4e7ad1
-      '@mui/styled-engine': 5.10.7_397371a3030c427395eab52bb49eb664
+      '@mui/styled-engine': 5.10.8_397371a3030c427395eab52bb49eb664
       '@mui/types': 7.2.0_@types+react@18.0.21
       '@mui/utils': 5.10.6_react@18.2.0
       '@types/react': 18.0.21
