@@ -61,7 +61,7 @@ specifiers:
   next-images: 1.8.4
   next-offline: 5.0.5
   next-sitemap: 3.1.24
-  next-transpile-modules: 9.0.0
+  next-transpile-modules: 9.1.0
   nodemon: 2.0.20
   postcss: 8.4.17
   prettier: 2.7.1
@@ -145,7 +145,7 @@ devDependencies:
   jest: 29.1.2
   lint-staged: 13.0.3
   next-sitemap: 3.1.24_next@12.3.0
-  next-transpile-modules: 9.0.0
+  next-transpile-modules: 9.1.0
   nodemon: 2.0.20
   postcss: 8.4.17
   prettier: 2.7.1
@@ -6513,8 +6513,8 @@ packages:
       once: 1.4.0
     dev: false
 
-  /enhanced-resolve/5.8.3:
-    resolution: {integrity: sha512-EGAbGvH7j7Xt2nc0E7D99La1OiEs8LnyimkRgwExpUMScN6O+3x9tIWs7PLQZVNx4YD+00skHXPXi1yQHpAmZA==}
+  /enhanced-resolve/5.10.0:
+    resolution: {integrity: sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==}
     engines: {node: '>=10.13.0'}
     dependencies:
       graceful-fs: 4.2.9
@@ -10454,10 +10454,10 @@ packages:
       next: 12.3.0_f4f28c5f6321d4e221346896f53dcb38
     dev: true
 
-  /next-transpile-modules/9.0.0:
-    resolution: {integrity: sha512-VCNFOazIAnXn1hvgYYSTYMnoWgKgwlYh4lm1pKbSfiB3kj5ZYLcKVhfh3jkPOg1cnd9DP+pte9yCUocdPEUBTQ==}
+  /next-transpile-modules/9.1.0:
+    resolution: {integrity: sha512-yzJji65xDqcIqjvx5vPJcs1M+MYQTzLM1pXH/qf8Q88ohx+bwVGDc1AeV+HKr1NwvMCNTpwVPSFI7cA5WdyeWA==}
     dependencies:
-      enhanced-resolve: 5.8.3
+      enhanced-resolve: 5.10.0
       escalade: 3.1.1
     dev: true
 
