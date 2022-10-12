@@ -71,7 +71,7 @@ specifiers:
   react-markdown: 8.0.3
   react-share: 4.4.0
   react-test-renderer: 18.2.0
-  rehype-highlight: 5.0.2
+  rehype-highlight: 6.0.0
   sharp: 0.31.1
   size-limit: 8.1.0
   typescript: 4.8.4
@@ -98,7 +98,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-markdown: 8.0.3_401f4652bc279224e5b6a5de5e4e7ad1
   react-share: 4.4.0_react@18.2.0
-  rehype-highlight: 5.0.2
+  rehype-highlight: 6.0.0
   sharp: 0.31.1
 
 devDependencies:
@@ -7446,7 +7446,7 @@ packages:
       mime-types: 2.1.33
 
   /format/0.2.2:
-    resolution: {integrity: sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=}
+    resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
     engines: {node: '>=0.4.x'}
     dev: false
 
@@ -11664,8 +11664,8 @@ packages:
       jsesc: 0.5.0
     dev: false
 
-  /rehype-highlight/5.0.2:
-    resolution: {integrity: sha512-ZNm8V8BQUDn05cJPzAu/PjiloaFFrh+Pt3bY+NCcdCggI7Uyl5mW0FGR7RATeIz5/ECUd1D8Kvjt4HaLPmnOMw==}
+  /rehype-highlight/6.0.0:
+    resolution: {integrity: sha512-q7UtlFicLhetp7K48ZgZiJgchYscMma7XjzX7t23bqEJF8m6/s+viXQEe4oHjrATTIZpX7RG8CKD7BlNZoh9gw==}
     dependencies:
       '@types/hast': 2.3.4
       hast-util-to-text: 3.1.1
