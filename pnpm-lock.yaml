@@ -18,8 +18,8 @@ specifiers:
   '@graphql-codegen/typescript-document-nodes': 2.3.3
   '@graphql-codegen/typescript-operations': 2.5.3
   '@graphql-codegen/typescript-react-apollo': 3.3.3
-  '@mui/lab': 5.0.0-alpha.104
-  '@mui/material': 5.10.10
+  '@mui/lab': 5.0.0-alpha.105
+  '@mui/material': 5.10.11
   '@sentry/nextjs': 7.16.0
   '@size-limit/file': 8.1.0
   '@stryker-mutator/core': 6.2.3
@@ -82,8 +82,8 @@ dependencies:
   '@emotion/react': 11.10.4_4ec53b7a0748c7d3d761014a4f9663a3
   '@emotion/server': 11.10.0
   '@emotion/styled': 11.10.4_af3bfd3edf27f48d1d415146fbe6035d
-  '@mui/lab': 5.0.0-alpha.104_347df02dfff4de07ecf23c10174049a4
-  '@mui/material': 5.10.10_58a78a90a0623fcb15d3cc53f0436dae
+  '@mui/lab': 5.0.0-alpha.105_5eb06d099645d10b6a27b92ad7f5b983
+  '@mui/material': 5.10.11_58a78a90a0623fcb15d3cc53f0436dae
   '@sentry/nextjs': 7.16.0_next@12.3.0+react@18.2.0
   classnames: 2.3.2
   concurrently: 7.5.0
@@ -2948,8 +2948,8 @@ packages:
     resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
     dev: true
 
-  /@mui/base/5.0.0-alpha.102_dc814835b1afd6d75f665817c1b1a67f:
-    resolution: {integrity: sha512-5e/qAIP+DlkrZxIt/cwnDw/A3ii22WkoEoWKHyu4+oeGs3/1Flh7qLaN4h5EAIBB9TvTEZEUzvmsTInmIj6ghg==}
+  /@mui/base/5.0.0-alpha.103_dc814835b1afd6d75f665817c1b1a67f:
+    resolution: {integrity: sha512-fJIyB2df3CHn7D26WHnutnY7vew6aytTlhmRJz6GX7ag19zU2GcOUhJAzY5qwWcrXKnlYgzimhEjaEnuiUWU4g==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
@@ -2972,12 +2972,12 @@ packages:
       react-is: 18.2.0
     dev: false
 
-  /@mui/core-downloads-tracker/5.10.10:
-    resolution: {integrity: sha512-aDuE2PNEh+hAndxEWlZgq7uiFPZKJtnkPDX7v6kSCrMXA32ZaQ6rZi5olmC7DUHt/BaOSxb7N/im/ss0XBkDhA==}
+  /@mui/core-downloads-tracker/5.10.11:
+    resolution: {integrity: sha512-u5ff+UCFDHcR8MoQ8tuJR4c35vt7T/ki3aMEE2O3XQoGs8KJSrBiisFpFKyldg9/W2NSyoZxN+kxEGIfRxh+9Q==}
     dev: false
 
-  /@mui/lab/5.0.0-alpha.104_347df02dfff4de07ecf23c10174049a4:
-    resolution: {integrity: sha512-mABdzB/cw5IXtCj2B4oggsXkfLvHg73ujZfErtKP4Sj7L6Fzy+rQceBGjv84UFBkqMvv9zm1UUchI3HfEj/lUw==}
+  /@mui/lab/5.0.0-alpha.105_5eb06d099645d10b6a27b92ad7f5b983:
+    resolution: {integrity: sha512-W4AUf8juwPfOomOGHL1Jasr6LW1mlcZUMlad/uf8AKYFOILX1Toonvdqi00iP+xMRndX88/RmLbJy0+nDZiKsg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -2997,8 +2997,8 @@ packages:
       '@babel/runtime': 7.19.0
       '@emotion/react': 11.10.4_4ec53b7a0748c7d3d761014a4f9663a3
       '@emotion/styled': 11.10.4_af3bfd3edf27f48d1d415146fbe6035d
-      '@mui/base': 5.0.0-alpha.102_dc814835b1afd6d75f665817c1b1a67f
-      '@mui/material': 5.10.10_58a78a90a0623fcb15d3cc53f0436dae
+      '@mui/base': 5.0.0-alpha.103_dc814835b1afd6d75f665817c1b1a67f
+      '@mui/material': 5.10.11_58a78a90a0623fcb15d3cc53f0436dae
       '@mui/system': 5.10.10_80b6928ae2f74554700fa36fbef89992
       '@mui/types': 7.2.0_@types+react@18.0.22
       '@mui/utils': 5.10.9_react@18.2.0
@@ -3010,8 +3010,8 @@ packages:
       react-is: 18.2.0
     dev: false
 
-  /@mui/material/5.10.10_58a78a90a0623fcb15d3cc53f0436dae:
-    resolution: {integrity: sha512-ioLvqY7VvcePz9dnEIRhpiVvtJmAFmvG6rtLXXzVdMmAVbSaelr5Io07mPz/mCyqE+Uv8/4EuJV276DWO7etzA==}
+  /@mui/material/5.10.11_58a78a90a0623fcb15d3cc53f0436dae:
+    resolution: {integrity: sha512-KJ0wPCTbv6sFzwA3dgg0gowdfF+SRl7D510J9l6Nl/KFX0EawcewQudqKY4slYGFXniKa5PykqokpaWXsCCPqg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@emotion/react': ^11.5.0
@@ -3030,8 +3030,8 @@ packages:
       '@babel/runtime': 7.19.0
       '@emotion/react': 11.10.4_4ec53b7a0748c7d3d761014a4f9663a3
       '@emotion/styled': 11.10.4_af3bfd3edf27f48d1d415146fbe6035d
-      '@mui/base': 5.0.0-alpha.102_dc814835b1afd6d75f665817c1b1a67f
-      '@mui/core-downloads-tracker': 5.10.10
+      '@mui/base': 5.0.0-alpha.103_dc814835b1afd6d75f665817c1b1a67f
+      '@mui/core-downloads-tracker': 5.10.11
       '@mui/system': 5.10.10_80b6928ae2f74554700fa36fbef89992
       '@mui/types': 7.2.0_@types+react@18.0.22
       '@mui/utils': 5.10.9_react@18.2.0
