@@ -61,7 +61,7 @@ specifiers:
   next-images: 1.8.4
   next-offline: 5.0.5
   next-sitemap: 3.1.30
-  next-transpile-modules: 9.1.0
+  next-transpile-modules: 10.0.0
   nodemon: 2.0.20
   postcss: 8.4.18
   prettier: 2.7.1
@@ -145,7 +145,7 @@ devDependencies:
   jest: 29.2.2
   lint-staged: 13.0.3
   next-sitemap: 3.1.30_next@12.3.0
-  next-transpile-modules: 9.1.0
+  next-transpile-modules: 10.0.0
   nodemon: 2.0.20
   postcss: 8.4.18
   prettier: 2.7.1
@@ -10609,11 +10609,10 @@ packages:
       next: 12.3.0_84de2bb4000442ce5a5fa18f0f3ae5a9
     dev: true
 
-  /next-transpile-modules/9.1.0:
-    resolution: {integrity: sha512-yzJji65xDqcIqjvx5vPJcs1M+MYQTzLM1pXH/qf8Q88ohx+bwVGDc1AeV+HKr1NwvMCNTpwVPSFI7cA5WdyeWA==}
+  /next-transpile-modules/10.0.0:
+    resolution: {integrity: sha512-FyeJ++Lm2Fq31gbThiRCrJlYpIY9QaI7A3TjuhQLzOix8ChQrvn5ny4MhfIthS5cy6+uK1AhDRvxVdW17y3Xdw==}
     dependencies:
       enhanced-resolve: 5.10.0
-      escalade: 3.1.1
     dev: true
 
   /next/12.3.0_84de2bb4000442ce5a5fa18f0f3ae5a9:
