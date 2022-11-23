@@ -37,7 +37,7 @@
         "concurrently": "7.6.0",
         "date-fns": "2.29.3",
         "graphql": "16.6.0",
-        "highlight.js": "11.6.0",
+        "highlight.js": "11.7.0",
         "jest-environment-jsdom": "29.3.1",
         "next": "12.3.0",
         "next-images": "1.8.4",
