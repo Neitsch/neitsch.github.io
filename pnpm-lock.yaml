@@ -68,7 +68,7 @@ specifiers:
   prettier-eslint: 15.0.1
   react: 18.2.0
   react-dom: 18.2.0
-  react-markdown: 8.0.3
+  react-markdown: 8.0.4
   react-share: 4.4.1
   react-test-renderer: 18.2.0
   rehype-highlight: 6.0.0
@@ -96,7 +96,7 @@ dependencies:
   next-offline: 5.0.5_next@12.3.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-markdown: 8.0.3_281bd807203c2775b3a3c90b05c2fd40
+  react-markdown: 8.0.4_281bd807203c2775b3a3c90b05c2fd40
   react-share: 4.4.1_react@18.2.0
   rehype-highlight: 6.0.0
   sharp: 0.31.2
@@ -4369,10 +4369,6 @@ packages:
   /@types/prettier/2.6.1:
     resolution: {integrity: sha512-XFjFHmaLVifrAKaZ+EKghFHtHSUonyw8P2Qmy2/+osBnrKbH9UYtlK10zg8/kCt47MFilll/DEDKy3DHfJ0URw==}
     dev: true
-
-  /@types/prop-types/15.7.4:
-    resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
-    dev: false
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -10236,7 +10232,7 @@ packages:
     dev: false
 
   /mdurl/1.0.1:
-    resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=}
+    resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
     dev: false
 
   /meow/8.1.2:
@@ -11672,21 +11668,17 @@ packages:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: true
 
-  /react-is/18.1.0:
-    resolution: {integrity: sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==}
-    dev: false
-
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  /react-markdown/8.0.3_281bd807203c2775b3a3c90b05c2fd40:
-    resolution: {integrity: sha512-We36SfqaKoVNpN1QqsZwWSv/OZt5J15LNgTLWynwAN5b265hrQrsjMtlRNwUvS+YyR3yDM8HpTNc4pK9H/Gc0A==}
+  /react-markdown/8.0.4_281bd807203c2775b3a3c90b05c2fd40:
+    resolution: {integrity: sha512-2oxHa6oDxc1apg/Gnc1Goh06t3B617xeywqI/92wmDV9FELI6ayRkwge7w7DoEqM0gRpZGTNU6xQG+YpJISnVg==}
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
     dependencies:
       '@types/hast': 2.3.4
-      '@types/prop-types': 15.7.4
+      '@types/prop-types': 15.7.5
       '@types/react': 18.0.25
       '@types/unist': 2.0.6
       comma-separated-tokens: 2.0.2
@@ -11694,7 +11686,7 @@ packages:
       prop-types: 15.8.1
       property-information: 6.1.0
       react: 18.2.0
-      react-is: 18.1.0
+      react-is: 18.2.0
       remark-parse: 10.0.0
       remark-rehype: 10.1.0
       space-separated-tokens: 2.0.1
