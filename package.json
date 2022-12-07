@@ -96,7 +96,7 @@
         "next-transpile-modules": "10.0.0",
         "nodemon": "2.0.20",
         "postcss": "8.4.19",
-        "prettier": "2.8.0",
+        "prettier": "2.8.1",
         "prettier-eslint": "15.0.1",
         "react-test-renderer": "18.2.0",
         "size-limit": "8.1.0",

@@ -64,7 +64,7 @@ specifiers:
   next-transpile-modules: 10.0.0
   nodemon: 2.0.20
   postcss: 8.4.19
-  prettier: 2.8.0
+  prettier: 2.8.1
   prettier-eslint: 15.0.1
   react: 18.2.0
   react-dom: 18.2.0
@@ -120,7 +120,7 @@ devDependencies:
   '@swc-node/jest': 1.5.5_typescript@4.9.3
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_react-dom@18.2.0+react@18.2.0
-  '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.0
+  '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.1
   '@types/react': 18.0.26
   '@typescript-eslint/eslint-plugin': 5.45.1_98d9e64b8d9d8eb7bb2dfa93089e8cff
   '@typescript-eslint/parser': 5.45.1_eslint@8.29.0+typescript@4.9.3
@@ -136,7 +136,7 @@ devDependencies:
   eslint-plugin-jest: 27.1.6_b3ced57f6da028acc06121ffb01d6d3e
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.29.0
   eslint-plugin-only-error: 1.0.2
-  eslint-plugin-prettier: 4.2.1_6c4eec61252d4b8572b35cfa324a7733
+  eslint-plugin-prettier: 4.2.1_e8cc9899c8f72668d779cb77602e91dd
   eslint-plugin-react: 7.29.4_eslint@8.29.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.29.0
   graphql-tag: 2.12.6_graphql@16.6.0
@@ -148,7 +148,7 @@ devDependencies:
   next-transpile-modules: 10.0.0
   nodemon: 2.0.20
   postcss: 8.4.19
-  prettier: 2.8.0
+  prettier: 2.8.1
   prettier-eslint: 15.0.1
   react-test-renderer: 18.2.0_react@18.2.0
   size-limit: 8.1.0
@@ -4186,7 +4186,7 @@ packages:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
 
-  /@trivago/prettier-plugin-sort-imports/4.0.0_prettier@2.8.0:
+  /@trivago/prettier-plugin-sort-imports/4.0.0_prettier@2.8.1:
     resolution: {integrity: sha512-Tyuk5ZY4a0e2MNFLdluQO9F6d1awFQYXVVujEPFfvKPPXz8DADNHzz73NMhwCSXGSuGGZcA/rKOyZBrxVNMxaA==}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
@@ -4199,7 +4199,7 @@ packages:
       '@babel/types': 7.17.0
       javascript-natural-sort: 0.7.1
       lodash: 4.17.21
-      prettier: 2.8.0
+      prettier: 2.8.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7027,7 +7027,7 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_6c4eec61252d4b8572b35cfa324a7733:
+  /eslint-plugin-prettier/4.2.1_e8cc9899c8f72668d779cb77602e91dd:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -7040,7 +7040,7 @@ packages:
     dependencies:
       eslint: 8.29.0
       eslint-config-prettier: 8.5.0_eslint@8.29.0
-      prettier: 2.8.0
+      prettier: 2.8.1
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -11457,7 +11457,7 @@ packages:
       indent-string: 4.0.0
       lodash.merge: 4.6.2
       loglevel-colored-level-prefix: 1.0.0
-      prettier: 2.8.0
+      prettier: 2.8.1
       pretty-format: 23.6.0
       require-relative: 0.8.7
       typescript: 4.9.3
@@ -11473,8 +11473,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.0:
-    resolution: {integrity: sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==}
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
