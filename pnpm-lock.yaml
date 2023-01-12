@@ -44,7 +44,7 @@ specifiers:
   eslint-config-prettier: 8.6.0
   eslint-plugin-graphql: 4.0.0
   eslint-plugin-jest: 27.2.1
-  eslint-plugin-jsx-a11y: 6.7.0
+  eslint-plugin-jsx-a11y: 6.7.1
   eslint-plugin-only-error: 1.0.2
   eslint-plugin-prettier: 4.2.1
   eslint-plugin-react: 7.29.4
@@ -134,7 +134,7 @@ devDependencies:
   eslint-config-prettier: 8.6.0_eslint@8.31.0
   eslint-plugin-graphql: 4.0.0_graphql@16.6.0+typescript@4.9.4
   eslint-plugin-jest: 27.2.1_35827febb8adf4618355037a7b97eff7
-  eslint-plugin-jsx-a11y: 6.7.0_eslint@8.31.0
+  eslint-plugin-jsx-a11y: 6.7.1_eslint@8.31.0
   eslint-plugin-only-error: 1.0.2
   eslint-plugin-prettier: 4.2.1_453b2fb55e1dbeedcc09216c5440ac31
   eslint-plugin-react: 7.29.4_eslint@8.31.0
@@ -3031,7 +3031,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.20.7
       '@emotion/is-prop-valid': 1.2.0
       '@mui/types': 7.2.0_@types+react@18.0.26
       '@mui/utils': 5.10.9_react@18.2.0
@@ -3128,7 +3128,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.20.7
       '@mui/utils': 5.10.9_react@18.2.0
       '@types/react': 18.0.26
       prop-types: 15.8.1
@@ -3148,7 +3148,7 @@ packages:
       '@emotion/styled':
         optional: true
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.20.7
       '@emotion/cache': 11.10.5
       '@emotion/react': 11.10.5_4bfb0360de7ae1fefebd3b92ffae5a71
       '@emotion/styled': 11.10.5_4bfa34c8f0f0205049aedb267d9cd412
@@ -3173,7 +3173,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.20.7
       '@emotion/react': 11.10.5_4bfb0360de7ae1fefebd3b92ffae5a71
       '@emotion/styled': 11.10.5_4bfa34c8f0f0205049aedb267d9cd412
       '@mui/private-theming': 5.10.9_5642dd39ea6eb7af96c6ee336ce01d77
@@ -3204,7 +3204,7 @@ packages:
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.19.0
+      '@babel/runtime': 7.20.7
       '@types/prop-types': 15.7.5
       '@types/react-is': 17.0.3
       prop-types: 15.8.1
@@ -6860,7 +6860,7 @@ packages:
       eslint-import-resolver-node: 0.3.6
       eslint-import-resolver-typescript: 2.7.1_72fe982162dd88c98c30db727c58d787
       eslint-plugin-import: 2.26.0_d125cbfd78d199503b33ce421bee6696
-      eslint-plugin-jsx-a11y: 6.7.0_eslint@8.31.0
+      eslint-plugin-jsx-a11y: 6.7.1_eslint@8.31.0
       eslint-plugin-react: 7.29.4_eslint@8.31.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.31.0
       typescript: 4.9.4
@@ -7004,8 +7004,8 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-jsx-a11y/6.7.0_eslint@8.31.0:
-    resolution: {integrity: sha512-EGGRKhzejSzXKtjmEjWNtr4SK/DkMkSzkBH7g7e7moBDXZXrqaUIxkmD7uF93upMysc4dKYEJwupu7Dff+ShwA==}
+  /eslint-plugin-jsx-a11y/6.7.1_eslint@8.31.0:
+    resolution: {integrity: sha512-63Bog4iIethyo8smBklORknVjB0T2dwB8Mr/hIC+fBS0uyHdYYpzM/Ed+YC8VxTjlXHEWFOdmgwcDn1U2L9VCA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
