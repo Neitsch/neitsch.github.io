@@ -21,7 +21,7 @@ specifiers:
   '@mui/lab': 5.0.0-alpha.105
   '@mui/material': 5.10.11
   '@sentry/nextjs': 7.31.1
-  '@size-limit/file': 8.1.1
+  '@size-limit/file': 8.1.2
   '@stryker-mutator/core': 6.3.1
   '@stryker-mutator/jest-runner': 6.3.1
   '@swc-node/jest': 1.5.6
@@ -114,7 +114,7 @@ devDependencies:
   '@graphql-codegen/typescript-document-nodes': 2.3.3_graphql@16.6.0
   '@graphql-codegen/typescript-operations': 2.5.3_graphql@16.6.0
   '@graphql-codegen/typescript-react-apollo': 3.3.7_9638a6d36e0a79897de9140382dd9059
-  '@size-limit/file': 8.1.1_size-limit@8.1.1
+  '@size-limit/file': 8.1.2_size-limit@8.1.1
   '@stryker-mutator/core': 6.3.1
   '@stryker-mutator/jest-runner': 6.3.1_@stryker-mutator+core@6.3.1
   '@swc-node/jest': 1.5.6_typescript@4.9.4
@@ -3756,11 +3756,11 @@ packages:
     dependencies:
       '@sinonjs/commons': 1.8.3
 
-  /@size-limit/file/8.1.1_size-limit@8.1.1:
-    resolution: {integrity: sha512-4VW3r5TuKXGyycrWdhKhYaBSpWQq2sxuz0UOMoKYiTGcYBM6Sqpk4342RbnoIjVDmj7kyD4PS4eBstUnvF3TSA==}
+  /@size-limit/file/8.1.2_size-limit@8.1.1:
+    resolution: {integrity: sha512-cjtGk1GejrmT+ik3LjXpRe+zrS/U15h+Py3L8sYN0XGat0+Y6pPbli1VuRRRcdXZNegpiW+UcxDxPN1AuZC5qA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
-      size-limit: 8.1.1
+      size-limit: 8.1.2
     dependencies:
       semver: 7.3.8
       size-limit: 8.1.1
