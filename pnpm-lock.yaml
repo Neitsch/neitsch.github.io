@@ -35,7 +35,7 @@ specifiers:
   babel-cli: 6.26.0
   babel-jest: 29.3.1
   classnames: 2.3.2
-  commitizen: 4.2.6
+  commitizen: 4.3.0
   concurrently: 7.6.0
   cz-conventional-changelog: 3.3.0
   date-fns: 2.29.3
@@ -106,7 +106,7 @@ devDependencies:
   '@babel/register': 7.18.9_@babel+core@7.20.12
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
-  '@commitlint/cz-commitlint': 17.4.2_commitizen@4.2.6
+  '@commitlint/cz-commitlint': 17.4.2_commitizen@4.3.0
   '@graphql-codegen/cli': 2.13.3_graphql@16.6.0+typescript@4.9.4
   '@graphql-codegen/fragment-matcher': 3.3.1_graphql@16.6.0
   '@graphql-codegen/introspection': 2.2.1_graphql@16.6.0
@@ -127,7 +127,7 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   babel-cli: 6.26.0
   babel-jest: 29.3.1_@babel+core@7.20.12
-  commitizen: 4.2.6
+  commitizen: 4.3.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.32.0
   eslint-config-next: 12.3.0_eslint@8.32.0+typescript@4.9.4
@@ -1647,7 +1647,7 @@ packages:
       ajv: 8.11.0
     dev: true
 
-  /@commitlint/cz-commitlint/17.4.2_commitizen@4.2.6:
+  /@commitlint/cz-commitlint/17.4.2_commitizen@4.3.0:
     resolution: {integrity: sha512-KNNuY6pQq5alnyJjzXyoQ7eeymRe5KXfSn/QTh6wto1p9gEBPxkrTZE2rX4S6pCpZh8jEFEm0KEqgYDb4KGLxg==}
     engines: {node: '>=v14'}
     peerDependencies:
@@ -1658,7 +1658,7 @@ packages:
       '@commitlint/load': 17.4.2
       '@commitlint/types': 17.4.0
       chalk: 4.1.2
-      commitizen: 4.2.6
+      commitizen: 4.3.0
       lodash.isplainobject: 4.0.6
       word-wrap: 1.2.3
     transitivePeerDependencies:
@@ -5974,8 +5974,8 @@ packages:
     engines: {node: ^12.20.0 || >=14}
     dev: true
 
-  /commitizen/4.2.6:
-    resolution: {integrity: sha512-RyTM+EiD9GO01DJUn9MRRAet3XUHGfoUZoksLfr+1ym1Xt2q5EYJs9Fg2BtKSb5Mo53i0BtMBmWMHQXVlZ/L9w==}
+  /commitizen/4.3.0:
+    resolution: {integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==}
     engines: {node: '>= 12'}
     hasBin: true
     dependencies:
@@ -5987,10 +5987,10 @@ packages:
       find-root: 1.1.0
       fs-extra: 9.1.0
       glob: 7.2.3
-      inquirer: 8.2.4
+      inquirer: 8.2.5
       is-utf8: 0.2.1
       lodash: 4.17.21
-      minimist: 1.2.6
+      minimist: 1.2.7
       strip-bom: 4.0.0
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
@@ -6294,7 +6294,7 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.2.6
+      commitizen: 4.3.0
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
@@ -8429,6 +8429,27 @@ packages:
 
   /inquirer/8.2.4:
     resolution: {integrity: sha512-nn4F01dxU8VeKfq192IjLsxu0/OmMZ4Lg3xKAns148rCaXP6ntAoEkVYZThWjwON8AlzdZZi6oqnhNbxUG9hVg==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      ansi-escapes: 4.3.2
+      chalk: 4.1.2
+      cli-cursor: 3.1.0
+      cli-width: 3.0.0
+      external-editor: 3.1.0
+      figures: 3.2.0
+      lodash: 4.17.21
+      mute-stream: 0.0.8
+      ora: 5.4.1
+      run-async: 2.4.1
+      rxjs: 7.8.0
+      string-width: 4.2.3
+      strip-ansi: 6.0.1
+      through: 2.3.8
+      wrap-ansi: 7.0.0
+    dev: true
+
+  /inquirer/8.2.5:
+    resolution: {integrity: sha512-QAgPDQMEgrDssk1XiwwHoOGYF9BAbUcc1+j+FhEvaOt8/cKRqyLn0U5qA6F74fGhTMGxf92pOvPBeh29jQJDTQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
       ansi-escapes: 4.3.2
@@ -10625,10 +10646,6 @@ packages:
       arrify: 1.0.1
       is-plain-obj: 1.1.0
       kind-of: 6.0.3
-    dev: true
-
-  /minimist/1.2.6:
-    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
   /minimist/1.2.7:
