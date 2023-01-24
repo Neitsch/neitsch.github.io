@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@apollo/client': 3.7.4
+  '@apollo/client': 3.7.5
   '@babel/core': 7.20.12
   '@babel/register': 7.18.9
   '@commitlint/cli': 17.4.2
@@ -77,7 +77,7 @@ specifiers:
   typescript: 4.9.4
 
 dependencies:
-  '@apollo/client': 3.7.4_30c50e0ebe73d138eec12db09601b888
+  '@apollo/client': 3.7.5_30c50e0ebe73d138eec12db09601b888
   '@emotion/cache': 11.10.5
   '@emotion/react': 11.10.5_c5c6fd8d7b20338dd6cf0b2bc2c3faf8
   '@emotion/server': 11.10.0
@@ -166,8 +166,8 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.15
 
-  /@apollo/client/3.7.4_30c50e0ebe73d138eec12db09601b888:
-    resolution: {integrity: sha512-bgiCKRmLSBImX4JRrw8NjqGo0AQE/mowCdHX1PJp2r5zIXrJx0UeaAYmx1qJY69Oz/KR7SKlLt4xK+bOP1jx7A==}
+  /@apollo/client/3.7.5_30c50e0ebe73d138eec12db09601b888:
+    resolution: {integrity: sha512-HEAhX2n2Y8Y2BwRr0UdteT94OTM7pn64K5/rTk/oLIdg/h7R2d83LdsCGDxSH5sBiqDqlv9vou4xdyTxxRWj/g==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5
