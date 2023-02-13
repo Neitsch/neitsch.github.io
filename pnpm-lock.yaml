@@ -73,7 +73,7 @@ specifiers:
   react-test-renderer: 18.2.0
   rehype-highlight: 6.0.0
   sharp: 0.31.3
-  size-limit: 8.1.2
+  size-limit: 8.2.4
   typescript: 4.9.5
 
 dependencies:
@@ -114,7 +114,7 @@ devDependencies:
   '@graphql-codegen/typescript-document-nodes': 2.3.3_graphql@16.6.0
   '@graphql-codegen/typescript-operations': 2.5.3_graphql@16.6.0
   '@graphql-codegen/typescript-react-apollo': 3.3.7_9638a6d36e0a79897de9140382dd9059
-  '@size-limit/file': 8.2.4_size-limit@8.1.2
+  '@size-limit/file': 8.2.4_size-limit@8.2.4
   '@stryker-mutator/core': 6.3.1
   '@stryker-mutator/jest-runner': 6.3.1_@stryker-mutator+core@6.3.1
   '@swc-node/jest': 1.5.7_typescript@4.9.5
@@ -151,7 +151,7 @@ devDependencies:
   prettier: 2.8.4
   prettier-eslint: 15.0.1
   react-test-renderer: 18.2.0_react@18.2.0
-  size-limit: 8.1.2
+  size-limit: 8.2.4
   typescript: 4.9.5
 
 packages:
@@ -3752,14 +3752,14 @@ packages:
     dependencies:
       '@sinonjs/commons': 2.0.0
 
-  /@size-limit/file/8.2.4_size-limit@8.1.2:
+  /@size-limit/file/8.2.4_size-limit@8.2.4:
     resolution: {integrity: sha512-xLuF97W7m7lxrRJvqXRlxO/4t7cpXtfxOnjml/t4aRVUCMXLdyvebRr9OM4jjoK8Fmiz8jomCbETUCI3jVhLzA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     peerDependencies:
       size-limit: 8.2.4
     dependencies:
       semver: 7.3.8
-      size-limit: 8.1.2
+      size-limit: 8.2.4
     dev: true
 
   /@stryker-mutator/api/6.3.1:
@@ -12482,8 +12482,8 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: true
 
-  /size-limit/8.1.2:
-    resolution: {integrity: sha512-/EfKz9I/K2ouBN+BcrTX2WiaPTOX5yiCXtM07jYpuVtyzX9r4FDUsuCq13nNmoWqRFYbtH/7wqgRLvF40AGKoQ==}
+  /size-limit/8.2.4:
+    resolution: {integrity: sha512-Un16nSreD1v2CYwSorattiJcHuAWqXvg4TsGgzpjnoByqQwsSfCIEQHuaD14HNStzredR8cdsO9oGH91ibypTA==}
     engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
     hasBin: true
     dependencies:
