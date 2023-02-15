@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@apollo/client': 3.7.7
+  '@apollo/client': 3.7.8
   '@babel/core': 7.20.12
   '@babel/register': 7.18.9
   '@commitlint/cli': 17.4.3
@@ -77,7 +77,7 @@ specifiers:
   typescript: 4.9.5
 
 dependencies:
-  '@apollo/client': 3.7.7_30c50e0ebe73d138eec12db09601b888
+  '@apollo/client': 3.7.8_30c50e0ebe73d138eec12db09601b888
   '@emotion/cache': 11.10.5
   '@emotion/react': 11.10.5_b291859fc1688233d8fe9b4500ee5a6b
   '@emotion/server': 11.10.0
@@ -166,8 +166,8 @@ packages:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.15
 
-  /@apollo/client/3.7.7_30c50e0ebe73d138eec12db09601b888:
-    resolution: {integrity: sha512-Rp/pCWuJSjLN7Xl5Qi2NoeURmZYEU/TIUz0n/LOwEo1tGdU2W7/fGVZ8+5um58JeVYq4UoTGBKFxSVeG4s411A==}
+  /@apollo/client/3.7.8_30c50e0ebe73d138eec12db09601b888:
+    resolution: {integrity: sha512-o1NxF4ytET2w9HSVMLwYUEEdv6H3XPpbh9M+ABVGnUVT0s6T9pgqRtYO4pFP1TmeDmb1pbRfVhFwh3gC167j5Q==}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
       graphql-ws: ^5.5.5
@@ -198,7 +198,7 @@ packages:
       response-iterator: 0.2.6
       symbol-observable: 4.0.0
       ts-invariant: 0.10.3
-      tslib: 2.4.1
+      tslib: 2.5.0
       zen-observable-ts: 1.2.5
     dev: false
 
@@ -13318,6 +13318,7 @@ packages:
 
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+    dev: true
 
   /tslib/2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
