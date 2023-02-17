@@ -22,8 +22,8 @@ specifiers:
   '@mui/material': 5.10.11
   '@sentry/nextjs': 7.37.2
   '@size-limit/file': 8.2.4
-  '@stryker-mutator/core': 6.3.1
-  '@stryker-mutator/jest-runner': 6.3.1
+  '@stryker-mutator/core': 6.4.0
+  '@stryker-mutator/jest-runner': 6.4.0
   '@swc-node/jest': 1.5.7
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0
@@ -115,8 +115,8 @@ devDependencies:
   '@graphql-codegen/typescript-operations': 2.5.3_graphql@16.6.0
   '@graphql-codegen/typescript-react-apollo': 3.3.7_9638a6d36e0a79897de9140382dd9059
   '@size-limit/file': 8.2.4_size-limit@8.2.4
-  '@stryker-mutator/core': 6.3.1
-  '@stryker-mutator/jest-runner': 6.3.1_@stryker-mutator+core@6.3.1
+  '@stryker-mutator/core': 6.4.0
+  '@stryker-mutator/jest-runner': 6.4.0_@stryker-mutator+core@6.4.0
   '@swc-node/jest': 1.5.7_typescript@4.9.5
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0_react-dom@18.2.0+react@18.2.0
@@ -369,23 +369,6 @@ packages:
       lru-cache: 5.1.1
       semver: 6.3.0
 
-  /@babel/helper-create-class-features-plugin/7.19.0_@babel+core@7.20.12:
-    resolution: {integrity: sha512-NRz8DwF4jT3UfrmUoZjd0Uph9HQnP30t7Ash+weACcyNkiYTywpIjDBgReJMKgr+n86sn2nPVVmJ28Dm053Kqw==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-    dependencies:
-      '@babel/core': 7.20.12
-      '@babel/helper-annotate-as-pure': 7.18.6
-      '@babel/helper-environment-visitor': 7.18.9
-      '@babel/helper-function-name': 7.19.0
-      '@babel/helper-member-expression-to-functions': 7.18.9
-      '@babel/helper-optimise-call-expression': 7.18.6
-      '@babel/helper-replace-supers': 7.19.1
-      '@babel/helper-split-export-declaration': 7.18.6
-    transitivePeerDependencies:
-      - supports-color
-
   /@babel/helper-create-class-features-plugin/7.20.5_@babel+core@7.20.12:
     resolution: {integrity: sha512-3RCdA/EmEaikrhayahwToF0fpweU/8o2p8vhc1c/1kftHOdTKuC65kik/TLc+qfbS8JKw4qqJbne4ovICDhmww==}
     engines: {node: '>=6.9.0'}
@@ -634,7 +617,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.20.12
-      '@babel/helper-create-class-features-plugin': 7.19.0_@babel+core@7.20.12
+      '@babel/helper-create-class-features-plugin': 7.20.5_@babel+core@7.20.12
       '@babel/helper-plugin-utils': 7.20.2
     transitivePeerDependencies:
       - supports-color
@@ -778,7 +761,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.20.12
-      '@babel/helper-create-class-features-plugin': 7.19.0_@babel+core@7.20.12
+      '@babel/helper-create-class-features-plugin': 7.20.5_@babel+core@7.20.12
       '@babel/helper-plugin-utils': 7.20.2
     transitivePeerDependencies:
       - supports-color
@@ -3518,7 +3501,7 @@ packages:
       '@rollup/pluginutils': 5.0.2_rollup@2.78.0
       commondir: 1.0.1
       estree-walker: 2.0.2
-      glob: 8.0.3
+      glob: 8.1.0
       is-reference: 1.2.1
       magic-string: 0.27.0
       rollup: 2.78.0
@@ -3752,41 +3735,41 @@ packages:
       size-limit: 8.2.4
     dev: true
 
-  /@stryker-mutator/api/6.3.1:
-    resolution: {integrity: sha512-NmD3MwU+zujV/jvkDaesyvuwOzCFJ6cAusw5BsMdaCEi+wt6pmPw77FETD1fsBkoHhRaH4g8ptKjFMDyKX2Xug==}
+  /@stryker-mutator/api/6.4.0:
+    resolution: {integrity: sha512-sk/OCoRt19m8VaPw4diFBxOnD3exQRBWGZ8CqacPMb/78Y6yj5gqcHc69cu1O59RQhXhyMp+Fs+uMXAgCYsWzA==}
     engines: {node: '>=14.18.0'}
     dependencies:
-      mutation-testing-metrics: 1.7.10
-      mutation-testing-report-schema: 1.7.10
-      tslib: 2.4.1
+      mutation-testing-metrics: 1.7.14
+      mutation-testing-report-schema: 1.7.14
+      tslib: 2.5.0
     dev: true
 
-  /@stryker-mutator/core/6.3.1:
-    resolution: {integrity: sha512-ii1E9RkZKFODf2Q5OTZQEllCAHuHmrOAEmta2siNQZYUd7LyvEgsjqXg2XP1NifMw0vJeHXaJAu+ZFyi8aDvgA==}
+  /@stryker-mutator/core/6.4.0:
+    resolution: {integrity: sha512-rIESMHC9/wugKM30vQMTZD9M8TK2VIzvjP7gW78/tkss5Os4TftMBQPL/5DBnYx+WMIaWOuHhNUSRRPFAru9Mg==}
     engines: {node: '>=14.18.0'}
     hasBin: true
     dependencies:
-      '@stryker-mutator/api': 6.3.1
-      '@stryker-mutator/instrumenter': 6.3.1
-      '@stryker-mutator/util': 6.3.1
-      ajv: 8.11.0
+      '@stryker-mutator/api': 6.4.0
+      '@stryker-mutator/instrumenter': 6.4.0
+      '@stryker-mutator/util': 6.4.0
+      ajv: 8.12.0
       chalk: 5.2.0
-      commander: 9.4.1
+      commander: 10.0.0
       diff-match-patch: 1.0.5
       emoji-regex: 10.2.1
-      execa: 6.1.0
+      execa: 7.0.0
       file-url: 4.0.0
       get-port: 6.1.2
-      glob: 8.0.3
+      glob: 8.1.0
       inquirer: 9.1.1
       lodash.flatmap: 4.5.0
       lodash.groupby: 4.6.0
       log4js: 6.7.0
       minimatch: 5.1.0
-      mkdirp: 1.0.4
-      mutation-testing-elements: 1.7.12
-      mutation-testing-metrics: 1.7.10
-      mutation-testing-report-schema: 1.7.10
+      mkdirp: 2.1.3
+      mutation-testing-elements: 1.7.14
+      mutation-testing-metrics: 1.7.14
+      mutation-testing-report-schema: 1.7.14
       npm-run-path: 5.1.0
       progress: 2.0.3
       rimraf: 3.0.2
@@ -3794,15 +3777,15 @@ packages:
       semver: 7.3.8
       source-map: 0.7.3
       tree-kill: 1.2.2
-      tslib: 2.4.0
+      tslib: 2.5.0
       typed-inject: 3.0.1
       typed-rest-client: 1.8.6
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@stryker-mutator/instrumenter/6.3.1:
-    resolution: {integrity: sha512-cxg88sHr3qDz41c0fS3t8t2mBI0dY55ksUrrkbhJy+b9KhPwjRhL2L3ixyMFsDyNY+ur+038mDYjS2emOsF2fg==}
+  /@stryker-mutator/instrumenter/6.4.0:
+    resolution: {integrity: sha512-IFBsI9u3vD9k2PR0GxvKxfd2WkaTNNhH7gpmL1Lpj8Kcvg1LpopXeU5phJizE5s92fOMJGp++Bi8YiUYbp5AUA==}
     engines: {node: '>=14.18.0'}
     dependencies:
       '@babel/core': 7.20.12
@@ -3812,29 +3795,29 @@ packages:
       '@babel/plugin-proposal-decorators': 7.20.5_@babel+core@7.20.12
       '@babel/plugin-proposal-private-methods': 7.18.6_@babel+core@7.20.12
       '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
-      '@stryker-mutator/api': 6.3.1
-      '@stryker-mutator/util': 6.3.1
-      angular-html-parser: 3.0.0
+      '@stryker-mutator/api': 6.4.0
+      '@stryker-mutator/util': 6.4.0
+      angular-html-parser: 4.0.1
       weapon-regex: 1.0.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@stryker-mutator/jest-runner/6.3.1_@stryker-mutator+core@6.3.1:
-    resolution: {integrity: sha512-kJJ8OCuMvrFyc2XrczBsudqcekfRaDOhyC7OaMUVJOwMOGdBzGAAGV5TBwdZR3FXnaoOU24lqhqUxuB2E8Yo2w==}
+  /@stryker-mutator/jest-runner/6.4.0_@stryker-mutator+core@6.4.0:
+    resolution: {integrity: sha512-zPRUb1TLcfr98rLpmLRSlsWrykU8kXZ8nVd6D7VqW2yjO8dgZv2LD9B+qZmoDcAuOSSna3wSJv1D69207SHWKQ==}
     engines: {node: '>=14.18.0'}
     peerDependencies:
       '@stryker-mutator/core': ~6.3.0
     dependencies:
-      '@stryker-mutator/api': 6.3.1
-      '@stryker-mutator/core': 6.3.1
-      '@stryker-mutator/util': 6.3.1
+      '@stryker-mutator/api': 6.4.0
+      '@stryker-mutator/core': 6.4.0
+      '@stryker-mutator/util': 6.4.0
       semver: 7.3.8
-      tslib: 2.4.0
+      tslib: 2.5.0
     dev: true
 
-  /@stryker-mutator/util/6.3.1:
-    resolution: {integrity: sha512-Oi5IulxqhncZ39QS4KcmUI6k4IWH03EfY/3TFc75IeODwClOVZpB7TasMfDVimAqchCmFzKFZUouqGRbrdcYWg==}
+  /@stryker-mutator/util/6.4.0:
+    resolution: {integrity: sha512-3ugJycEmZEqVTpZgMiT0mdK+0cWIKlHTfnhIhyYLbuXFP9QDfyEj5hbr91stNFkWIJc17q2BEXDZ7gIaAgM9yQ==}
     dependencies:
       lodash.flatmap: 4.5.0
     dev: true
@@ -4723,11 +4706,20 @@ packages:
       uri-js: 4.4.1
     dev: true
 
-  /angular-html-parser/3.0.0:
-    resolution: {integrity: sha512-2UVNx5UmO2wj2JzwIIb0927/jr3d8vYv4cMIFsh4a8dLUIhf2YpMU7UgRMXJJo19jAihTW/MO2whnl/0xvAfqg==}
+  /ajv/8.12.0:
+    resolution: {integrity: sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==}
+    dependencies:
+      fast-deep-equal: 3.1.3
+      json-schema-traverse: 1.0.0
+      require-from-string: 2.0.2
+      uri-js: 4.4.1
+    dev: true
+
+  /angular-html-parser/4.0.1:
+    resolution: {integrity: sha512-x9SLf2jNNh3nG+haVIwKX/GVW8PcvSRmkeT9WqTDYSAVuwT9IzwEyVm09FCZpOo/dtFRxE9vaNXqcAf/MIxphg==}
     engines: {node: '>= 14'}
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: true
 
   /ansi-colors/3.2.4:
@@ -5952,6 +5944,11 @@ packages:
   /comma-separated-tokens/2.0.2:
     resolution: {integrity: sha512-G5yTt3KQN4Yn7Yk4ed73hlZ1evrFKXeUW3086p3PRFNp7m2vIjI6Pg+Kgb+oyzhd9F2qdcoj67+y3SdxL5XWsg==}
     dev: false
+
+  /commander/10.0.0:
+    resolution: {integrity: sha512-zS5PnTI22FIRM6ylNW8G4Ap0IEOyk62fhLSD0+uHRT9McRCLGpkVNvao4bjimpK/GShynyQkFFxHhwMcETmduA==}
+    engines: {node: '>=14'}
+    dev: true
 
   /commander/2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
@@ -7234,6 +7231,21 @@ packages:
       strip-final-newline: 3.0.0
     dev: true
 
+  /execa/7.0.0:
+    resolution: {integrity: sha512-tQbH0pH/8LHTnwTrsKWideqi6rFB/QNUawEwrn+WHyz7PX1Tuz2u7wfTvbaNBdP5JD5LVWxNo8/A8CHNZ3bV6g==}
+    engines: {node: ^14.18.0 || ^16.14.0 || >=18.0.0}
+    dependencies:
+      cross-spawn: 7.0.3
+      get-stream: 6.0.1
+      human-signals: 4.3.0
+      is-stream: 3.0.0
+      merge-stream: 2.0.0
+      npm-run-path: 5.1.0
+      onetime: 6.0.0
+      signal-exit: 3.0.7
+      strip-final-newline: 3.0.0
+    dev: true
+
   /exit/0.1.2:
     resolution: {integrity: sha512-Zk/eNKV2zbjpKzrsQ+n1G6poVbErQxJ0LBOJXaKZ1EViLzH+hrLu9cdXI4zw9dBQJslwBEpbQ2P1oS7nDxs6jQ==}
     engines: {node: '>= 0.8.0'}
@@ -7879,8 +7891,8 @@ packages:
       once: 1.4.0
       path-is-absolute: 1.0.1
 
-  /glob/8.0.3:
-    resolution: {integrity: sha512-ull455NHSHI/Y1FqGaaYFaLGkNMMJbavMrEGFXG/PGrg6y7sutWHUHrz6gy6WEBH6akM1M414dWKCNs+IhKdiQ==}
+  /glob/8.1.0:
+    resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
     dependencies:
       fs.realpath: 1.0.0
@@ -8299,6 +8311,11 @@ packages:
   /human-signals/3.0.1:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}
     engines: {node: '>=12.20.0'}
+    dev: true
+
+  /human-signals/4.3.0:
+    resolution: {integrity: sha512-zyzVyMjpGBX2+6cDVZeFPCdtOtdsxOeseRhB9tkQ6xXmGUNrcnBzdEKPy3VPNYz+4gy1oukVOXcrJCunSyc6QQ==}
+    engines: {node: '>=14.18.0'}
     dev: true
 
   /husky/8.0.3:
@@ -10679,6 +10696,12 @@ packages:
     hasBin: true
     dev: true
 
+  /mkdirp/2.1.3:
+    resolution: {integrity: sha512-sjAkg21peAG9HS+Dkx7hlG9Ztx7HLeKnvB3NQRcu/mltCVmvkF0pisbiTSfDVYTT86XEfZrTUosLdZLStquZUw==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dev: true
+
   /move-concurrently/1.0.1:
     resolution: {integrity: sha1-viwAX9oy4LKa8fBdfEszIUxwH5I=}
     dependencies:
@@ -10712,18 +10735,18 @@ packages:
       object-assign: 4.1.1
     dev: false
 
-  /mutation-testing-elements/1.7.12:
-    resolution: {integrity: sha512-6L5PiREMKWirDOVoMVpJtq4r1MfHZgme78PFQl9W59YQq/rqmHpYAcwrdUYikPVYASp4r91ZupiKlFHgCPiVBw==}
+  /mutation-testing-elements/1.7.14:
+    resolution: {integrity: sha512-/klVQtO0W9Y3zRUf3Xaf4hvzjCpLMKWetg6/bnLDPBrGTySt7JeW+muh2JQcBessDJMFFZyFYKdCTJOL5AhlBw==}
     dev: true
 
-  /mutation-testing-metrics/1.7.10:
-    resolution: {integrity: sha512-wQnfnvMoSkV/5AHurRaDouiXf2ENoo23cXNZw70ks+mftEGPwLMStlyQZytQrcY/9lQDdrNSdMSPt2Zri75OcA==}
+  /mutation-testing-metrics/1.7.14:
+    resolution: {integrity: sha512-Y5I6p2gZy7sXYfWn9yR863vd3NA9IhjKccUdbybmHASRy5b7zit6B03DczuYU+cQDqZ7WX38gzQ9IFs/JdbHqQ==}
     dependencies:
-      mutation-testing-report-schema: 1.7.10
+      mutation-testing-report-schema: 1.7.14
     dev: true
 
-  /mutation-testing-report-schema/1.7.10:
-    resolution: {integrity: sha512-lPbEVTAlx0XCXA5GKpb6+0mtDk9MoepYVsXhEtRcwiHRjmqBn2frwXL1Xmkh6HxYnEDIQddzZAgk8SIbkV7p+g==}
+  /mutation-testing-report-schema/1.7.14:
+    resolution: {integrity: sha512-vN2Gw5dXWp1I7fj9PSzyBPy7KqNG4wN5qMdHwTV339fbW2pH19qlSU5Qg6VJlAZtlfgUiDJ1NYYgIEjpoqrRZA==}
     dev: true
 
   /mute-stream/0.0.8:
