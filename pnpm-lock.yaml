@@ -22,8 +22,8 @@ specifiers:
   '@mui/material': 5.10.11
   '@sentry/nextjs': 7.38.0
   '@size-limit/file': 8.2.4
-  '@stryker-mutator/core': 6.4.0
-  '@stryker-mutator/jest-runner': 6.4.0
+  '@stryker-mutator/core': 6.4.1
+  '@stryker-mutator/jest-runner': 6.4.1
   '@swc-node/jest': 1.5.7
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0
@@ -115,8 +115,8 @@ devDependencies:
   '@graphql-codegen/typescript-operations': 2.5.3_graphql@16.6.0
   '@graphql-codegen/typescript-react-apollo': 3.3.7_9638a6d36e0a79897de9140382dd9059
   '@size-limit/file': 8.2.4_size-limit@8.2.4
-  '@stryker-mutator/core': 6.4.0
-  '@stryker-mutator/jest-runner': 6.4.0_@stryker-mutator+core@6.4.0
+  '@stryker-mutator/core': 6.4.1
+  '@stryker-mutator/jest-runner': 6.4.1_@stryker-mutator+core@6.4.1
   '@swc-node/jest': 1.5.7_typescript@4.9.5
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0_react-dom@18.2.0+react@18.2.0
@@ -3735,8 +3735,8 @@ packages:
       size-limit: 8.2.4
     dev: true
 
-  /@stryker-mutator/api/6.4.0:
-    resolution: {integrity: sha512-sk/OCoRt19m8VaPw4diFBxOnD3exQRBWGZ8CqacPMb/78Y6yj5gqcHc69cu1O59RQhXhyMp+Fs+uMXAgCYsWzA==}
+  /@stryker-mutator/api/6.4.1:
+    resolution: {integrity: sha512-xHK5mqTXqMKegfOAhURDqaPNA2vOj79f0/fC3J9Udnol0OkTresSfOG06t2Y80Qr0iH50RQm+Dzgg0Sgt8ODzg==}
     engines: {node: '>=14.18.0'}
     dependencies:
       mutation-testing-metrics: 1.7.14
@@ -3744,14 +3744,14 @@ packages:
       tslib: 2.5.0
     dev: true
 
-  /@stryker-mutator/core/6.4.0:
-    resolution: {integrity: sha512-rIESMHC9/wugKM30vQMTZD9M8TK2VIzvjP7gW78/tkss5Os4TftMBQPL/5DBnYx+WMIaWOuHhNUSRRPFAru9Mg==}
+  /@stryker-mutator/core/6.4.1:
+    resolution: {integrity: sha512-MJJ/332R3oFxvXUSrPU8gves9CdANkjfPoPAuURanjqeTbz6FmEb7fSJun1Gf4HsbvXCiiU1kbbV+Xj+hfid4w==}
     engines: {node: '>=14.18.0'}
     hasBin: true
     dependencies:
-      '@stryker-mutator/api': 6.4.0
-      '@stryker-mutator/instrumenter': 6.4.0
-      '@stryker-mutator/util': 6.4.0
+      '@stryker-mutator/api': 6.4.1
+      '@stryker-mutator/instrumenter': 6.4.1
+      '@stryker-mutator/util': 6.4.1
       ajv: 8.12.0
       chalk: 5.2.0
       commander: 10.0.0
@@ -3784,8 +3784,8 @@ packages:
       - supports-color
     dev: true
 
-  /@stryker-mutator/instrumenter/6.4.0:
-    resolution: {integrity: sha512-IFBsI9u3vD9k2PR0GxvKxfd2WkaTNNhH7gpmL1Lpj8Kcvg1LpopXeU5phJizE5s92fOMJGp++Bi8YiUYbp5AUA==}
+  /@stryker-mutator/instrumenter/6.4.1:
+    resolution: {integrity: sha512-2Q5trdgi4Ymq3QTRju5ZpZGgPFq00CAZFv5DiC8XenLtqbBIpjVtawfdXXGEKx7ndB4yr2WFKXQkTs6LKDtCfA==}
     engines: {node: '>=14.18.0'}
     dependencies:
       '@babel/core': 7.20.12
@@ -3795,29 +3795,29 @@ packages:
       '@babel/plugin-proposal-decorators': 7.20.5_@babel+core@7.20.12
       '@babel/plugin-proposal-private-methods': 7.18.6_@babel+core@7.20.12
       '@babel/preset-typescript': 7.18.6_@babel+core@7.20.12
-      '@stryker-mutator/api': 6.4.0
-      '@stryker-mutator/util': 6.4.0
+      '@stryker-mutator/api': 6.4.1
+      '@stryker-mutator/util': 6.4.1
       angular-html-parser: 4.0.1
       weapon-regex: 1.0.3
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@stryker-mutator/jest-runner/6.4.0_@stryker-mutator+core@6.4.0:
-    resolution: {integrity: sha512-zPRUb1TLcfr98rLpmLRSlsWrykU8kXZ8nVd6D7VqW2yjO8dgZv2LD9B+qZmoDcAuOSSna3wSJv1D69207SHWKQ==}
+  /@stryker-mutator/jest-runner/6.4.1_@stryker-mutator+core@6.4.1:
+    resolution: {integrity: sha512-Hqs+M4KtniLikcrP76XjxSSrAfW6VJYRBzPnqOOCe8T5w/CrFZ3aRN7UqbvCl3/BYA2+lf6AzKpsl4BWPOk5BQ==}
     engines: {node: '>=14.18.0'}
     peerDependencies:
-      '@stryker-mutator/core': ~6.3.0
+      '@stryker-mutator/core': ^6.4.0
     dependencies:
-      '@stryker-mutator/api': 6.4.0
-      '@stryker-mutator/core': 6.4.0
-      '@stryker-mutator/util': 6.4.0
+      '@stryker-mutator/api': 6.4.1
+      '@stryker-mutator/core': 6.4.1
+      '@stryker-mutator/util': 6.4.1
       semver: 7.3.8
       tslib: 2.5.0
     dev: true
 
-  /@stryker-mutator/util/6.4.0:
-    resolution: {integrity: sha512-3ugJycEmZEqVTpZgMiT0mdK+0cWIKlHTfnhIhyYLbuXFP9QDfyEj5hbr91stNFkWIJc17q2BEXDZ7gIaAgM9yQ==}
+  /@stryker-mutator/util/6.4.1:
+    resolution: {integrity: sha512-ziJA9VGSQXtLPpohgeZnEdwAeWfFmYAgqTcVIloCzR0ERBdh2Vvq27zRG2xAEJ5bTD7/5DDaXX9B0nidTCHlcg==}
     dependencies:
       lodash.flatmap: 4.5.0
     dev: true
