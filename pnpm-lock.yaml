@@ -27,7 +27,7 @@ specifiers:
   '@swc-node/jest': 1.5.7
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0
-  '@trivago/prettier-plugin-sort-imports': 4.0.0
+  '@trivago/prettier-plugin-sort-imports': 4.1.0
   '@types/react': 18.0.28
   '@typescript-eslint/eslint-plugin': 5.53.0
   '@typescript-eslint/parser': 5.53.0
@@ -120,7 +120,7 @@ devDependencies:
   '@swc-node/jest': 1.5.7_typescript@4.9.5
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 14.0.0_react-dom@18.2.0+react@18.2.0
-  '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.4
+  '@trivago/prettier-plugin-sort-imports': 4.1.0_prettier@2.8.4
   '@types/react': 18.0.28
   '@typescript-eslint/eslint-plugin': 5.53.0_6e392fc05ec1bfc280bb1faf3c69c5ce
   '@typescript-eslint/parser': 5.53.0_eslint@8.34.0+typescript@4.9.5
@@ -258,29 +258,6 @@ packages:
     resolution: {integrity: sha512-KZXo2t10+/jxmkhNXc7pZTqRvSOIvVv/+lJwHS+B2rErwOyjuVRh60yVpb7liQ1U5t7lLJ1bz+t8tSypUZdm0g==}
     engines: {node: '>=6.9.0'}
 
-  /@babel/core/7.17.8:
-    resolution: {integrity: sha512-OdQDV/7cRBtJHLSOBqqbYNkOcydOgnX59TZx4puf41fzcVtN3e/4yqY8lMQsK+5X2lJtAdmA+6OHqsj1hBJ4IQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@ampproject/remapping': 2.2.0
-      '@babel/code-frame': 7.18.6
-      '@babel/generator': 7.21.0
-      '@babel/helper-compilation-targets': 7.20.7_@babel+core@7.17.8
-      '@babel/helper-module-transforms': 7.21.0
-      '@babel/helpers': 7.21.0
-      '@babel/parser': 7.21.0
-      '@babel/template': 7.20.7
-      '@babel/traverse': 7.21.0
-      '@babel/types': 7.21.0
-      convert-source-map: 1.8.0
-      debug: 4.3.4
-      gensync: 1.0.0-beta.2
-      json5: 2.2.3
-      semver: 6.3.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@babel/core/7.20.12:
     resolution: {integrity: sha512-XsMfHovsUYHFMdrIHkZphTN/2Hzzi78R08NuHfDBehym2VsPDL6Zn/JAD/JQdnRvbSsbQc4mVaU1m6JgtTEElg==}
     engines: {node: '>=6.9.0'}
@@ -375,20 +352,6 @@ packages:
       '@babel/helper-explode-assignable-expression': 7.16.0
       '@babel/types': 7.21.0
     dev: false
-
-  /@babel/helper-compilation-targets/7.20.7_@babel+core@7.17.8:
-    resolution: {integrity: sha512-4tGORmfQcrc+bvrjb5y3dG9Mx1IOZjsHqQVUz7XCNHO+iTmqxWnVg3KRygjGmpRLJGdQSKuvFinbIb0CnZwHAQ==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0
-    dependencies:
-      '@babel/compat-data': 7.20.5
-      '@babel/core': 7.17.8
-      '@babel/helper-validator-option': 7.18.6
-      browserslist: 4.21.4
-      lru-cache: 5.1.1
-      semver: 6.3.0
-    dev: true
 
   /@babel/helper-compilation-targets/7.20.7_@babel+core@7.20.12:
     resolution: {integrity: sha512-4tGORmfQcrc+bvrjb5y3dG9Mx1IOZjsHqQVUz7XCNHO+iTmqxWnVg3KRygjGmpRLJGdQSKuvFinbIb0CnZwHAQ==}
@@ -624,14 +587,6 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       chalk: 2.4.2
       js-tokens: 4.0.0
-
-  /@babel/parser/7.18.9:
-    resolution: {integrity: sha512-9uJveS9eY9DJ0t64YbIBZICtJy8a5QrDEVdiLCG97fVLpDTpGX7t8mMSb6OWw6Lrnjqj4O8zwjELX3dhoMgiBg==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
-    dependencies:
-      '@babel/types': 7.21.0
-    dev: true
 
   /@babel/parser/7.20.7:
     resolution: {integrity: sha512-T3Z9oHybU+0vZlY9CiDSJQTD5ZapcW18ZctFMi0MOAl/4BjFF4ul7NVSARLdbGO5vDqy9eQiGTV0LtKfvCYvcg==}
@@ -4216,15 +4171,17 @@ packages:
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
     engines: {node: '>= 10'}
 
-  /@trivago/prettier-plugin-sort-imports/4.0.0_prettier@2.8.4:
-    resolution: {integrity: sha512-Tyuk5ZY4a0e2MNFLdluQO9F6d1awFQYXVVujEPFfvKPPXz8DADNHzz73NMhwCSXGSuGGZcA/rKOyZBrxVNMxaA==}
+  /@trivago/prettier-plugin-sort-imports/4.1.0_prettier@2.8.4:
+    resolution: {integrity: sha512-aTr6QPFaPAAzPRFn9yWB/9yKi3ZAFqfGpxIGLPWuQfYJFGUed+W3KKwxntsoCiNvNE2iuKOg6haMo5KG8WXltg==}
     peerDependencies:
       '@vue/compiler-sfc': 3.x
       prettier: 2.x
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
     dependencies:
-      '@babel/core': 7.17.8
       '@babel/generator': 7.17.7
-      '@babel/parser': 7.18.9
+      '@babel/parser': 7.21.0
       '@babel/traverse': 7.17.3
       '@babel/types': 7.17.0
       javascript-natural-sort: 0.7.1
