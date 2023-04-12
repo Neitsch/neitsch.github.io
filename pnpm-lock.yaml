@@ -68,7 +68,7 @@ specifiers:
   prettier-eslint: 15.0.1
   react: 18.2.0
   react-dom: 18.2.0
-  react-markdown: 8.0.5
+  react-markdown: 8.0.7
   react-share: 4.4.1
   react-test-renderer: 18.2.0
   rehype-highlight: 6.0.0
@@ -96,7 +96,7 @@ dependencies:
   next-offline: 5.0.5_next@12.3.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-markdown: 8.0.5_7b08a519b01d2cb6137dcbdb0391a2df
+  react-markdown: 8.0.7_7b08a519b01d2cb6137dcbdb0391a2df
   react-share: 4.4.1_react@18.2.0
   rehype-highlight: 6.0.0
   sharp: 0.31.3
@@ -11914,8 +11914,8 @@ packages:
   /react-is/18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  /react-markdown/8.0.5_7b08a519b01d2cb6137dcbdb0391a2df:
-    resolution: {integrity: sha512-jGJolWWmOWAvzf+xMdB9zwStViODyyFQhNB/bwCerbBKmrTmgmA599CGiOlP58OId1IMoIRsA8UdI1Lod4zb5A==}
+  /react-markdown/8.0.7_7b08a519b01d2cb6137dcbdb0391a2df:
+    resolution: {integrity: sha512-bvWbzG4MtOU62XqBx3Xx+zB2raaFFsq4mYiAzfjXJMEz2sixgeAfraA3tvzULF02ZdOMUOKTBFFaZJDDrq+BJQ==}
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
