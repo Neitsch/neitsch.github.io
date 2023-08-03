@@ -41,7 +41,7 @@ specifiers:
   date-fns: 2.29.3
   eslint: 8.35.0
   eslint-config-next: 12.3.4
-  eslint-config-prettier: 8.6.0
+  eslint-config-prettier: 8.10.0
   eslint-plugin-graphql: 4.0.0
   eslint-plugin-jest: 27.2.1
   eslint-plugin-jsx-a11y: 6.7.1
@@ -131,12 +131,12 @@ devDependencies:
   cz-conventional-changelog: 3.3.0
   eslint: 8.35.0
   eslint-config-next: 12.3.4_eslint@8.35.0+typescript@4.9.5
-  eslint-config-prettier: 8.6.0_eslint@8.35.0
+  eslint-config-prettier: 8.10.0_eslint@8.35.0
   eslint-plugin-graphql: 4.0.0_graphql@16.6.0+typescript@4.9.5
   eslint-plugin-jest: 27.2.1_aea01e54c933a8777634ae9b851ad849
   eslint-plugin-jsx-a11y: 6.7.1_eslint@8.35.0
   eslint-plugin-only-error: 1.0.2
-  eslint-plugin-prettier: 4.2.1_a6b270714872732e6a67cbcd6c19e766
+  eslint-plugin-prettier: 4.2.1_660691251bcdc19c92139114071f079a
   eslint-plugin-react: 7.29.4_eslint@8.35.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.35.0
   graphql-tag: 2.12.6_graphql@16.6.0
@@ -6925,8 +6925,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-config-prettier/8.6.0_eslint@8.35.0:
-    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
+  /eslint-config-prettier/8.10.0_eslint@8.35.0:
+    resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -7090,7 +7090,7 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_a6b270714872732e6a67cbcd6c19e766:
+  /eslint-plugin-prettier/4.2.1_660691251bcdc19c92139114071f079a:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -7102,7 +7102,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.35.0
-      eslint-config-prettier: 8.6.0_eslint@8.35.0
+      eslint-config-prettier: 8.10.0_eslint@8.35.0
       prettier: 2.8.4
       prettier-linter-helpers: 1.0.0
     dev: true
@@ -7826,7 +7826,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
