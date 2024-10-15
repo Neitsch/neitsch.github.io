@@ -39,7 +39,7 @@
         "graphql": "16.6.0",
         "highlight.js": "11.7.0",
         "jest-environment-jsdom": "29.4.3",
-        "next": "12.3.4",
+        "next": "14.2.7",
         "next-images": "1.8.4",
         "next-offline": "5.0.5",
         "react": "18.2.0",
